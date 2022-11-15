@@ -95,6 +95,11 @@ footer .copyright{padding:6vw 0;}
 
 /*org===================================================================================*/
 
+.gmenu { 
+  display: flex;
+  justify-content:space-around; 
+}
+
 
 h1 {
   padding: 0.5em;/*文字周りの余白*/
