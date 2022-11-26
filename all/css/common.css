@@ -964,3 +964,119 @@ h5{font-size:1.8rem;margin-bottom:6vw;}
 .swiper-button-next {
   right: -17px
 }
+
+
+/* ------ slide image ------- */
+.t-slide_img {
+	/*animation-duration: 30s;*/
+	animation: slideAnime 36s 0s infinite;
+	animation-iteration-count: infinite;
+	animation-name: slideAnime;
+	animation-timing-function: ease infinite;
+	display: block;
+	object-fit: cover;
+	opacity: 0;
+	width: 100%;
+	z-index: 10;
+}
+@media screen and (min-width:769px) and (max-width:2880px) {
+	.t-slide_img {
+		min-height: 80vh;
+	}
+}
+@media screen and (max-width: 768px) {
+	.t-slide_img {
+		min-height: 70vh;
+	}
+}
+.t-slide_item:nth-of-type(1) .t-slide_img {
+	animation-delay: 0s;
+}
+.t-slide_item:nth-of-type(2) .t-slide_img {
+	animation-delay: 6s;
+}
+.t-slide_item:nth-of-type(3) .t-slide_img {
+	animation-delay: 12s;
+}
+.t-slide_item:nth-of-type(4) .t-slide_img {
+	animation-delay: 18s;
+}
+.t-slide_item:nth-of-type(5) .t-slide_img {
+	animation-delay: 24s;
+}
+.t-slide_item:nth-of-type(6) .t-slide_img {
+	animation-delay: 30s;
+}
+@keyframes slideAnime {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+		z-index: 9;
+		transform: scale(1.2);
+		/*transform: translateX(-10%);*/
+	}
+}
+/* ------ topani erea ------- */
+.topani {
+	overflow: hidden;
+	position: relative;
+}
+@media screen and (min-width:769px) and (max-width:2880px) {
+	.topani {
+		min-height: 80vh;
+	}
+}
+@media screen and (max-width: 768px) {
+	.topani {
+		min-height: 70vh;
+	}
+}
+.t-inner {
+	margin: 0 auto;
+	width: 100%;
+}
+/* ------ topani title ------- */
+.topani_title {
+	font-size: 2.2rem;
+	line-height: 4vw;
+	color: #fff;
+	font-weight: bold;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 45%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+		.topani_titles {
+	font-size: 2.2rem;
+	line-height: 4vw;
+	color: #fff;
+	font-weight: bold;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 45%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+.t-slide_item {
+	bottom: 0;
+	height: 100%;
+	position: absolute;
+	right: -10%;
+	width: 110%;
+}
