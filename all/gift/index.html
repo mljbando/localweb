@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no" />
+<title>local</title>
+<link rel="shortcut icon" href="../img/favicon.png">
+<link rel="stylesheet" property="stylesheet" href="../css/bootstrap.min.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/destyle.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/base.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/slider-pro.min.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/all.min.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/slick.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/slick-theme.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/nouislider.min.css" media="all">
+<link rel="stylesheet" property="stylesheet" href="../css/common.css" media="all">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../js/jquery.sliderPro.min.js"></script>
+<script type="text/javascript" src="../js/chart.min.js"></script>
+<script type="text/javascript" src="../js/nouislider.min.js"></script>
+<script type="text/javascript" src="../js/wNumb.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+<header>
+<div class="container">
+<a class="logo" href="../"><img src="../img/logo.png"><span>紋別市<br class="sp">ふるさと納税<br class="sp">特設サイト</span></a>
+<nav>
+<ul>
+<li><a href="../about/"><img src="../img/icon_about.png"><p>紋別市の紹介</p></a></li>
+<li><a href=""><img src="../img/icon_find.png"><p>見つける</p></a></li>
+<li><a href=""><img src="../img/icon_cart.png"><p>カート<span class="cart_number">1</span></p></a></li>
+<li class="burger-btn"><a><div><span></span><span></span><span></span></div><p>メニュー</p></a></li>
+</ul>
+</nav>
+</div>
+
+<div class="burger-menu">
+      <div class="inner">
+        <ul>
+          <li><a href="">マイページ</a></li>
+          <li><a href="">ログイン</a></li>
+        </ul>
+        <ul class="m-navi">
+          <li><a href="./">お礼の品一覧</a></li>
+          <li><a href="">紋別市に寄付をする</a></li>
+          <li><a href="../crowdfunding/">クラウドファンディング</a></li>
+          <li><a href="">マンスリーサポーター</a></li>
+          <li><a href="">寄付の使い道</a></li>
+          <li><a href="../about/">紋別市の紹介</a></li>
+          <li><a href="">手続きの方法</a></li>
+          <li><a href="">ふるさと納税とは</a></li>
+          <li><a href="">よくある質問</a></li>
+          <li><a href="">事業者の紹介</a></li>
+          <li><a href="">お知らせ</a></li>
+          <li><a href="">お問い合わせ</a></li>
+        </ul>
+        <ul class="s-navi">
+          <li><a href="">運営者情報</a></li>
+          <li><a href="">利用規約</a></li>
+          <li><a href="">個人情報の取扱について</a></li>
+          <li><a href="">サイトマップ</a></li>
+       </ul>
+      </div>
+</div>
+
+<div class="categorynav">
+<ul class="scrollmenu">
+<li><button id="all"><img src="../img/category/icon_all.png"><p>すべて</p></button></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>魚貝類</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a class="select">ホタテ</a></li><li><a>イクラ</a></li><li><a>エビ</a></li><li><a>魚</a></li><li><a>その他</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>エビ・カニ等</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a class="select">テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>米・パン</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>肉類</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>飲料類</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>菓子</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>加工品等</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>イベントやチケット等</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>雑貨・日用品</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>家電</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>ファッション</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+<li><button class="drop"><img src="../img/category/icon_gyokai.png"><p>家具・工芸品・装飾品</p></button>
+    <div class="openWrap"><ul class="scrollmenu"><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li><li><a>テキスト</a></li></ul></div></li>
+</ul>
+</div>
+</header>
+
+
+<div class="popup" id="js-popup">
+  <div class="innerbox">
+    <div class="midashi"><span>見つける</span></div>
+    <div class="closebtn" id="popup-close"><img src="../img/popup_close.png"></div>
+    <div class="scrollbox">
+    <input type="text" name="sa" placeholder="キーワードから探す" class="search">
+    <section>
+     <h6>価格帯</h6>
+     <div class="chartwrap"><canvas id="chart_price"></canvas></div>
+     <div class="noUiSlider-wrap standard">
+     <div class="range-slider"></div>
+      <ul class="text-wrap">
+      <li><p>最低料金</p><input type="text" name="min" class="min-box" value=""></li>
+      <li><p>最高料金</p><input type="text" name="max" class="max-box" value=""></li>
+      </ul>
+     </div>
+    </section>
+    <section>
+     <h6>カテゴリー</h6>
+     <ul class="L_categories">
+     <li><a><img src="../img/category/icon_all.png"><p>すべて</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>魚介類</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>エビ・カニ等</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>米・パン</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>肉類</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>飲料類</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>菓子</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>加工品等</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>イベントや<br>チケット等</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>雑貨・<br class="sp">日用品</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>家電</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>ファッション</p></a></li>
+     <li><a><img src="../img/category/icon_gyokai.png"><p>家具・工芸品・<br class="pc">装飾品</p></a></li>
+     </ul>
+    </section>
+    <section>
+     <h6>中カテゴリー</h6>
+     <ul class="M_categories">
+     <li><a><span>ホタテ</span></a></li>
+     <li><a><span>イクラ</span></a></li>
+     <li><a><span>エビ</span></a></li>
+     <li><a><span>魚</span></a></li>
+     <li><a><span>その他</span></a></li>
+     <li><a><span>二行のサンプル</span></a></li>
+     </ul>
+    </section>
+    </div><!--/scrollbox-->
+    <div class="under_display">
+    <div class="flex"><a class="allclear">すべてクリア</a><button class="btn_show">412件のお礼の品を表示</button></div>
+    </div>
+  </div><!--/innerbox-->
+  <div class="layer" id="popup-bg"></div>
+</div><!--/popup-->
+
+
+<main id="gift" class="list">
+<div class="pt_plus"></div>
+<div class="container">
+
+<ul class="pagehead">
+<li><h3>お礼の品一覧</h3><p class="hit"><span class="Fbold">150件</span>が見つかりました。</p></li>
+<li class="btns"><button class="filter" id="popupbtn"><span>フィルター</span></button>
+<div class="selectwrap"><select><option value="新着順">新着順</option><option value="">ダミー</option><option value="">ダミー</option><option value="">ダミー</option></select></div></li>
+</ul>
+
+<ul class="p-box">
+<li><a href="detail.html"><div class="mask"><button class="favorite red"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/12-13.png"><div class="c-pic"><img src="../img/gift/12-13.png"></div>
+<div class="price"><p>寄付金額<span>12,000</span>円</p></div></div><p class="product_name">12-13 オホーツク産ホタテ玉冷大(1kg)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/24-4.png"><div class="c-pic"><img src="../img/gift/24-4.png"></div>
+<div class="price"><p>寄付金額<span>24,000</span>円</p></div></div><p class="product_name">24-4 オホーツク産ホタテ玉冷大2kg</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/10-379.png"><div class="c-pic"><img src="../img/gift/10-379.png"></div>
+<div class="price"><p>寄付金額<span>10,000</span>円</p></div></div><p class="product_name">10-379 【訳あり】オホーツク海産ほたて干し貝柱300g（割れ欠け含）</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/12-15.png"><div class="c-pic"><img src="../img/gift/12-15.png"></div>
+<div class="price"><p>寄付金額<span>12,000</span>円</p></div></div><p class="product_name">12-15 乾燥帆立貝柱　200g</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/10-233.png"><div class="c-pic"><img src="../img/gift/10-233.png"></div>
+<div class="price"><p>寄付金額<span>10,000</span>円</p></div></div><p class="product_name">10-233 オホーツク産ホタテ玉冷中1.2kg(600g×2P)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/15-115.png"><div class="c-pic"><img src="../img/gift/15-115.png"></div>
+<div class="price"><p>寄付金額<span>15,000</span>円</p></div></div><p class="product_name">15-115 オホーツク産ホタテ玉冷　特大(1kg)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/100-22.png"><div class="c-pic"><img src="../img/gift/100-22.png"></div>
+<div class="price"><p>寄付金額<span>100,000</span>円</p></div></div><p class="product_name">100-22 お刺身用冷凍帆立貝柱(5kg)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/11-55.png"><div class="c-pic"><img src="../img/gift/11-55.png"></div>
+<div class="price"><p>寄付金額<span>11,000</span>円</p></div></div><p class="product_name">11-55 北海道オホーツク海産ほたて玉冷1kg</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/12-14.png"><div class="c-pic"><img src="../img/gift/12-14.png"></div>
+<div class="price"><p>寄付金額<span>12,000</span>円</p></div></div><p class="product_name">12-14 大粒2Sサイズ　ほたて玉冷</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/167-1.png"><div class="c-pic"><img src="../img/gift/167-1.png"></div>
+<div class="price"><p>寄付金額<span>16,7000</span>円</p></div></div><p class="product_name">167-1 ほたて貝柱(冷凍) セット(10kg)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/20-64.png"><div class="c-pic"><img src="../img/gift/20-64.png"></div>
+<div class="price"><p>寄付金額<span>20,000</span>円</p></div></div><p class="product_name">20-64 お刺身用冷凍帆立貝柱(1kg)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/22-25.png"><div class="c-pic"><img src="../img/gift/22-25.png"></div>
+<div class="price"><p>寄付金額<span>22,000</span>円</p></div></div><p class="product_name">22-25 北海道オホーツク海産ほたて玉冷2kg</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/35-2.png"><div class="c-pic"><img src="../img/gift/35-2.png"></div>
+<div class="price"><p>寄付金額<span>35,000</span>円</p></div></div><p class="product_name">35-2 お刺身用冷凍帆立貝柱(2kg)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/68-1.png"><div class="c-pic"><img src="../img/gift/68-1.png"></div>
+<div class="price"><p>寄付金額<span>68,000</span>円</p></div></div><p class="product_name">68-1 ほたて貝柱(冷凍) セット(4kg)</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/30-37.png"><div class="c-pic"><img src="../img/gift/30-37.png"></div>
+<div class="price"><p>寄付金額<span>30,000</span>円</p></div></div><p class="product_name">30-37 乾燥帆立貝柱　たっぷり500g入</p></a></li>
+<li><a href="detail.html"><div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="../img/gift/12-61.png"><div class="c-pic"><img src="../img/gift/12-61.png"></div>
+<div class="price"><p>寄付金額<span>12,000</span>円</p></div></div><p class="product_name">12-61 7種の海鮮塩鍋(2～3人前)</p></a></li>
+</ul>
+
+
+
+<ul class="pankuzu">
+<li><a href="../">HOME</a></li><li>お礼の品一覧</li>
+</ul>
+</div><!--/container-->
+
+</main>
+
+<a class="totopfade" href="./"><img src="../img/totop.png"></a>
+<footer>
+<div class="container inner">
+<nav class="pc">
+<ul>
+<li><a href="./">お礼の品を探す</a></li>
+<li><a href="../about/">紋別市について</a></li>
+<li><a href="">ふるさと納税とは</a></li>
+<li><a href="">手続きの方法</a></li>
+<li><a href="">よくある質問</a></li>
+<li><a href="">お問い合わせ</a></li>
+<li><a href="">お知らせ</a></li>
+<li><a href="">運営者情報</a></li>
+</ul>
+</nav>
+<p class="logo"><img src="../img/logo.png"><span>紋別市ふるさと納税特設サイト</span></p>
+<p>紋別市ふるさと納税担当<br>〒094-8707 北海道紋別市幸町2丁目1番18号</p>
+<ul class="snslinks">
+<li><a href="" target="_blank"><img src="../img/icon_fb.png"></a></li>
+<li><a href="" target="_blank"><img src="../img/icon_ig.png"></a></li>
+</ul>
+<ul class="subnav pc">
+<li><a href="">個人情報の取扱について</a></li>
+<li><a href="">利用規約</a></li>
+<li><a href="">サイトマップ</a></li>
+</ul>
+</div>
+<div class="copyright"><p class="container">Copyright &copy; 紋別市 CITY.</p></div>
+</footer>
+
+<script type="text/javascript" src="../js/common.js"></script>
+</body>		
+</html>
