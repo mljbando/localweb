@@ -1046,37 +1046,75 @@ h5{font-size:1.8rem;margin-bottom:6vw;}
 	margin: 0 auto;
 	width: 100%;
 }
-/* ------ topani title ------- */
-.topani_title {
-	font-size: 2.2rem;
-	line-height: 4vw;
-	color: #fff;
-	font-weight: bold;
-	left: 0;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	top: 45%;
-	transform: translateY(-50%);
-	width: 100%;
-}
-		.topani_titles {
-	font-size: 2.2rem;
-	line-height: 4vw;
-	color: #fff;
-	font-weight: bold;
-	left: 0;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	top: 45%;
-	transform: translateY(-50%);
-	width: 100%;
-}
 .t-slide_item {
 	bottom: 0;
 	height: 100%;
 	position: absolute;
 	right: -10%;
 	width: 110%;
+}
+/* ------ topani title ------- */
+.topa_heading{
+ position: absolute;
+    width: 100%;
+    left: 0; 
+    top: calc(46% - 25px); 
+    text-align: center; 
+}
+.topani_title {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+	font-size: calc(40px + 4 * ((100vw - 320px) / 670));
+  line-height: calc(50px + 4 * ((100vw - 320px) / 670));
+	color: #fff;
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.6);
+	font-weight: bold;
+  animation-name: fadeup;
+  animation-duration: 5s;
+}
+@keyframes fadeup {
+0% {
+    opacity: 0;
+    transform: translateY(100px);
+}
+25% {
+    opacity: 0;
+}
+50% {
+    opacity: 0;
+}
+75% {
+    opacity: 0.7;
+}
+100% {
+    opacity: 1;
+
+}
+}
+	.topani_titles {
+	font-size: calc(20px + 4 * ((100vw - 320px) / 670));
+	line-height: calc(30px + 4 * ((100vw - 320px) / 670));
+	color: #fff;
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.6);
+	font-weight: bold;
+	animation-name: fadein;
+  animation-duration: 5s;
+}
+@keyframes fadein {
+0% {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+25% {
+    opacity: 0;
+}
+50% {
+    opacity: 0.7;
+}
+75% {
+    opacity: 1;
+}
+100% {
+    opacity: 1;
+
+}
 }

@@ -299,6 +299,7 @@ main {
   display: flex;
   align-items: center;
 }
+
 .line-a {
   background: linear-gradient(transparent 70%, #9587cb 70%);
   padding-bottom: 8px;
@@ -447,29 +448,67 @@ detail
 
 }
 
+/***jigyousya*******************/
+.parallax-bg {
+  background-image: url(../../assets/img/pic_j00.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-bg {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.jigyousya img {
+  max-width: 250px;
+  -webkit-filter: drop-shadow(0px 3px 10px #777);
+  filter: drop-shadow(0px 3px 10px #777);
+}
+
+.jigyousya h1,
+.jigyousya h5 {
+  /* text-shadow: 0 0 10px #000;*/
+  -webkit-filter: drop-shadow(0px 0px 6px #000);
+  filter: drop-shadow(0px 0px 6px #000);
+}
 
 
 /* global menu */
 
 #g-menu nav {
-	display: flex;
-	/*flex-wrap: wrap;*/
-	gap: 0px;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  gap: 0px;
 }
 
 #g-menu nav .menu-list {
-	margin: 0;
-	width: calc(100%/7);
-	display: flex;
-  align-items:center;
+  margin: 0;
+  width: calc(100%/7);
+  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
 #g-menu nav a {
-	width: 80%;
-	text-align: center;
+  width: 80%;
+  text-align: center;
 }
 
 .smn {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.sms {
+  font-size: 1rem;
+  margin-bottom: -6px;
+}
+
+.mce {
+  display: flex;
+  flex-flow: column;
 }
