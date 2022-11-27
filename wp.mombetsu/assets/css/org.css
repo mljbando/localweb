@@ -280,38 +280,11 @@ footer .copyright {
 
 /*org===================================================================================*/
 
-.site-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.wrapper-r,
-.wrapper-c,
-.wrapper-l {
-  flex: 1;
-}
-
-.g-item {
-  text-align: center;
-}
-
-.logoaera {
-  text-align: center;
-
-}
-
-.logomm {
-  width: 200px;
-}
-
-
 main {
   display: grid;
   row-gap: 1.5rem;
   column-gap: 1.5rem;
 }
-
-
 
 /*9587cb*/
 /*3eb2d2*/
@@ -326,9 +299,6 @@ main {
   display: flex;
   align-items: center;
 }
-
-
-
 .line-a {
   background: linear-gradient(transparent 70%, #9587cb 70%);
   padding-bottom: 8px;
@@ -475,4 +445,31 @@ detail
   transform: translate(0%, 0%);
   text-shadow: #666 1px 0 6px;
 
+}
+
+
+
+/* global menu */
+
+#g-menu nav {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	gap: 0px;
+}
+
+#g-menu nav .menu-list {
+	margin: 0;
+	width: calc(100%/7);
+	display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+
+#g-menu nav a {
+	width: 80%;
+	text-align: center;
+}
+
+.smn {
+    font-size: 1.2rem;
 }
