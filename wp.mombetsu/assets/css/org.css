@@ -24,7 +24,7 @@ main {
   /*overflow:hidden;*/
   margin: auto;
   display: block;
-  /* padding: 100px 0 60px;*/
+  padding: 0 0 60px;
 }
 
 a {
@@ -499,16 +499,193 @@ detail
   text-align: center;
 }
 
-.smn {
+#g-menu .smn {
   font-size: 1.2rem;
 }
 
-.sms {
+#g-menu .sms {
   font-size: 1rem;
   margin-bottom: -6px;
 }
 
-.mce {
+#g-menu .mce {
   display: flex;
   flex-flow: column;
+}
+
+/*tab*/
+section .mmback {
+  background-image: url(../../assets/img/mmback.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section .mmback .mm-logo {
+  display: flex;
+  justify-content: center;
+}
+
+section .mmback .logomm {
+  width: 60px;
+  text-align: center;
+  height: auto;
+}
+
+section .mmback .tab {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+
+
+section .mmback .tab__item {
+  width: calc(100%/6);
+  height: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+section .mmback .tab {
+  font-size: 1.2rem;
+  background-color: #fff;
+}
+
+section .mmback .tab a {
+  display: block;
+}
+
+
+
+
+.tline-a {
+  background: linear-gradient(transparent 90%, #9587cb 90%);
+  border: 1px solid #d1d5db;
+}
+
+.tline-b {
+  background: linear-gradient(transparent 90%, #3eb2d2 90%);
+  border: 1px solid #d1d5db;
+}
+
+.tline-c {
+  background: linear-gradient(transparent 90%, #f8cb4b 90%);
+  border: 1px solid #d1d5db;
+}
+
+.tline-d {
+  background: linear-gradient(transparent 90%, #f58a63 90%);
+  border: 1px solid #d1d5db;
+}
+
+.tline-e {
+  background: linear-gradient(transparent 90%, #dc5b7e 90%);
+  border: 1px solid #d1d5db;
+}
+
+.tline-f {
+  background: linear-gradient(transparent 90%, #c0c662 90%);
+  border: 1px solid #d1d5db;
+}
+
+
+
+
+/*layout*/
+
+#wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+
+@media all and (min-width: 768px) {
+  #wrap .card {
+    width: calc(96% / 2);
+  }
+}
+
+
+@media all and (min-width: 992px) {
+  #wrap .card {
+    width: calc(96% / 3);
+  }
+
+  #wrap::after {
+    content: "";
+    display: block;
+    width: calc(96% / 3);
+  }
+}
+
+#wrap .card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 12px
+}
+#wrap .card-body{
+  flex-grow: 1;
+  margin-bottom: 3.5em;
+}
+
+#wrap .card img {
+  border-radius: 12px 12px 0 0;
+}
+
+#wrap .overlay {
+  width: 100%;
+  position: relative;
+}
+
+#wrap .overlay p {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  min-height: 60px;
+  left: 0;
+  top: 0;
+  padding: 6px;
+  height: auto;
+  text-shadow: 0 2x 2px #666;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+#wrap .card-title {
+  border-bottom: 3px solid #f8cb4b;
+  padding: 0.5rem 0;
+font-weight: 700;
+}
+
+#wrap .btn {
+  border: 1px solid #f8cb4b;
+  background: #f8cb4b;
+  border-radius: 28px;
+  padding: 12px 0;
+  text-align: center;
+  max-width: 230px;
+  display: block;
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#wrap .btn:hover {
+  background: #fff;
+  color: #333;
 }
