@@ -74,7 +74,9 @@ button img {
 }
 
 .container {
-  max-width: 1132px;
+  max-width: 1320px
+    /*1132px*/
+  ;
   margin: auto;
   width: 96%;
 }
@@ -241,7 +243,9 @@ h5 {
 }
 
 .p-box li .mask {
-  height: 265px;
+  height: 237px
+    /*265px*/
+  ;
   overflow: hidden;
   border-radius: 12px;
   position: relative;
@@ -650,7 +654,8 @@ header .categorynav ul {
   -webkit-overflow-scrolling: touch;
   margin
   /*-left*/
-  : 0 calc((100% - 1132px) / 2);
+  /*: 0 calc((100% - 1132px) / 2);*/
+  : 0 calc((100% - 1320px) / 2);
 }
 
 header .categorynav ul::-webkit-scrollbar {
