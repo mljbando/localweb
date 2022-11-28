@@ -135,6 +135,18 @@ $(function () {
   });
 });
 
+/*TOPカテゴリー　スライド*/
+$(function () {
+  $('.scrollmenu').slick({
+    arrows: true,
+    variableWidth: true,
+    touchMove: true,
+    infinite: false,
+    slidesToShow:12,
+    slidesToScroll:1
+  });
+});
+
 /*TOPページ　スライド*/
 $(function () {
   $('#top-slide').slick({

@@ -205,7 +205,7 @@
 
 /*カスタム*/
 .slick-dots{bottom:-20px;}
-.slick-slide{overflow:hidden;border-radius:12px;margin:30px 7px 5px;}
+.slick-slide{overflow:hidden;border-radius:12px;/*margin:30px 7px 5px;*/}
 .slick-dots li{width:188px;height:1px;margin:0;}
 .slick-dots li button{width:100%;height:1px;background:#C8C8C8;padding:0;border-radius:0;}
 .slick-dots li.slick-active button{background:#878787;}
@@ -244,7 +244,7 @@
 }
 
 @media screen and (min-width:769px){
-.slick-slide{max-width:752px;width:100%!important;}
+.slick-slide{max-width:752px;/*width:100%!important;*/}
 }
 
 @media screen and (max-width: 768px) {

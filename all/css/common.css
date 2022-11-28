@@ -572,7 +572,7 @@ header nav ul li a .cart_number {
   top: 6px;
   position: absolute;
   width: 375px;
-  height: 625px;
+  height: auto;
   background: #fff;
   border-radius: 12px;
   border: 1px solid #C8C8C8;
@@ -597,7 +597,7 @@ header nav ul li a .cart_number {
 
 .burger-menu .inner ul {
   border-top: 1px solid #C8C8C8;
-  padding-top: 20px;
+  padding: 10px 0;
 }
 
 .burger-menu .inner ul:first-of-type {
@@ -605,7 +605,7 @@ header nav ul li a .cart_number {
 }
 
 .burger-menu .inner ul li {
-  margin-bottom: 6px;
+  margin: 6px 0;
 }
 
 .burger-menu .inner ul li a {
@@ -629,11 +629,13 @@ header nav ul li a .cart_number {
 }
 
 .burger-menu .inner ul.s-navi li {
-  margin-bottom: 6px;
+  margin: 12px 0;
 }
 
 .burger-menu .inner ul.s-navi li a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  display: block;
+  font-weight: bold;
 }
 
 header .categorynav {
@@ -641,7 +643,7 @@ header .categorynav {
 }
 
 header .categorynav ul {
-  overflow-x: auto;
+  /*overflow-x: auto;*/
   white-space: nowrap;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -3377,17 +3379,22 @@ background-size:cover;width:33px;height:3px;left:50%;bottom:-32px;margin-left:-1
 }
 
 
-.burger-menu .wrap {
-  display: flex;
-  flex-flow: column;
-  margin: 0 0 1em;
+/*top cate*/
+
+.scrollmenu .slick-arrow:before {
+  opacity: 1 !important;
 }
 
-.burger-menu .wrap .ml-b {
-  margin: none;
+.scrollmenu .slick-arrow {
+  z-index: 2 !important;
+  width: 60px !important;
+  height: 60px !important;
 }
 
-.burger-menu .ml-t, .burger-menu, .ml-c .burger-menu .ml-b {
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+.scrollmenu .slick-next {
+  right: -60px !important;
+}
+
+.scrollmenu .slick-prev {
+  left: -60px !important;
 }
