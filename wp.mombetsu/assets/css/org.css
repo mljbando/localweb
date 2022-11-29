@@ -24,7 +24,7 @@ main {
   /*overflow:hidden;*/
   margin: auto;
   display: block;
-  padding: 0 0 60px;
+  /* padding: 100px 0 60px;*/
 }
 
 a {
@@ -499,39 +499,40 @@ detail
   text-align: center;
 }
 
-#g-menu .smn {
+.smn {
   font-size: 1.2rem;
 }
 
-#g-menu .sms {
+.sms {
   font-size: 1rem;
   margin-bottom: -6px;
 }
 
-#g-menu .mce {
+.mce {
   display: flex;
   flex-flow: column;
 }
 
 /*tab*/
-section .mmback {
+.mmback {
   background-image: url(../../assets/img/mmback.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-section .mmback .mm-logo {
+.mmback .mm-logo {
   display: flex;
   justify-content: center;
 }
 
-section .mmback .logomm {
-  width: 60px;
+.mmback .logomm {
+  width: 165px;
   text-align: center;
   height: auto;
+  padding: 3px 0;
 }
 
-section .mmback .tab {
+.mmback .tab {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
@@ -539,7 +540,7 @@ section .mmback .tab {
 
 
 
-section .mmback .tab__item {
+.mmback .tab__item {
   width: calc(100%/6);
   height: 50px;
   display: flex;
@@ -554,12 +555,12 @@ section .mmback .tab__item {
 }
 
 
-section .mmback .tab {
+.mmback .tab {
   font-size: 1.2rem;
   background-color: #fff;
 }
 
-section .mmback .tab a {
+.mmback .tab a {
   display: block;
 }
 
@@ -639,7 +640,7 @@ section .mmback .tab a {
 }
 #wrap .card-body{
   flex-grow: 1;
-  margin-bottom: 3.5em;
+  margin-bottom: 1em;
 }
 
 #wrap .card img {
