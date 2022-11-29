@@ -25,6 +25,7 @@ body{
 	color: #333;
 }
 
+
 main {
 	width:100%;
 	/*overflow:hidden;*/
@@ -46,7 +47,7 @@ img{width:100%;}
 button{transition: all 0.2s ease-in-out;}
 button img{vertical-align: middle;}
 
-.container{max-width:1920px;margin:auto;width:96%;}
+.container{max-width:1132px;margin:auto;width:96%;}
 
 @font-face {
   font-family: 'fontawesome'; 
@@ -90,64 +91,11 @@ h5{font-size:2rem;font-weight:bold;line-height:1.4em;margin-bottom:25px;}
 .c-pic{background:rgba(255,255,255,0.8);width:100%;height:100%;position:relative;}
 .c-pic img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .b-pic{display: block;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);height:100%;width:auto;-ms-filter: blur(6px);filter: blur(4px);}
- 
-/*.p-box{display:flex;flex-wrap:wrap;align-items:flex-start; column-gap: 10px;height: auto;}*/
-/*.p-box{
-position: relative;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 20px;
-  }*/
 
-.p-box{
-  position: relative;
-  height: 100%!important;
-  display:flex;
-  flex-wrap:wrap;
-  align-content: flex-start;
-row-gap: 10px;
-width: 100%!important;
-
-}
-
-@media screen and (min-width:768px){
-.p-box:after{
-content: "";
-display: block;
-width: calc(96%/3);
-height: 0;
-}
-}
-@media screen and (min-width:992px){
-  .p-box:after{
-    content: "";
-    display: block;
-    width: calc(96%/5);
-    height: 0;
-  }
-  }
-  @media (min-width: 400px) and (max-width: 768px) {
-    .p-box li .mask{height:44vw;}
-  }
-  @media (min-width: 769px) and (max-width: 992px) {
-    .p-box li .mask{height:28vw;}
-  }
-  @media (min-width: 993px) and (max-width: 1280px) {
-    .p-box li .mask{height:20vw;}
-  }
-    @media (min-width: 1281px) and (max-width: 1920px) {
-    .p-box li .mask{height:18vw;}
-  }
-  @media (min-width: 1921px) and (max-width: 2560px) {
-    .p-box li .mask{height:14vw;}
-  }
-
-
+.p-box{display:flex;flex-wrap:wrap;align-items:flex-start;}
 .p-box li a{display:block;}
 .p-box li a:hover{opacity:.6;}
-.p-box li .mask{overflow:hidden;border-radius:12px;position:relative;border: 1px solid #f7f7f7;}
+.p-box li .mask{height:265px;overflow:hidden;border-radius:12px;position:relative;border: 1px solid #f7f7f7;}
 .p-box li button.favorite{position:absolute;top:15px;right:15px;z-index:5;}
 .p-box li .price{position:absolute;z-index:5;display:block;bottom:9px;left:50%;width:100%;transform: translateX(-50%);text-align:center;}
 .p-box li .price p{color:#fff;background:rgba(0,0,0,0.5);display:inline-block;padding:3px 10px;border-radius:4px;font-size:1.4rem;}
@@ -156,7 +104,7 @@ height: 0;
 
 
 .c-box li a{display:block;background:#fff;overflow:hidden;border-radius:12px;position:relative;box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.6);}
-.c-box li a figure{position:relative;overflow:hidden;border-radius:12px 12px 0 0; padding-bottom: 56.25%;}
+.c-box li a figure{position:relative;overflow:hidden;border-radius:12px 12px 0 0;    padding-bottom: 56.25%;}
 .c-box li a figure img{display: block;position: absolute;top: 0px;left:0;background:#fff;transition:transform 0.3s;}
 .c-box li a:hover figure img{transform:scale(1.2);}
 .c-box li a .text{padding:15px 15px 25px;}
@@ -230,7 +178,7 @@ border-radius:50%;top:0;right:-2px;line-height:16px;font-size:1rem;font-weight:b
 .burger-btn.close p{display:none;}
 .burger-menu{
     visibility: hidden;
-    right: calc((100% - 1920px) / 2);
+    right: calc((100% - 1132px) / 2);
     top: 6px;
     position: absolute;
     width: 375px;
@@ -256,7 +204,7 @@ border-radius:50%;top:0;right:-2px;line-height:16px;font-size:1rem;font-weight:b
 .burger-menu .inner ul.s-navi li a{font-size:1.4rem;display:block;font-weight:bold;}
 
 header .categorynav{border-top:1px solid #C8C8C8;}
-header .categorynav ul{overflow-x: auto;white-space: nowrap;-ms-overflow-style: none;scrollbar-width: none;-webkit-overflow-scrolling: touch;margin/*-left*/:0 calc((100% - 1200px) / 2);}
+header .categorynav ul{overflow-x: auto;white-space: nowrap;-ms-overflow-style: none;scrollbar-width: none;-webkit-overflow-scrolling: touch;margin/*-left*/:0 calc((100% - 1132px) / 2);}
 header .categorynav ul::-webkit-scrollbar {display:none;}
 header .categorynav ul{display:flex;align-items:flex-start;}
 header .categorynav ul li{margin-right:40px;}
@@ -594,29 +542,6 @@ color: #fff;width:38%;font-weight:400;}
 
 
 /*PC==============================================*/
-@media screen and (min-width:768px){
-  .p-box li {
-  /*  display: flex;
-    flex-direction: column;*/
-    width: calc(100%/3);
-    position: relative;
-    margin-bottom: 50px;
-    padding: 6px;
-  }
-  }
-  
-  @media screen and (min-width:992px){
-  .p-box li {
-  /*display: flex;
-    flex-direction: column;*/
-    width: calc(100%/5);
-    position: relative;
-    margin-bottom: 50px;
-    padding: 6px;
-  }
-  }
-  
-
 @media screen and (min-width:769px){
 .pc{display:block;}
 .sp{display:none;}
@@ -626,9 +551,8 @@ main {min-height: calc(100vh - 420px);}
 .popup .M_categories li a{min-width:94px;}
 footer nav ul, footer .subnav{display:flex;flex-wrap:wrap;}
 .popup .under_display .flex .btn_show{width:260px;}
-
-/*
-.p-box li:nth-child(4n), .c-box li:nth-child(3n){margin-right:0;}*/
+.p-box li{width:23.4%;margin-bottom:50px;margin-right:2.13%;}
+.p-box li:nth-child(4n), .c-box li:nth-child(3n){margin-right:0;}
 .c-box{display:flex;flex-wrap:wrap;align-items:flex-start;}
 .c-box li{width:31%;margin-right:3.5%;margin-bottom:50px;}
 
@@ -672,19 +596,14 @@ footer nav ul, footer .subnav{display:flex;flex-wrap:wrap;}
 #gift.detail .floating_cart{right:calc(50% - 267.5px - 18%);}
 }
 
-@media screen and (min-width:769px){
-  #gift.detail .floating_cart{right:10%;}
-  #crowdfunding.detail .sec1 .Rside .kifu input{width:85%;}
-  }
-  
-
-@media screen and (min-width:1200px){
+@media screen and (max-width:1200px){
+.p-box li .mask{height:22vw;}
 #gift.detail .floating_cart{right:10%;}
 #crowdfunding.detail .sec1 .Rside .kifu input{width:85%;}
+
 }
 
-
-@media screen and (max-width:1920px){
+@media screen and (max-width:1194px){
 .burger-menu{right:2%;}
 header .categorynav ul,sec .categorynav ul{margin:0;}
 header .categorynav ul li,sec .categorynav ul li{padding:0 20px;margin:0;}
@@ -1052,7 +971,6 @@ h5{font-size:1.8rem;margin-bottom:6vw;}
 	animation-name: slideAnime;
 	animation-timing-function: ease infinite;
 	display: block;
-	object-fit: cover;
 	opacity: 0;
 	width: 100%;
 	z-index: 10;

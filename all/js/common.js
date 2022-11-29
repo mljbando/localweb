@@ -136,16 +136,13 @@ $(function () {
 });
 
 /*TOPカテゴリー　スライド*/
-$(function () {
-  $('.scrollmenu').slick({
-    arrows: true,
-    variableWidth: true,
-    touchMove: true,
-    infinite: false,
-    slidesToShow:12,
-    slidesToScroll:1
-  });
-});
+//$(function () {
+//  $('.scrollmenu').slick({
+//    arrows: true,
+//    variableWidth: true,
+//    infinite: false
+//  });
+//});
 
 /*TOPページ　スライド*/
 $(function () {
