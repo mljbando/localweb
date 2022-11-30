@@ -14,6 +14,7 @@ button img {vertical-align:middle;}
 .container {max-width:1920px;margin:auto;width:96%;}
 @font-face {font-family:'fontawesome';src:url('../font/fa-solid-900.ttf') format('truetype');}
 i {font-family:'fontawesome', sans-serif;font-style:normal;}
+.fi{font-size:1.8rem;font-weight:bold;}
 button.favorite {text-shadow:1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;font-size:2.4rem;color:#333;}
 button.favorite.red i {color:#FF004E;}
 .btn {color:#fff;border:1px solid #333;background:#333;border-radius:28px;padding:12px 0;text-align:center;max-width:230px;display:block;font-size:1.4rem;margin:auto;}
@@ -89,11 +90,11 @@ header .logo {display:inline-block;}
 header .logo:hover, header nav ul li a:hover {opacity:.5;}
 
 header nav ul {display:flex;align-items:center;}
-header nav ul li {margin-left:30px;}
+header nav ul li {margin-left:20px;}
 header nav ul li a {display:block;font-size:1.2rem;text-align:center;position:relative;}
 header nav ul li a img {max-width:24px;}
 header nav ul li a p {line-height:1em;margin-top:4px;}
-header nav ul li a .cart_number {position:absolute;width:16px;height:16px;display:block;background:#ff004e;color:#fff;border-radius:50%;top:0;right:-2px;line-height:16px;font-size:1rem;font-weight:bold;text-align:center;}
+header nav ul li a .cart_number {position:absolute;width:16px;height:16px;display:block;background:#ff004e;color:#fff;border-radius:50%;top:-6px;left:3px;line-height:16px;font-size:1rem;font-weight:bold;text-align:center;}
 
 .burger-btn {position:relative;width:48px;height:40px;}
 .burger-btn a {position:absolute;width:100%;left:50%;top:50%;transform:translate(-50%, -50%);z-index:99;}
@@ -410,7 +411,7 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
   header .logo span, sec .logo span {font-size:1.1rem;line-height:1.34em;}
   header nav ul li, sec nav ul li {margin-left:4vw;}
   header nav ul li a, sec nav ul li a {font-size:1rem;}
-  header nav ul li a .cart_number, sec nav ul li a .cart_number {top:-1px;right:-4px;}
+  header nav ul li a .cart_number, sec nav ul li a .cart_number {top:-4px;left:0;}
   /*.burger-menu{right:1%;}*/
   header .categorynav ul li, sec .categorynav ul li {padding:0 15px;}
   header .categorynav ul li button img, sec .categorynav ul li button img {width:30px;}
