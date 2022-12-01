@@ -792,6 +792,10 @@ detail
   margin-bottom: 4em;
 }
 
+#lrap .mbn {
+  margin-bottom: 0em!important;
+}
+
 #lrap .card-text {
   padding: 0 12px;
 }
@@ -833,86 +837,118 @@ detail
   color: #333;
 }
 
+#lrap .pr {
+  display: grid;
+  place-items: center;
+}
 
-/*---prap--------------------------*/
-#prap {
+
+/*---bg---------------------------*/
+#bg-m {
   width: 100%;
-  height: 70vh;
+  height: auto;
+  background: url(../../assets/img/bg_m.jpg) top center;
+  background-position: center;
   background-size: cover;
   position: relative;
 }
 
-#prap .prap-container {
+#bg-m .bg-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 90%);
+  top: 0;
+  left: 0;
+  padding: 30px 0;
+  margin: -30px 0;
+}
+
+#bg-e1 {
+  width: 100%;
+  height: 80vh;
+  background: url(../../assets/img/pic_e01.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+
+#bg-e2 {
+  width: 100%;
+  height: 80vh;
+  background: url(../../assets/img/pic_e02.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+
+
+#bg-e1 .prap-container, #bg-e2 .prap-container {
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
-  padding-top: 80px;
+  padding-top: 200px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
 
-#prap h1 {
+#bg-e1 h1, #bg-e2 h1 {
   margin: 0 0 10px 0;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 56px;
   color: #fff;
+  text-shadow: 0px 5px 5px rgb(0 0 0 / 60%);
 }
 
 @media (min-width: 1024px) {
-  #prap {
+  #bg-m, #bg-e1, #bg-e2 {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #prap h1 {
+  #bg-e1 h1, #bg-e2 h1 {
     font-size: 28px;
     line-height: 36px;
+    text-shadow: 0px 5px 5px rgb(0 0 0 / 60%);
   }
 }
 
 .cont_lead {
   display: block;
   padding: 30px 0;
+  /*  background-color:rgba(220,91,126,0.1);*/
+  /*background: linear-gradient(rgba(220, 91, 126,0),rgba(220, 91, 126,0.1));*/
 }
 
-
 .cont_lead .bg-c {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
+  border: 3px solid #dc5b7e;
+  border-radius: 25px;
 }
 
 .cont_lead h1 {
   font-size: 4rem;
   font-weight: 300;
   line-height: 56px;
-  color: #fff;
+  color: #dc5b7e;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.cont_lead .hr {
-  height: 1px;
-  background-image: linear-gradient(90deg,
-      hsla(0, 0%, 100%, 0),
-      hsla(0, 0%, 100%, 0.9) 50%,
-      hsla(0, 0%, 100%, 0) 100%);
-  margin-bottom: 30px;
+.cont_lead .hr-e {
+  height: 3px;
+  background: #dc5b7e;
+  background-image: -webkit-linear-gradient(left, #fff, #dc5b7e, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #dc5b7e, #fff);
+  background-image: -ms-linear-gradient(left, #fff, #dc5b7e, #fff);
+  background-image: -o-linear-gradient(left, #fff, #dc5b7e, #fff);
+  margin: 30px;
 }
 
 .cont_lead .card-text {
   text-align: center;
-  color: #fff;
-}
-
-.prap-ex {
-  background: linear-gradient(rgba(220, 91, 126, 0.1), rgba(220, 91, 126, 0.1)), url("http://13.115.133.43/wp-content/themes/wp.mombetsu.furusato-direct.jp/assets/img/pic_e01.jpg") fixed center center;
-  background-size: cover;
-  padding: 60px 0;
 }
