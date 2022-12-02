@@ -658,6 +658,17 @@ body {font-size:1.4rem;}
 .swiper-button-prev {left:-17px}
 .swiper-button-next {right:-17px}
 
+/* ------ topani area ------- */
+.topani {width: 100%;overflow:hidden;position:relative;}
+@media screen and (min-width:769px) and (max-width:2880px) {
+.topani {min-height:80vh;}
+}
+@media screen and (max-width:768px) {
+.topani {min-height:70vh;}
+}
+.t-inner {margin:0 auto;width:100%;}
+.t-slide_item {bottom:0;height:100%;position:absolute;/*right:-10%;*/width:100%;}
+
 /* ------ slide image ------- */
 .t-slide_img {/*animation-duration:30s;*/  animation:slideAnime 36s 0s infinite;animation-iteration-count:infinite;animation-name:slideAnime;animation-timing-function:ease infinite;display:block;object-fit:cover;opacity:0;width:100%;z-index:10;}
 @media screen and (min-width:769px) and (max-width:2880px) {
@@ -679,25 +690,13 @@ body {font-size:1.4rem;}
   25% {opacity:0;}
   100% {opacity:0;z-index:9;transform:scale(1.2);/*transform:translateX(-10%);*/}
 }
-
-/* ------ topani erea ------- */
-.topani {overflow:hidden;position:relative;}
-@media screen and (min-width:769px) and (max-width:2880px) {
-.topani {min-height:80vh;}
-}
-@media screen and (max-width:768px) {
-.topani {min-height:70vh;}
-}
-.t-inner {margin:0 auto;width:100%;}
-.t-slide_item {bottom:0;height:100%;position:absolute;right:-10%;width:110%;}
-
 /* ------ topani title ------- */
 .topa_heading {position:absolute;width:100%;left:0;top:calc(46% - 25px);text-align:center;}
 .topani_title {font-family:'游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;font-size:calc(40px + 4 * ((100vw - 320px) / 670));line-height:calc(50px + 4 * ((100vw - 320px) / 670));color:#fff;text-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);font-weight:bold;animation-name:fadeup;animation-duration:5s;}
 @keyframes fadeup {0% {opacity:0;transform:translateY(100px);}
   25% {opacity:0;}
-  50% {opacity:0;}
-  75% {opacity:0.7;}
+  50% {opacity:0.7;}
+  75% {opacity:1;}
   100% {opacity:1;}
 }
 .topani_titles {font-size:calc(20px + 4 * ((100vw - 320px) / 670));line-height:calc(30px + 4 * ((100vw - 320px) / 670));color:#fff;text-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);font-weight:bold;animation-name:fadein;animation-duration:5s;}
