@@ -19,6 +19,8 @@ button.favorite {text-shadow:1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -
 button.favorite.red i {color:#FF004E;}
 .btn {color:#fff;border:1px solid #333;background:#333;border-radius:28px;padding:12px 0;text-align:center;max-width:230px;display:block;font-size:1.4rem;margin:auto;}
 .btn:hover {background:#fff;color:#333;}
+.btn-re {color:#333;border:1px solid #333;background:#fff;border-radius:28px;padding:12px 0;text-align:center;max-width:230px;display:block;font-size:1.4rem;margin:auto;}
+.btn-re:hover {background:#333;color:#fff;}
 .ac-btn {border-color:#c8c8c8;background:#fff;position:relative;color:#333;}
 .ac-btn::after, .selectwrap::after {content:"";width:9px;height:9px;border:0px;border-top:solid 2px #333;border-right:solid 2px #333;transform:rotate(135deg);position:absolute;top:50%;right:30px;margin-top:-5.5px;transition:all 0.2s ease-in-out;}
 .ac-btn.active {background:#F6F6F6;border-color:#F6F6F6;}
