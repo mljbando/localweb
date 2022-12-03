@@ -812,6 +812,11 @@ detail
   margin-bottom: 4em;
 }
 
+#lrap .card-title {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+
 #lrap .mbn {
   margin-bottom: 0em !important;
 }
