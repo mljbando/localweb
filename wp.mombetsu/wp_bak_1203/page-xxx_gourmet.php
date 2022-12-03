@@ -17,7 +17,7 @@ get_header(); ?>
           </div>
         </div>
 
-        <div class="row">
+      <div class="row">
 
         <div class="col-12 col-lg-6">
           <div class="overlay">
@@ -29,8 +29,7 @@ get_header(); ?>
         <div class="col-12 col-lg-6">
           <div class="overlay">
           <img class="img-fluid rounded" src="https://wp.mombetsu.furusato-direct.jp/wp-content/uploads/2022/11/gourmet01_02.jpg" loading="lazy">
-            <p style="font-size:2.4rem;">カニ味噌豆腐付<br>
-カニといくらの贅沢重</p>
+            <p style="font-size:2.4rem;">カニ味噌豆腐付カニといくらの贅沢重</p>
           </div>
         </div>
 

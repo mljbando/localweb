@@ -49,7 +49,6 @@ get_header(); ?>
     </div>
   </div>
 </div>
-</div>
 
 <div class="container">
   <div id="lrap">
@@ -57,7 +56,7 @@ get_header(); ?>
       <div class="card-header"><span class="line-a">紋別市のマスコット「紋太（もんた）」</span></div>
       <div class="row gc">
         <div class="col-lg-5">
-          <img class="rounded" src="<?php echo get_template_directory_uri(); ?>/assets/img/pic_a07.jpg" loading="lazy">
+          <img class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>/assets/img/pic_a07.jpg" loading="lazy">
         </div>
         <div class="col-lg-7">
           <table class="tb-m">

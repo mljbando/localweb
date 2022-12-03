@@ -732,7 +732,7 @@ detail
 
 #wrap .card-body {
   flex-grow: 1;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
 #wrap .card img {
@@ -789,7 +789,7 @@ detail
 }
 
 #lrap .row {
-  row-gap: 10px;
+ /*row-gap: 10px;*/
 }
 
 #lrap .card-header {
@@ -822,7 +822,7 @@ detail
 }
 
 #lrap .card-text {
-  padding: 0 12px;
+  padding: 1rem;
 }
 
 #lrap .overlay {
