@@ -863,6 +863,10 @@ detail
   place-items: center;
 }
 
+#lrap img.roundtop{
+  border-radius: 12px 12px 0 0;
+}
+
 /*---bg---------------------------*/
 #bg-m {
   width: 100%;
