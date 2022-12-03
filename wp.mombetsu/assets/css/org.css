@@ -306,7 +306,6 @@ main {
   display: grid;
   row-gap: 1.5rem;
   column-gap: 1.5rem;
-  margin-bottom: 20px;
 }
 
 /*9587cb*/
@@ -748,10 +747,10 @@ detail
 #wrap .overlay p {
   background-color: rgba(255, 255, 255, 0.4);
   width: 100%;
-  min-height: 60px;
+  min-height: 1rem;
   left: 0;
   top: 0;
-  padding: 6px;
+  padding: 0.5rem 1rem;
   height: auto;
   text-shadow: 0 2x 2px #666;
   color: #fff;
@@ -786,7 +785,7 @@ detail
   position: relative;
   display: flex;
   width: 100%;
-  row-gap: 20px;
+  margin-bottom: 20px;
 }
 
 #lrap .row {
@@ -829,10 +828,10 @@ detail
 #lrap .overlay p {
   background-color: rgba(255, 255, 255, 0.4);
   width: 100%;
-  min-height: 60px;
+  min-height: 1rem;
   left: 0;
   top: 0;
-  padding: 6px;
+  padding: 1rem;
   height: auto;
   text-shadow: 0 2x 2px #666;
   color: #fff;
@@ -972,4 +971,62 @@ detail
 
 .cont_lead .card-text {
   text-align: center;
+}
+
+#lrap table {
+  border: 1px solid #aaa;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+}
+#lrap table tbody th,
+#lrap table tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #aaa;
+}
+#lrap table tbody th {
+  background-color: rgba(0, 0, 0, 0.03);
+  white-space: nowrap;
+}
+#lrap table thead th + th,
+#lrap table tbody td {
+  border-left: 1px solid #aaa;
+}
+#lrap table tbody tr:last-child th,
+#lrap table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .tb-m tr,
+  .tb-m th,
+  .tb-m td {
+    display: block;
+    border: none;
+  }
+  .tb-m {
+    border: solid 1px #aaa;
+    border-top: none;
+  }
+  .tb-m th {
+    border-top: none!important;
+  }
+  .tb-m td {
+    border-left: none!important;
+  }
+  #lrap table tbody tr:last-child th{
+    border-bottom: 1px solid #aaa;
+  }
+}
+
+.fimg img{
+  border-radius: 0 0 12px 12px;}
+
+
+.bg-inner-betsu {
+  background: #fff2f9;
+border-radius: 6px;
+padding: 10px;
 }
