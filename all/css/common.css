@@ -731,3 +731,4 @@ body {font-size:1.4rem;}
 #faq .toggle:checked + .title + .content{max-height:500px;transition:all 1.5s;}
 #faq .toggle:checked + .title::before{transform:rotate(90deg)!important;/*transform:rotate(45deg)!important;*/}
 /*#faq .toggle:checked + .title::after{transform:rotate(135deg)!important;}*/
+
