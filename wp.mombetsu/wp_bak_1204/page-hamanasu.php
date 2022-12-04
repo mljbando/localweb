@@ -3,7 +3,7 @@
 Template Name: トップ：紋別の夜
 */
 get_header(); ?>
-<main>
+
 
   <section id="bg-e1">
     <div class="prap-container">
@@ -231,6 +231,5 @@ get_header(); ?>
     </p>
   </div>
 
-</main>
 
 <?php get_footer(); ?>

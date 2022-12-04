@@ -4,7 +4,6 @@ Template Name: トップ：紋別の土産
 */
 get_header(); ?>
 
-<main>
 
 	<section>
 		<div class="container">
@@ -139,6 +138,5 @@ get_header(); ?>
       </div>
     </div>
 
-</main>
 
 <?php get_footer(); ?>

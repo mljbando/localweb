@@ -4,7 +4,6 @@ Template Name: トップ：紋別の観光
 */
 get_header(); ?>
 
-<main>
 
   <section>
     <div class="container">
@@ -59,6 +58,5 @@ get_header(); ?>
     </div>
   </div>
 
-</main>
 
 <?php get_footer(); ?>

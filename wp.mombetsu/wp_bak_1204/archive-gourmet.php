@@ -4,8 +4,6 @@ Template Name: トップ：紋別のグルメ
 */
 get_header(); ?>
 
-<main>
-
   <section>
     <div class="container">
       <div class="row p-3">
@@ -57,6 +55,5 @@ get_header(); ?>
     </div>
   </div>
 
-</main>
 
 <?php get_footer(); ?>
