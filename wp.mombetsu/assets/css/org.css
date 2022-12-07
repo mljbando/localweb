@@ -72,8 +72,8 @@ ol {
 
 /*.container{max-width:1132px;margin:auto;width:96%;}*/
 
-/*header.common-----------------*/
-header.common {
+/*section.common-----------------*/
+section.common {
   background: #fff;
   position: fixed;
   width: 100%;
@@ -81,81 +81,48 @@ header.common {
   box-shadow: 0 6px 3px -3px rgb(0 0 0 / 13%);
 }
 
-header.common .container {
+section.common .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
 }
 
-header.common .logo {
+section.common .logo {
   display: inline-block;
 }
 
-header.common .logo:hover,
-header.common nav ul li a:hover {
+section.common .logo:hover,
+section.common nav ul li a:hover {
   opacity: .5;
 }
 
-header nav ul {display:flex;align-items:center;}
-header nav ul li {margin-left:20px;}
-header nav ul li a {display:block;font-size:1.2rem;text-align:center;position:relative;}
-header nav ul li a img {max-width:24px;}
-header nav ul li a p {line-height:1em;margin-top:4px;}
-header nav ul li a .cart_number {position:absolute;width:16px;height:16px;display:block;background:#ff004e;color:#fff;border-radius:50%;top:-6px;left:3px;line-height:16px;font-size:1rem;font-weight:bold;text-align:center;}
-
-.burger-btn {position:relative;width:48px;height:40px;}
-.burger-btn a {position:absolute;width:100%;left:50%;top:50%;transform:translate(-50%, -50%);z-index:99;}
-.burger-btn a:hover {opacity:1;}
-.burger-btn div {position:relative;width:24px;height:24px;margin:auto;}
-.burger-btn div span {position:absolute;height:2px;width:100%;background:#333;left:50%;transform:translateX(-50%);z-index:101;transition:transform .3s;}
-.burger-btn div span:nth-of-type(1) {top:5px;}
-.burger-btn div span:nth-of-type(2) {top:50%;transform:translate(-50%, -50%);}
-.burger-btn div span:nth-of-type(3) {bottom:5px;}
-.burger-btn.close div span:nth-of-type(1) {transform:translate(-50%, 5px) rotate(45deg);}
-.burger-btn.close div span:nth-of-type(2) {opacity:0;}
-.burger-btn.close span:nth-of-type(3) {transform:translate(-50%, -7px) rotate(-45deg);}
-.burger-btn.close p {display:none;}
-
-.burger-menu {visibility:hidden;right:calc((100% - 1920px) / 2);top:6px;position:absolute;width:375px;height:auto/*625px*/;background:#fff;border-radius:12px;border:1px solid #C8C8C8;opacity:0;transition:opacity .5s;z-index:98;}
-.burger-menu.fade {opacity:1;visibility:visible;}
-.burger-menu.fade .inner {opacity:1;}
-.burger-menu .inner {padding:40px 15px;opacity:0;}
-.burger-menu .inner ul {border-top:1px solid #C8C8C8;padding:10px 0;}
-.burger-menu .inner ul:first-of-type {border:none;}
-.burger-menu .inner ul li {margin:6px 0;}
-.burger-menu .inner ul li a {font-size:1.4rem;display:block;font-weight:bold;}
-.burger-menu .inner ul li a:hover {color:#00B84C;}
-.burger-menu .inner ul.m-navi {display:flex;flex-wrap:wrap;justify-content:space-between;padding:12px 0;}
-.burger-menu .inner ul.m-navi li {width:48%;}
-.burger-menu .inner ul.s-navi li {margin:12px 0;}
-.burger-menu .inner ul.s-navi li a {font-size:1.4rem;display:block;font-weight:bold;}
-header nav ul {
+section nav ul {
   display: flex;
   align-items: center;
 }
 
-header nav ul li {
+section nav ul li {
   margin-left: 20px;
 }
 
-header nav ul li a {
+section nav ul li a {
   display: block;
   font-size: 1.2rem;
   text-align: center;
   position: relative;
 }
 
-header nav ul li a img {
+section nav ul li a img {
   max-width: 24px;
 }
 
-header nav ul li a p {
+section nav ul li a p {
   line-height: 1em;
   margin-top: 4px;
 }
 
-header nav ul li a .cart_number {
+section nav ul li a .cart_number {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -239,7 +206,7 @@ header nav ul li a .cart_number {
 
 .burger-menu {
   visibility: hidden;
-  right: calc((100% - 1320px) / 2);
+  right: calc((100% - 1920px) / 2);
   top: 6px;
   position: absolute;
   width: 375px;
@@ -312,6 +279,208 @@ header nav ul li a .cart_number {
   font-weight: bold;
 }
 
+section nav ul {
+  display: flex;
+  align-items: center;
+}
+
+section nav ul li {
+  margin-left: 20px;
+}
+
+section nav ul li a {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+}
+
+section nav ul li a img {
+  max-width: 24px;
+}
+
+section nav ul li a p {
+  line-height: 1em;
+  margin-top: 4px;
+}
+
+section nav ul li a .cart_number {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: #ff004e;
+  color: #fff;
+  border-radius: 50%;
+  top: -6px;
+  left: 3px;
+  line-height: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.burger-btn {
+  position: relative;
+  width: 48px;
+  height: 40px;
+}
+
+.burger-btn a {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.burger-btn a:hover {
+  opacity: 1;
+}
+
+.burger-btn div {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
+.burger-btn div span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #333;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 101;
+  transition: transform .3s;
+}
+
+.burger-btn div span:nth-of-type(1) {
+  top: 5px;
+}
+
+.burger-btn div span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-btn div span:nth-of-type(3) {
+  bottom: 5px;
+}
+
+.burger-btn.close div span:nth-of-type(1) {
+  transform: translate(-50%, 5px) rotate(45deg);
+}
+
+.burger-btn.close div span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.burger-btn.close span:nth-of-type(3) {
+  transform: translate(-50%, -7px) rotate(-45deg);
+}
+
+.burger-btn.close p {
+  display: none;
+}
+
+.burger-menu {
+  visibility: hidden;
+  right: calc((100% - 1920px) / 2);
+  top: 6px;
+  position: absolute;
+  width: 375px;
+  height: auto
+    /*625px*/
+  ;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #C8C8C8;
+  opacity: 0;
+  transition: opacity .5s;
+  z-index: 98;
+}
+
+.burger-menu.fade {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger-menu.fade .inner {
+  opacity: 1;
+}
+
+.burger-menu .inner {
+  padding: 40px 15px;
+  opacity: 0;
+}
+
+.burger-menu .inner ul {
+  border-top: 1px solid #C8C8C8;
+  padding: 10px 0;
+}
+
+.burger-menu .inner ul:first-of-type {
+  border: none;
+}
+
+.burger-menu .inner ul li {
+  margin: 6px 0;
+}
+
+.burger-menu .inner ul li a {
+  font-size: 1.4rem;
+  display: block;
+  font-weight: bold;
+}
+
+.burger-menu .inner ul li a:hover {
+  color: #00B84C;
+}
+
+.burger-menu .inner ul.m-navi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.burger-menu .inner ul.m-navi li {
+  width: 48%;
+}
+
+.burger-menu .inner ul.s-navi li {
+  margin: 12px 0;
+}
+
+.burger-menu .inner ul.s-navi li a {
+  font-size: 1.4rem;
+  display: block;
+  font-weight: bold;
+}
+
+@media screen and (max-width:1920px) {
+  .burger-menu {
+    right: 2%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .burger-menu {
+    width: 96%;
+  }
+
+  .burger-btn.close div {
+    margin-top: 3vw;
+  }
+}
+
 /*footer-----------------*/
 footer {
   border-top: 1px solid #c8c8c8;
@@ -319,6 +488,21 @@ footer {
 
 footer .inner {
   padding: 40px 0;
+}
+
+footer nav ul li {
+  margin-right: 30px;
+}
+
+footer nav ul li:last-child,
+footer .snslinks li:last-child,
+footer .subnav li:last-child {
+  margin: 0;
+  border: 0;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
 }
 
 footer .logo {
@@ -395,7 +579,7 @@ footer .copyright {
     min-height: calc(100vh - 420px);
   }
 
-  .header.common {
+  .section.common {
     height: 70px;
   }
 
@@ -428,7 +612,7 @@ footer .copyright {
     font-size: 1.9rem;
   }
 
-  .header.common {
+  section.common {
     height: 60px;
   }
 
@@ -436,17 +620,17 @@ footer .copyright {
     padding-top: 62px;
   }
 
-  header.common .container {
+  section.common .container {
     padding: 8px 0;
   }
 
-  header.common .logo img {
+  section.common .logo img {
     width: 32px;
     margin-right: 2.5vw;
     margin-left: 10px;
   }
 
-  header.common .logo span {
+  section.common .logo span {
     font-size: 1.1rem;
     line-height: 1.34em;
   }
@@ -1324,6 +1508,7 @@ detail
 #lrap table tbody td {
   border-left: 1px solid #aaa;
 }
+
 /*
 #lrap table tbody tr:last-child th,
 #lrap table tbody tr:last-child td {
