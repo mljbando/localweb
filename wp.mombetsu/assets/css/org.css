@@ -1509,12 +1509,11 @@ detail
   border-left: 1px solid #aaa;
 }
 
-/*
 #lrap table tbody tr:last-child th,
 #lrap table tbody tr:last-child td {
   border-bottom: none;
 }
-*/
+
 @media only screen and (max-width: 992px) {
 
   .tb-m tr,
