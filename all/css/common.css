@@ -144,10 +144,15 @@ header .categorynav {display:flex;justify-content:space-between;align-items:cent
 header .categorynav .cate-prev{position:absolute;display:block;width:10px;height:10px;border-left:2px solid #333;border-bottom:2px solid #333;transform: rotate(45deg) translateY(-50%);top: 32px;}
 header .categorynav .cate-next {position: absolute;display: block;width: 10px;height: 10px;border-left: 2px solid #333;border-bottom: 2px solid #333;transform: rotate(-135deg) translateY(-50%);top: 25px;}
 
+@media screen and (min-width:2881px) and (max-width:3840px) {
+header .categorynav .cate-prev{display:none;}
+header .categorynav .cate-next{display:none;}
+header .categorynav ul {margin: 0 calc((100vw - 47vw) / 2);}
+}
 @media screen and (min-width:1921px) and (max-width:2880px) {
-header .categorynav .cate-prev{right: calc(100vw - 9.5vw);margin-right: 1rem;}
-header .categorynav .cate-next{left: calc(100vw - 9.5vW);margin-left: 1rem;}
-header .categorynav ul {margin: 0 calc((100vw - 80vw) / 2);}
+header .categorynav .cate-prev{right: calc(100vw - 14vw);margin-right: 1rem;}
+header .categorynav .cate-next{left: calc(100vw - 14vW);margin-left: 1rem;}
+header .categorynav ul {margin: 0 calc((100vw - 71vw) / 2);}
 }
 @media screen and (min-width:1441px) and (max-width:1920px) {
 header .categorynav .cate-prev{right: calc(100vw - 3vw);margin-right: 1rem;}
@@ -698,7 +703,7 @@ body {font-size:1.4rem;}
 
 /* ------ topani area ------- */
 .topani {width: 100%;overflow:hidden;position:relative;}
-@media screen and (min-width:769px) and (max-width:2880px) {
+@media screen and (min-width:769px) and (max-width:3840px) {
 .topani {min-height:80vh;}
 }
 @media screen and (max-width:768px) {
@@ -709,7 +714,7 @@ body {font-size:1.4rem;}
 
 /* ------ slide image ------- */
 .t-slide_img {/*animation-duration:30s;*/  animation:slideAnime 36s 0s infinite;animation-iteration-count:infinite;animation-name:slideAnime;animation-timing-function:ease infinite;display:block;object-fit:cover;opacity:0;width:100%;z-index:10;}
-@media screen and (min-width:769px) and (max-width:2880px) {
+@media screen and (min-width:769px) and (max-width:3840px) {
 .t-slide_img {min-height:80vh;}
 }
 @media screen and (max-width:768px) {
