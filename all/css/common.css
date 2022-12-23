@@ -385,19 +385,24 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
   #gift.detail .sec1 .Lside {width:48%;}
   #gift.detail .sec1 .Rside {width:47%;margin-left:5%;}
   #gift.detail .sec2 .p-box li {margin-bottom:0;}
-  .news li a {display:flex;align-items:center;position:relative;}
-  .news li a::after {content:"";display:block;width:10px;height:10px;border-left:2px solid #333;border-bottom:2px solid #333;transform:rotate(-135deg) translateY(-50%);position:absolute;right:15px;top:50%;margin-top:-10px;transition:all 0.2s ease-in-out;}
-  .news li a:hover::after {right:0;}
-  .news li a .date {width:8%;margin-right:2%;}
-  .news li a .text {width:90%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:40px;}
-  .news li a:hover .text {text-decoration:underline;}
   #crowdfunding.detail .sec1 {display:flex;justify-content:space-between;align-items:flex-start;}
   #crowdfunding.detail .sec1 .Lside {width:48%;}
   #crowdfunding.detail .sec1 .Rside {width:47%;}
   .sticky {position:-webkit-sticky;position:sticky;top:70px;z-index:98;display:block;}
   footer .subnav li a {padding-right:20px;line-height:1.4em;font-size:1.4rem;}
   footer .subnav li {border-right:1px solid #333;margin-right:20px;line-height:1em;}
-
+}
+@media screen and (min-width:1080px) {
+.news li a {display:flex;align-items:center;position:relative;}
+.news li a::after {content:"";display:block;width:10px;height:10px;border-left:2px solid #333;border-bottom:2px solid #333;transform:rotate(-135deg) translateY(-50%);position:absolute;right:15px;top:50%;margin-top:-10px;transition:all 0.2s ease-in-out;}
+.news li a:hover::after {right:0;}
+.news li a .date {width:8%;margin-right:2%;}
+.news li a .text {width:90%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:40px;}
+.news li a:hover .text {text-decoration:underline;}
+}
+@media screen and (max-width:1079px) {
+.news li a {display:block;padding:5vw 0;}
+.news li a .date {margin-bottom:2vw;}
 }
 @media screen and (max-width:1600px) {
 #gift.detail .floating_cart {right:calc(50% - 267.5px - 18%);}
@@ -488,8 +493,6 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
   #top .ranking .p-box li .ranktag {font-size:1.6rem;width:24px;padding:5px 0;left:12px;}
   #top .ranking .p-box li .ranktag::after {border-left:12px solid #FF004E;border-right:12px solid #FF004E;border-bottom:6px solid transparent;}
   #top .newgift .btn, #top .ranking .ac-btn {margin-top:2vw;}
-  .news li a {display:block;padding:5vw 0;}
-  .news li a .date {margin-bottom:2vw;}
   #gift .container, #crowdfunding .container, #about .container {padding-top:8vw;}
   #gift.list .pankuzu {margin-top:6vw;}
   #gift.list .pagehead {align-items:flex-start;margin-bottom:6vw;}
