@@ -545,6 +545,12 @@ footer .copyright {
   padding: 45px 0;
 }
 
+footer p.container {
+  max-width: 1920px;
+  margin: auto;
+  width: 96%;
+}
+
 .totopfade {
   position: fixed;
   right: 30px;
