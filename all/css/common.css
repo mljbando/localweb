@@ -34,8 +34,8 @@ h5 {font-size:2rem;font-weight:bold;line-height:1.4em;margin-bottom:25px;}
 .container.small .image {border-radius:12px;overflow:hidden;margin:30px 0;}
 .c-pic{background:rgba(255,255,255,0.8);width:100%;height:100%;position:relative;}
 .c-pic img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
-.b-pic{position: absolute;top: 0;left: -50%;width:200%;height:100%;filter: blur(0.5rem)}
 /*.b-pic{position: absolute;top: 50%;left:0;transform: translateY(-50%);height:100%;width:auto;}*/
+.b-pic{position: absolute;top: 0;left: -50%;width:200%;height:100%;filter: blur(0.5rem)}
 /*.p-box{display:flex;flex-wrap:wrap;align-items:flex-start; column-gap:10px;height:auto;}*/
 /*.p-box{position:relative;display:flex;width:100%;flex-wrap:wrap;justify-content:space-between;row-gap:20px;}*/
 .p-box {position:relative;height:100% !important;display:flex;flex-wrap:wrap;align-content:flex-start;row-gap:10px;width:100% !important;}
@@ -316,14 +316,14 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
 #gift.detail .sec1 .Rside .part .openimg .inner {border-radius:12px;overflow:hidden;}
 /*#gift.detail .sec1 .Rside .part .ac-btn{margin-top:30px;}*/
 #gift.detail .sec1 .Rside dl {display:flex;align-items:flex-start;margin-top:15px;}
-#gift.detail .sec1 .Rside dl dt {width:22%;}
-#gift.detail .sec1 .Rside dl dd {width:78%;}
+#gift.detail .sec1 .Rside dl dt {width:30%;}
+#gift.detail .sec1 .Rside dl dd {width:70%;}
 #gift.detail .sec1 .Rside dl.category {align-items:center;}
 #gift.detail .sec1 .Rside dl.category dd ul {display:flex;align-items:center;}
 #gift.detail .sec1 .Rside dl.category dd ul li:first-child {position:relative;margin-right:25px;}
 /*#gift.detail .sec1 .Rside dl.category dd ul li:first-child::after{content:'';width:8px; height:8px; border:0px;border-top:solid 1px #333;border-right:solid 1px #333;transform:rotate(45deg);position:absolute;top:50%;right:-15px;margin-top:-4px;}*/
 #gift.detail .sec1 .Rside dl.category dd ul li img {max-width:40px;display:inline-block;vertical-align:middle;}
-#gift.detail .sec1 .Rside dl.category dd ul li span {display:inline-block;vertical-align:middle;padding-left:15px;}
+#gift.detail .sec1 .Rside dl.category dd ul li span {display:inline-block;vertical-align:middle;/*padding-left:15px;*/}
 #gift.detail .sec1 .Rside dl dd .others {text-decoration:underline;position:relative;display:inline-block;margin-top:10px;}
 #gift.detail .sec1 .Rside dl dd .others:hover {opacity:.5;}
 #gift.detail .sec1 .Rside dl dd .others::after {content:"";width:8px;height:8px;border:0px;border-top:solid 1px #333;border-right:solid 1px #333;transform:rotate(45deg);position:absolute;top:50%;right:-12px;margin-top:-4px;}
