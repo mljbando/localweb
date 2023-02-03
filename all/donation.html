@@ -44,12 +44,58 @@
 
 
   <style>
-    .attention {
+    #p-donation .card {
+      background: #fff;
+      border-radius: 12px;
+      position: relative;
+      box-shadow: 0px 0px 15px -7px rgb(0 0 0 / 60%);
+    }
+
+    #p-donation .card-header {
+      background: #00B84C;
+      border-radius: 12px 12px 0 0 / 12px 12px 0 0;
+    }
+
+    #p-donation .card-header p.title {
+      font-size: 2rem;
+      color: #FFF;
+      padding: 1vw 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #p-donation .card-body p.lead {
+      font-size: 2rem;
+      padding: 1vw 0;
+      line-height: 2.5rem;
+    }
+
+    #p-donation .form-group p.stitle {
+      font-size: 2rem;
+      padding: 1rem 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #p-donation .form-control{
+      direction: rtl;
+    }
+    #p-donation .attention {
       background: rgba(239, 228, 67, 0.18);
       padding: 12px;
       border-radius: 8px;
       margin: 2rem;
-      width: auto;
+    }
+
+    #p-donation .attention p.title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #FF004E;
+    }
+
+    #p-donation .attention p.lead {
+      font-size: 1.2rem;
+      color: #FF004E;
     }
   </style>
 
@@ -57,63 +103,65 @@
 
     <div class="container">
 
-      <div class="card col-md-8 mx-auto">
+      <div id="p-donation">
+        <div class="card col-md-8 mx-auto">
 
-        <div class="card-header">
-          <p class="h2 fw-bold">返礼品なし寄付</p>
-        </div>
-
-        <div class="row">
-          <div class="card-body m-3">
-            <p class="h3" style="line-height:2.5rem">
-              応援寄付をご希望の方は、以下のフォームより寄付金額を選択してください。<br>寄付金額をご確認の上、「寄付する」ボタンをクリックすると、寄付のお申し込みへお進みいただけます。</p>
-            <p class="h4" style="line-height:2rem">※こちらからの寄付ではお礼の品をお選びいただくことは出来ませんが、あなたの寄付金は全額自治体の課題解決に役立てられます。</p>
+          <div class="card-header">
+            <p class="title">返礼品なし寄付</p>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-5 col-md-3 m-3">
-            <form>
-              <div class="form-group">
-                <label>
-                  <p class="h2 fw-bold">寄付金額を選択</p>
-                </label>
-                <div class="ec-select">
-                  <select id="donation_price" name="donation[price]" class="form-control">
-                    <option value="">-</option>
-                    <option value="2000">2,000</option>
-                    <option value="3000">3,000</option>
-                    <option value="4000">4,000</option>
-                    <option value="5000">5,000</option>
-                    <option value="6000">6,000</option>
-                    <option value="7000">7,000</option>
-                    <option value="8000">8,000</option>
-                    <option value="9000">9,000</option>
-                    <option value="10000">10,000</option>
-                    <option value="20000">20,000</option>
-                    <option value="30000">30,000</option>
-                    <option value="40000">40,000</option>
-                    <option value="50000">50,000</option>
-                    <option value="60000">60,000</option>
-                    <option value="70000">70,000</option>
-                    <option value="80000">80,000</option>
-                    <option value="90000">90,000</option>
-                    <option value="100000">100,000</option>
-                  </select>&nbsp;円
+          <div class="row">
+            <div class="card-body m-3">
+              <p class="lead">
+                応援寄付をご希望の方は、以下のフォームより寄付金額を選択してください。<br>寄付金額をご確認の上、「寄付する」ボタンをクリックすると、寄付のお申し込みへお進みいただけます。</p>
+              <p class="h4">※こちらからの寄付ではお礼の品をお選びいただくことは出来ませんが、あなたの寄付金は全額自治体の課題解決に役立てられます。</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5 col-md-3 m-3">
+              <form>
+                <div class="form-group">
+                  <label>
+                    <p class="stitle">寄付金額を選択</p>
+                  </label>
+                  <div class="ec-select">
+                    <select id="donation_price" name="donation[price]" class="form-control">
+                      <option value="">-</option>
+                      <option value="2000">2,000</option>
+                      <option value="3000">3,000</option>
+                      <option value="4000">4,000</option>
+                      <option value="5000">5,000</option>
+                      <option value="6000">6,000</option>
+                      <option value="7000">7,000</option>
+                      <option value="8000">8,000</option>
+                      <option value="9000">9,000</option>
+                      <option value="10000">10,000</option>
+                      <option value="20000">20,000</option>
+                      <option value="30000">30,000</option>
+                      <option value="40000">40,000</option>
+                      <option value="50000">50,000</option>
+                      <option value="60000">60,000</option>
+                      <option value="70000">70,000</option>
+                      <option value="80000">80,000</option>
+                      <option value="90000">90,000</option>
+                      <option value="100000">100,000</option>
+                    </select>&nbsp;円
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="attention text-danger">
-            <p class="fw-bold"><i class="fa fa-exclamation-triangle fa-fw"></i>注意事項</p>
-            <p class="h5" style="line-height:2rem">※2,000円以上の金額を入力してください。<br>
-              ※こちらの寄付では返礼品の申し込みはできません。<br>返礼品をご希望の方は“戻る“より、返礼品を選んでお申込みください。</p>
+          <div class="row">
+            <div class="attention col-11 col-md-8 mx-auto">
+              <p class="title"><i class="fa fa-exclamation-triangle fa-fw"></i>注意事項</p>
+              <p class="lead">※2,000円以上の金額を入力してください。<br>
+                ※こちらの寄付では返礼品の申し込みはできません。<br>返礼品をご希望の方は“戻る“より、返礼品を選んでお申込みください。</p>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
     </div>
