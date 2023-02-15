@@ -922,6 +922,15 @@ detail
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: all 0.2s;
+}
+
+#g-menu nav .menu-list:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#g-menu nav .menu-list.mce:hover {
+  transform: none!important
 }
 
 #g-menu nav a {
