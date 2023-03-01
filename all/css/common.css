@@ -808,12 +808,13 @@ body {font-size:1.4rem;}
   #sec-simulator .bg-simulator-row {-ms-flex-wrap: wrap;flex-wrap: wrap;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
   #sec-simulator .bg-simulator-req {width: 15vw;padding: 1.5vw 0;}
   #sec-simulator .bg-simulator-tq {width: 38vw;margin-left: 4vw;font-size: 1.6875rem;}
-  #sec-simulator .bg-simulator-ta {color: #000 !important; font-weight: 600 !important;font-size: 1.6rem !important;letter-spacing: 0!important;}
-    #sec-simulator .bg-simulator-select {width: 100%;margin-top: 3vw;margin-left: 0;}
+  #sec-simulator .bg-simulator-ta {color: #000 !important; font-weight: 600 !important;font-size: 1.2rem !important;letter-spacing: 0!important;}
+  #sec-simulator .bg-simulator-select {width: 100%;margin-top: 3vw;margin-left: 0;}
   #sec-simulator .bg-simulator-row + #sec-simulator .bg-simulator-row {margin-top: 6vw;}
-  #sec-simulator .bg-simulator-result {margin-top: 8vw;padding: 1vw 0;}
+  #sec-simulator .bg-simulator-result {margin-top: 8vw;/*padding: 1vw 0;*/}
+  #sec-simulator .bg-simulator-result p:nth-of-type(1) {font-size: 1.4rem;padding-top: .6rem;font-weight: 600;}
+  #sec-simulator .bg-simulator-result input {font-size:3rem;margin-top: -0.5rem;position: absolute;top: 36%;}
   #sec-simulator .bg-simulator-result:before {border-width: 6vw 10vw 0 10vw;}
-  #sec-simulator .bg-simulator-result p:nth-of-type(1) {padding-top: 2rem;}
   #sec-simulator .bg-simulator-read {padding:.5rem 0;}
   #sec-simulator .bg-simulator-read p {font-size: 1rem;}
 }
