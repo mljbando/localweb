@@ -154,7 +154,7 @@
     .ec-birth select:first-child {
       margin-left: 0;
     }
-
+/*
     #entry_sex {
       display: flex;
       border: solid 1px #aaa;
@@ -213,7 +213,7 @@
     #entry_mail_magazine label:last-child {
       border: none;
     }
-
+*/
     .magazine-text {
       padding-left: 4rem;
       padding-right: 4rem;
@@ -339,9 +339,40 @@
       text-decoration: underline;
     }
 
-    #entry_mail_magazine label {
-      padding-left: 10px;
+    #entry_sex,
+    #entry_mail_magazine{
+      display: flex!important;
+      justify-content: center!important;
+      align-items: center!important;
+      flex-wrap: wrap;
+      gap: 0 1rem;
+      margin-bottom: 4rem;
     }
+#entry_sex input,
+#entry_mail_magazine input{
+    display: none;
+}
+#entry_sex label,
+#entry_mail_magazine label {
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: initial;
+    flex: 1;
+    line-height: 5rem;
+}
+#entry_sex input:checked + label,
+#entry_mail_magazine input:checked + label{
+  background-color: #00B84C;
+  color: #fff;
+  flex: 1;
+  line-height: 5rem;
+}
+
+/* 装飾用 */
+
+
+
 
     @media screen and (max-width:768px) {
 
@@ -369,27 +400,7 @@
         border-top: 7px solid transparent;
         border-bottom: 7px solid transparent;
       }
-      #entry_sex input {
-        margin-left: initial;
-      }
-      #entry_sex  label[for="entry_sex_3"] {
-        display: inline-block;
-        width: 36%;
-        padding-left: initial;
-      }
-      #entry_sex label[for="entry_sex_1"] {
-        display: inline-block;
-        width: 20%;
-        padding-left: initial;
-        min-width: initial;
-      }
-      #entry_sex label[for="entry_sex_2"] {
-        display: inline-block;
-        width: 18%;
-      }
-      #entry_mail_magazine label {
-        margin-left: -18px;
-      }
+
     }
 
       @media screen and (min-width:769px) {
@@ -1773,7 +1784,7 @@
                         </dt>
                         <dd>
                           <div class="ec-radio">
-                            <div id="entry_sex">
+                            <div id="entry_sex" class="radiobutton">
                               <input type="radio" id="entry_sex_3" name="entry[sex]" value="3" checked="checked" /><label for="entry_sex_3"><span>回答しない</span></label>
                               <input type="radio" id="entry_sex_1" name="entry[sex]" value="1" /><label for="entry_sex_1"><span>男性</span></label>
                               <input type="radio" id="entry_sex_2" name="entry[sex]" value="2" /><label for="entry_sex_2"><span>女性</span></label>
