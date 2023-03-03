@@ -792,7 +792,7 @@ body {font-size:1.4rem;}
 #sec-simulator .bg-simulator-select:after {position: absolute;top: 18px;right: 16px;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);width: 8px;height: 8px;border-right: 2px solid #000;border-bottom: 2px solid #000;content: "";pointer-events: none;}
 #sec-simulator .bg-simulator-row + .bg-simulator-row {margin-top: 24px;}
 #sec-simulator .bg-simulator-row {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
-#sec-simulator .bg-simulator-result {position: relative;margin-top: 32px;/*padding: 3vh 0 ;*/height: 10vh;background: #fff;text-align: center;box-shadow: 0px 0px 15px -7px rgb(0 0 0 / 60%);border-radius: 12px;}
+#sec-simulator .bg-simulator-result {display: flex;position: relative;flex-direction: column;align-items: center;margin-top: 32px;/*padding: 3vh 0 ;*/height: 13vh;background: #fff;text-align: center;box-shadow: 0px 0px 15px -7px rgb(0 0 0 / 60%);border-radius: 12px;}
 #sec-simulator .bg-simulator-result.is-over p {visibility: visible;}
 #sec-simulator .bg-simulator-result p:nth-of-type(1) {font-size: 1.8rem;padding-top: 2.4rem;font-weight: 600;}
 #sec-simulator .bg-simulator-result p {visibility: hidden;}
