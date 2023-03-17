@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" property="stylesheet" href="./assets/css/bootstrap.min.css" media="all">
   <link rel="stylesheet" property="stylesheet" href="./assets/css/swiper-bundle.min.css" media="all">
   <link rel="stylesheet" property="stylesheet" href="./assets/css/themify-icons.css" media="all">
@@ -98,375 +99,108 @@
 
 </header>
 
-<style>
 
 
-// -------------------------------------------------
+<!-- Vertical Timeline -->
+<section id="conference-timeline">
 
-// Responsive Vertical Timeline - by CodyHouse.co
+  <div class="conference-timeline-content">
+    <!-- Article -->
+    <div class="timeline-article">
 
-// -------------------------------------------------
+      <div class="meta-date">
+        <span class="date">春</span>
+      </div>
 
-:root {
-  // colors
-  @include defineColorHSL(--cd-color-1, 206, 21%, 24%); // Navy
-  @include defineColorHSL(--cd-color-2, 205, 38%, 89%); // Blue
-  @include defineColorHSL(--cd-color-3, 207, 10%, 55%); // Grey
-  @include defineColorHSL(--cd-color-4, 111, 51%, 60%); // Green
-  @include defineColorHSL(--cd-color-5, 356, 53%, 49%); // Red
-  @include defineColorHSL(--cd-color-6, 47, 85%, 61%);  // Yellow
+      <div class="content-left-container">
+        <div class="content-left">
+          <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+        </div>
+      </div>
+      <div class="content-right-container">
+        <div class="content-right">
+          <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+        </div>
+      </div>
 
-  // header
-  --cd-header-height: 200px;
-
-  // font
-  --font-primary: 'Droid Serif', serif;
-  --font-secondary: 'Open Sans', sans-serif;
-}
-
-@supports(--css: variables) {
-  :root {
-    @include breakpoint(md) {
-      --cd-header-height:  300px;
-    }
-  }
-}
-
-.cd-main-header {
-  height: var(--cd-header-height);
-  background: var(--cd-color-1);
-  color: var(--color-white);
-  @include fontSmooth;
-
-  h1 {
-    font-family: var(--font-secondary);
-    color: inherit;
-  }
-}
-
-.cd-timeline {
-  overflow: hidden;
-  padding: var(--space-lg) 0;
-  color: var(--cd-color-3);
-  background-color: lightness(var(--cd-color-2), 1.05);
-  font-family: var(--font-primary);
-
-  h2 {
-    font-family: var(--font-secondary);
-    font-weight: 700;
-  }
-}
-
-.cd-timeline__container {
-  position: relative;
-  padding: var(--space-md) 0;
-
-  &::before { // this is the timeline vertical line
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 100%;
-    width: 4px;
-    background: var(--cd-color-2);
-  }
-
-  @include breakpoint(md) {
-    &::before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-  }
-}
-
-.cd-timeline__block {
-  display: flex;
-  position: relative;
-  z-index: 1; // make sure content is above the timeline vertical line
-  margin-bottom: var(--space-lg);
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  @include breakpoint(md) {
-    &:nth-child(even) {
-      flex-direction: row-reverse; // for even blocks -> lay out content from right to left
-    }
-  }
-}
-
-.cd-timeline__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--color-white), inset 0 2px 0 rgba(#000, 0.08), 0 3px 0 4px rgba(#000, 0.05);
-
-  img {
-    width: 24px;
-    height: 24px;
-  }
-
-  @include breakpoint(md) {
-    width: 60px;
-    height: 60px;
-    order: 1; // flex order -> place the image after cd-timeline__content
-    margin-left: calc(5% - 30px);
-    will-change: transform;
-
-    .cd-timeline__block:nth-child(even) & {
-      margin-right: calc(5% - 30px);
-    }
-  }
-}
-
-.cd-timeline__img--picture {
-  background-color: var(--cd-color-4);
-}
-
-.cd-timeline__img--movie {
-  background-color: var(--cd-color-5);
-}
-
-.cd-timeline__img--location {
-  background-color: var(--cd-color-6);
-}
-
-.cd-timeline__content {
-  flex-grow: 1; // expand element so that it takes up all the available space inside its parent
-  position: relative;
-  margin-left: var(--space-md);
-  background: var(--color-white);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  box-shadow: 0 3px 0 var(--cd-color-2); 
-
-  &::before { // triangle next to content block
-    content: '';
-    position: absolute;
-    top: 16px;
-    right: 100%;
-    @include triangle(left, 7px, var(--color-white));
-  }
-
-  h2 {
-    color: var(--cd-color-1);
-  }
-
-  @include breakpoint(md) {
-    width: 45%;
-    flex-grow: 0; // prevent element from growing inside its parent
-    will-change: transform;
-    margin: 0;
-    font-size: 0.8em;
-    --line-height-multiplier: 1.2;
-
-    &::before { // triangle
-      top: 24px;
-    }
-
-    .cd-timeline__block:nth-child(odd) &::before { // change triangle direction
-      right: auto;
-      left: 100%;
-      @include triangle(right, 7px, var(--color-white)); 
-    }
-  }
-}
-
-.cd-timeline__date {
-  color: alpha(var(--cd-color-3), 0.7);
-
-  @include breakpoint(md) {
-    position: absolute;
-    width: 100%;
-    left: 120%;
-    top: 20px;
-
-    .cd-timeline__block:nth-child(even) & {
-      left: auto;
-      right: 120%;
-      text-align: right;
-    }
-  }
-}
-
-@include breakpoint(md) { // animations
-  .cd-timeline__img--hidden, .cd-timeline__content--hidden {
-    visibility: hidden;
-  }
-
-  .cd-timeline__img--bounce-in {
-    animation: cd-bounce-1 0.6s;
-  }
-
-  .cd-timeline__content--bounce-in {
-    animation: cd-bounce-2 0.6s;       
-  }
-
-  .cd-timeline__block:nth-child(even) .cd-timeline__content--bounce-in {
-    animation-name: cd-bounce-2-inverse; 
-  }
-}
-
-
-@keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);    
-  }
-}
-
-@keyframes cd-bounce-2 {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);   
-  }
-
-  60% {
-    opacity: 1;
-    transform: translateX(20px);       
-  }
-
-  100% {
-    transform: translateX(0);       
-  }
-}
-
-@keyframes cd-bounce-2-inverse {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);   
-  }
-
-  60% {
-    opacity: 1;
-    transform: translateX(-20px);
-  }
-
-  100% {
-    transform: translateX(0);    
-  }
-}
-</style>
-
-
-<div class="container">
-
-
-  <section class="cd-timeline js-cd-timeline">
-    <div class="container max-width-lg cd-timeline__container">
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 1</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 2</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-          
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 3</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 24</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 4</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 5</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Final Section</h2>
-          <p class="color-contrast-medium">This is the content of the last section</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 26</span>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
     </div>
-  </section> <!-- cd-timeline -->
+    <!-- // Article -->
+    
+    <!-- Article -->
+    <div class="timeline-article">
+
+      <div class="meta-date">
+        <span class="date">夏</span>
+      </div>
+
+      <div class="content-left-container">
+        <div class="content-left">
+          <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+        </div>
+      </div>
+      <div class="content-right-container">
+        <div class="content-right">
+          <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- // Article -->
+    
+    <!-- Article -->
+    <div class="timeline-article">
+
+      <div class="meta-date">
+        <span class="date">秋</span>
+      </div>
 
 
+      <div class="content-left-container">
+        <div class="content-left">
+          <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+        </div>
+      </div>
 
-</div>
+      <div class="content-right-container">
+        <div class="content-right">
+          <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- // Article -->
+
+        <!-- Article -->
+        <div class="timeline-article">
+
+          <div class="meta-date">
+            <span class="date">冬</span>
+          </div>
+    
+    
+          <div class="content-left-container">
+            <div class="content-left">
+              <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+            </div>
+          </div>
+    
+          <div class="content-right-container">
+            <div class="content-right">
+              <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+            </div>
+          </div>
+    
+    
+        </div>
+        <!-- // Article -->
+
+  </div>
+
+</section>
+<!-- // Vertical Timeline -->
+
+
 
   <a class="totopfade" href="https://mombetsu.furusato-direct.jp"><img src="./assets/img/totop.png"></a>
   <footer>
