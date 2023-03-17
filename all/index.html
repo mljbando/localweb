@@ -527,51 +527,87 @@
 
 
 			<style>
-				#top #greeting{width: 100%;}
-				#top .greeting {
+				#top #greeting {
+					margin: 80px 0;
+				}
 
+				#top .greeting {
+					margin: 0 calc(50% - 50vw);
+					padding: 0 calc(50vw - 50%);
+					width: 100vw;
+					overflow-x: hidden;
+					position: relative;
+					background-image: url(./img/bg_greeting.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
+
+				#top .greeting .contents {
 					max-width: 1920px;
 					margin: auto;
 					width: 96%;
+					padding: 30px 0;
 				}
 
-				#top .greeting h3 {
-					margin: 80px 0 30px;
+				#top .greeting .contents h3 {
+					margin: 0 0 30px !important;
 					font-size: 2.4rem;
 					padding: 0 1rem;
 				}
 
-				#top .greeting img {
-					width: 100%;
-					height: auto;
+				#top .greeting .contents img {
+					border-radius: 12px;
 				}
 
-				.greeting .full-width {
-					width: 100vw;
-					margin-left: calc(-50vw + 50%);
+				#top .greeting .row {
+					background-color: rgba(255,255,255,0.7);
+					border-radius: 12px;
+					align-items: center;
+					line-height: 3rem;
 				}
+
+				#top .greeting .row p.signe-mayor{
+					text-align: right;
+					font-weight: bold;
+					padding: 0rem 2rem 0;
+				}
+
 			</style>
 
-<section id="greeting">
-			<div class="contents">
+			<section id="greeting">
 				<div class="greeting">
-					<h3>首長からのご挨拶</h3>
-					<div class="full-width">
-						<img src="./img/bg_greeting.png">
+					<div class="contents">
+
+						<h3>首長からのご挨拶</h3>
+
+						<div class="col-12 mx-auto">
+							<div class="row p-5">
+								<div class="col-xl-4">
+									<img class="img-fluid mb-4 mb-xl-0" src="./img/mayor_mombetsu.jpg" loading="lazy">
+								</div>
+								<div class="col-xl-8">
+
+									<p>ふるさと納税制度へのご協力をお願いします</p>
+									<p>海や山や川そして流氷は、すべての人々にとってかけがえのない大切な自然です。</p>
+									<p>紋別市は、青く澄み渡るオホーツク海、緑あふれる山々、広大な牧草地帯など美しい自然に囲まれ、そのオホーツクの海や豊かな大地からの贈りもの、新鮮で安全な海の幸・山の幸に恵まれています。</p>
+									<p>そして、そこには多くの産業の営みと自然と調和したオホーツクの暮らしがあります。</p>
+									<p>しかし、地球温暖化の影響なのか、このところオホーツクの流氷は年々減少化傾向にあり、海洋環境や動植物への影響が心配されているほか、オホーツク海屈指の漁業や観光などへの影響も危惧されているところです。
+									</p>
+									<p>「オホーツクの流氷と自然」は、私たち紋別市民にとって大切なかけがえのない財産であるとともに、北海道、日本の環境保全のためにも守り残していかなければならない財産です。</p>
+									<p>そこで本市では、多くの人々から「寄附金」という応援をいただきながら、環境保全の取り組みや地域の活性化のために、このたび、『オホーツクの流氷と自然を守る寄附条例』を制定しました。</p>
+									<p>
+										「紋別に行ったことがある」「昔、紋別に住んでいた」「紋別が好きだ」など、本市とゆかりのある方々、あるいは、現在市内に住んでいる方々に、是非、本市の取り組みに賛同していただけるよう、皆さまの応援を心からお待ちしておりますのでよろしくお願いします。
+									</p>
+									<p class="signe-mayor">令和4年1月1日<br>宮川　良一</p>
+
+								</div>
+							</div>
+						</div>
+
 					</div>
-					<p>ふるさと納税制度へのご協力をお願いします</p>
-					<p>海や山や川そして流氷は、すべての人々にとってかけがえのない大切な自然です。</p>
-					<p>紋別市は、青く澄み渡るオホーツク海、緑あふれる山々、広大な牧草地帯など美しい自然に囲まれ、そのオホーツクの海や豊かな大地からの贈りもの、新鮮で安全な海の幸・山の幸に恵まれています。</p>
-					<p>そして、そこには多くの産業の営みと自然と調和したオホーツクの暮らしがあります。</p>
-					<p>しかし、地球温暖化の影響なのか、このところオホーツクの流氷は年々減少化傾向にあり、海洋環境や動植物への影響が心配されているほか、オホーツク海屈指の漁業や観光などへの影響も危惧されているところです。</p>
-					<p>「オホーツクの流氷と自然」は、私たち紋別市民にとって大切なかけがえのない財産であるとともに、北海道、日本の環境保全のためにも守り残していかなければならない財産です。</p>
-					<p>そこで本市では、多くの人々から「寄附金」という応援をいただきながら、環境保全の取り組みや地域の活性化のために、このたび、『オホーツクの流氷と自然を守る寄附条例』を制定しました。</p>
-					<p>
-						「紋別に行ったことがある」「昔、紋別に住んでいた」「紋別が好きだ」など、本市とゆかりのある方々、あるいは、現在市内に住んでいる方々に、是非、本市の取り組みに賛同していただけるよう、皆さまの応援を心からお待ちしておりますのでよろしくお願いします。
-					</p>
 				</div>
-			</div>
-		</section>
+			</section>
 
 			<!--/container-->
 
