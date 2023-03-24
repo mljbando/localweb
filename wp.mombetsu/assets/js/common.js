@@ -512,7 +512,7 @@ $(window).scroll(function () {
   var scrollAnimationElm = document.querySelectorAll(' .fin-up , .fin-lr , .fin-rl');
   var scrollAnimationFunc = function () {
     for (var i = 0; i < scrollAnimationElm.length; i++) {
-      var triggerMargin = 1;
+      var triggerMargin = 0;
       if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
         scrollAnimationElm[i].classList.add('on');
       }

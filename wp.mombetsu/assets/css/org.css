@@ -1744,7 +1744,68 @@ detail
 
 
 
-/* timeline  */
+/* timeline  #top-info*/
+#top-info .bg-info {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(../../assets/img/bg-info.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+ 
+#top-info .filter {
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0,0,0,0.5);*/
+}
+
+#top-info .content {
+/*width: 50%;
+height: ;*/
+margin: 0 auto;
+padding: calc(1vw + 0em);
+background: linear-gradient(158deg, rgba(255,255,255,0.2) 0%, rgba(129,162,188,0.4) 37%, rgba(109,146,188,0.4) 100%);
+/*background-color: rgba(110,195,230,0.6);*/
+color: #fff;
+}
+
+#top-info .content h1 {
+text-align: center;
+font-size: calc(3rem + 4 * ((100vw - 320px) / 670));
+color: #fff;
+position: relative;
+text-shadow: 1px 2px 3px #000;
+padding-top: 1.5rem;
+}
+
+#top-info .content .read-info {
+padding: 10px;
+}
+#top-info .content p {
+font-size:2rem;
+color: #fff;
+position: relative;
+line-height: 3rem;
+text-shadow: 1px 2px 3px #000;
+/*left: 0%;*/
+/*margin: 20px 60px;*/
+}
+
+#top-info .z-in {
+  animation: zoomIn 0.7s ease-in-out forwards;
+  animation-delay: 0s;
+  transform: scale(0,0);
+}
+@keyframes zoomIn {
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+/* timeline  #timeline*/
 #timeline .card{
   box-shadow: 0px 0px 15px -7px rgb(0 0 0 / 60%);
   border-radius: 12px;
