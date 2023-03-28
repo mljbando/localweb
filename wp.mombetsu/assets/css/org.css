@@ -1754,6 +1754,7 @@ detail
   background-size: cover;
   background-position: center;
   object-fit: cover;
+  box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%)
 }
  
 #top-info .filter {
@@ -1763,14 +1764,14 @@ detail
 }
 
 #top-info .content {
-/*width: 50%;
-height: ;*/
-margin: 0 auto;
-padding: calc(1vw + 0em);
-background: linear-gradient(158deg, rgba(255,255,255,0.2) 0%, rgba(129,162,188,0.4) 37%, rgba(109,146,188,0.4) 100%);
-/*background-color: rgba(110,195,230,0.6);*/
-color: #fff;
-}
+  /*width: 50%;
+  height: ;*/
+  margin: 0 auto;
+  padding: calc(1vw + 0em);
+  background: linear-gradient(158deg, rgba(255,255,255,0.2) 0%, rgba(129,162,188,0.4) 37%, rgba(109,146,188,0.4) 100%);
+  /*background-color: rgba(110,195,230,0.6);*/
+  color: #fff;
+  }
 
 #top-info .content h1 {
 text-align: center;
@@ -1838,6 +1839,7 @@ text-shadow: 1px 2px 3px #000;
 }
 .timeline-s1,.timeline-s2,.timeline-s3,.timeline-s4 {
   position: relative;
+  overflow: hidden;
 }
 .timeline-s1::after,.timeline-s2::after,.timeline-s3::after,.timeline-s4::after {
   content: "";
@@ -1852,6 +1854,7 @@ text-shadow: 1px 2px 3px #000;
   position: relative;
   background-color: inherit;
   width: 50%;
+  padding-bottom: 2rem
 }
 .timeline-1::after,.timeline-2::after,.timeline-3::after,.timeline-4::after {
   content: "";
@@ -1864,12 +1867,12 @@ text-shadow: 1px 2px 3px #000;
   z-index: 1;
 }
 .tl-left {
-  padding: 0px 40px 20px 0px;
+  /*padding: 0px 40px 20px 0px;*/
   left: 0;
 }
 .tl-right {
-  padding: 0px 0px 20px 40px;
-  left: 50%;
+  /*padding: 0px 0px 20px 40px;*/
+  left: 100%;
 }
 #timeline .card-body .season-text{
   font-size: 1.6rem;
@@ -1899,6 +1902,7 @@ text-shadow: 1px 2px 3px #000;
   opacity: 0;
   filter: alpha(opacity=0);
   -moz-opacity: 0;
+  margin-right: 20px;
 }
 #timeline .fin-lr.on {
   opacity: 1.0;
@@ -1915,6 +1919,7 @@ text-shadow: 1px 2px 3px #000;
   opacity: 0;
   filter: alpha(opacity=0);
   -moz-opacity: 0;
+  margin-left: 20px;
 }
 #timeline .fin-rl.on {
   opacity: 1.0;
@@ -1973,21 +1978,36 @@ text-shadow: 1px 2px 3px #000;
 .tl-right::after {
   left: -14px;
 }
-
+p.at-text {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #666;
+  margin-top: 2rem;
+}
 @media screen and (max-width: 600px) {
   .timeline-s1::after,.timeline-s2::after,.timeline-s3::after,.timeline-s4::after {
-    left: 31px;
+    left: 12px;
+    margin-left: 0;
+  }
+  .timeline-1::after,.timeline-2::after,.timeline-3::after,.timeline-4::after {
+    left: 0;
   }
   .timeline-1,.timeline-2,.timeline-3,.timeline-4 {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 12px;
   }
   .timeline-2::before,.timeline-2::before,.timeline-3::before,.timeline-4::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
+  }
+  #timeline .fin-lr{
+    margin-right: 0;
+  }
+  #timeline .fin-rl{
+    margin-left: 0;
   }
   .tl-left::after,
   .tl-right::after {
@@ -1998,6 +2018,9 @@ text-shadow: 1px 2px 3px #000;
   }
   .tl-right {
     left: 0%;
+  }
+  p.at-text {
+    text-align:initial;
   }
 }
 
