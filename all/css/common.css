@@ -796,6 +796,8 @@ body {font-size:1.4rem;}
 #faq .toggle:checked + .title + .content{max-height:500px;transition:all 1.5s;}
 #faq .toggle:checked + .title::before{transform:rotate(90deg)!important;/*transform:rotate(45deg)!important;*/}
 /*#faq .toggle:checked + .title::after{transform:rotate(135deg)!important;}*/
+#faq .textt{font-size: 2rem;font-weight: bold;color: #6d9c00;text-decoration: underline;}
+#faq .textm{font-size: 1.5rem;font-weight: bold;text-decoration: underline;}
 
 /*#sec-simulator {padding:3vh 0;}*/
 #sec-simulator .bg-simulator {margin-top: 24px;box-shadow: 0px 0px 15px -7px rgb(0 0 0 / 60%);background: #fff;border-radius: 12px;position: relative;}
