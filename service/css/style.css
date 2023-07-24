@@ -362,6 +362,7 @@ h6,
 }
 
 /*** Project Portfolio ***/
+
 #portfolio-flters {
     display: inline-block;
     background: var(--light);
@@ -382,54 +383,8 @@ h6,
     color: var(--dark);
     border-color: var(--dark);
 }
-/*
-.portfolio-inner {
-    position: relative;
-    overflow: hidden;
-}
 
-.portfolio-inner::before,
-.portfolio-inner::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgb(204, 37, 24, 0.8);
-    transition: .5s;
-}
 
-.portfolio-inner::after {
-    left: auto;
-    right: 0;
-}
-
-.portfolio-inner:hover::before,
-.portfolio-inner:hover::after {
-    width: 50%;
-}
-
-.portfolio-inner .portfolio-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-    z-index: 3;
-    opacity: 0;
-}
-
-.portfolio-inner:hover .portfolio-text {
-    transition-delay: .3s;
-    opacity: 1;
-}
-*/
 .portfolio-inner {
     position: relative;
     overflow: hidden;
@@ -487,7 +442,86 @@ h6,
     color: var(--light);
 }
 
+.portfolio-container{
+    margin-bottom: 100px;
+}
 
+@media (max-width: 768px) {
+    .portfolio-container{
+        margin-bottom: 25px;
+    }
+}
+.portfolio-item{
+    text-align: center;
+}
+
+
+/*** timeline ***/
+
+.horizontal-timeline .items {
+  border-top: 3px solid #e9ecef;
+  text-align: center;
+}
+
+.horizontal-timeline .items .items-list {
+  display: block;
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+
+.horizontal-timeline .items .items-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+
+.horizontal-timeline .items .items-list .event-date {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  width: 75px;
+  height: 75px; /* Add height to match width for a perfect circle */
+  margin: 0 auto;
+  font-size: 2rem;
+  background-color: #cc2518;
+  color: #fff;
+  border-radius: 50%; /* Add border-radius to make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.horizontal-timeline .px-4 h4{
+    padding-top:3rem ;
+  }
+  .horizontal-timeline .px-4 h5{
+    color: #cc2518;
+    font-weight: bold;
+  }
+
+@media (min-width: 1140px) {
+  .horizontal-timeline .items .items-list {
+    display: inline-block;
+    width: 15%;
+    padding-top: 45px;
+  }
+
+  .horizontal-timeline .items .items-list .event-date {
+    top: -40px;
+  }.horizontal-timeline .px-4 h4{
+    padding-top:initial ;
+  }
+
+}
+
+
+
+  
 /*** Team ***/
 .team-item {
     position: relative;
