@@ -37,7 +37,9 @@ h6,
 .fw-semi-bold {
     font-weight: 500 !important;
 }
-
+.bgc{
+    background-color: rgb(255, 213, 213, 0.2);
+}
 
 /*** Spinner ***/
 #spinner {
@@ -268,13 +270,6 @@ h6,
 }
 
 
-/*** Facts & Quote ***/
-.facts,
-.quote {
-    background: rgba(15, 66, 41, .6);
-}
-
-
 /*** Service ***/
 .service-item {
     position: relative;
@@ -442,10 +437,6 @@ h6,
     color: var(--light);
 }
 
-.portfolio-container{
-    margin-bottom: 100px;
-}
-
 @media (max-width: 768px) {
     .portfolio-container{
         margin-bottom: 25px;
@@ -454,12 +445,15 @@ h6,
 .portfolio-item{
     text-align: center;
 }
-
+/* ページ読み込み時とAllが選択された時のみ余白追加 */
+.portfolio-item:not(:last-child):not(.active),
+.portfolio-item.active[data-filter="*"] {
+  margin-bottom: 100px;
+}
 
 /*** timeline ***/
-
 .horizontal-timeline .items {
-  border-top: 3px solid #e9ecef;
+  border-top: 3px solid rgb(0, 0, 0, 0.6);
   text-align: center;
 }
 
@@ -576,11 +570,24 @@ h6,
 
 
 /*** Testimonial ***/
+/* .ih-head要素をフレックスコンテナに変換 */
+.ih-head {
+    display: flex;
+    align-items: center; /* 横方向に中央寄せ */
+  }
+.ih-logo{
+width: 40px;
+}
+.ih-name{
+    color: #6d9c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-.testimonial-carousel .owl-item img {
+/*.testimonial-carousel .owl-item img {
     width: 100px;
     height: 100px;
-}
+}*/
 
 .testimonial-carousel .owl-nav {
     margin-top: 30px;
@@ -595,8 +602,8 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
-    background: var(--light);
+    color: var(--light);
+    background: var(--primary);
     border-radius: 4px;
     font-size: 22px;
     transition: .5s;
@@ -604,10 +611,20 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    color: var(--light);
+    background: var(--light);
+    color: var(--primary);
 }
+.btn-container {
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+    margin-left: 80%;
+  }
 
+/*** Quote ***/
+.bg-light{
+    background-color: rgb(204, 37, 24, 0.1)!important;
+}
 
 /*** Footer ***/
 .footer .btn.btn-link {
