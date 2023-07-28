@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,8 +24,8 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -35,7 +35,12 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+        return false;
+    });
+    $('.plink').click(function () {
+        var targetOffset = $('#a-contact').offset().top;
+        $('html, body').animate({ scrollTop: targetOffset }, 1500, 'easeInOutQuart');
         return false;
     });
 
@@ -51,27 +56,35 @@
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
-      });
-  
-       $('#portfolio-flters li').on('click', function () {
+    });
+
+    $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
         portfolioIsotope.isotope({ filter: $(this).data('filter') });
-      });
+    });
 
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
-        items: 1,
+        items: 1.1,
         dots: false,
         loop: true,
         nav: true,
-        navText : [
+        navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ]
+    });
+
+    // underline
+    window.addEventListener('load', () => {
+        const rtxtElements = document.querySelectorAll('.list-group-item .rtxt');
+        if (rtxtElements.length > 0) {
+            rtxtElements[0].style.textDecoration = 'none'; // 最初の要素の下線を消す
+        }
     });
 
 
