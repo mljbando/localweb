@@ -86,16 +86,16 @@
 
 
   <!-- Carousel Start -->
-  <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container-fluid p-0">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="w-100" src="img/carousel-1.png" alt="Image">
+          <img class="w-100 wow fadeIn" src="img/carousel-1.png" alt="Image" data-wow-delay="0.5s">
           <div class="carousel-caption">
             <div class="text-center">
-              <div class="circle-bg">
-                <div class="text-container">
-                  <p class="display-1 text-white animated slideInDown">ふるさとダイレクトは<br>
+              <div class="circle-bg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="text-container wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                  <p class="display-1 text-white wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">ふるさとダイレクトは<br>
                     返礼品を通じたつながりだけではなく<br>
                     地域を理解し<br>
                     地域のファンになってもらい<br>
@@ -130,11 +130,13 @@
               <img class="img-fluid" src="img/service-1.jpg" alt="">
             </div>
             <div class="service-text rounded p-5 w-100">
-              <div class="btn-square rounded-circle mx-auto mb-3">
+              <div class="btn-square rounded-circle mx-auto">
                 <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">
               </div>
-              <h2 class="mb-3">手間が掛からない</h2>
-              <h4 class="mb-4">システム連携により<span class="tc">運用負荷</span>を<span class="tc">大幅削減</span></h4>
+              <h2>手間が掛からない</h2>
+              <h4>システム連携により<span class="tc">運用負荷</span>を<span class="tc">大幅削減</span></h4>
+              <h6>Furusato360と自動連携</h6>
+              <h6>※ふるさとdo他、一部APIの連携を現在開発中です。お気軽にお問い合わせ下さい。</h6>
             </div>
           </div>
         </div>
@@ -144,11 +146,12 @@
               <img class="img-fluid" src="img/service-2.jpg" alt="">
             </div>
             <div class="service-text rounded p-5 w-100">
-              <div class="btn-square rounded-circle mx-auto mb-3">
+              <div class="btn-square rounded-circle mx-auto">
                 <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
               </div>
-              <h2 class="mb-3">手数料が安い</h2>
-              <h4 class="mb-4"><span class="tc">トータルコスト</span>を<span class="tc">抑えられます</span></h4>
+              <h2>手数料が安い</h2>
+              <h4><span class="tc">導入コスト</span>は<span class="tc">掛かりません</span></h4>
+              <h6>初期費用無料</h6>
             </div>
           </div>
         </div>
@@ -158,11 +161,12 @@
               <img class="img-fluid" src="img/service-3.jpg" alt="">
             </div>
             <div class="service-text rounded p-5 w-100">
-              <div class="btn-square rounded-circle mx-auto mb-3">
+              <div class="btn-square rounded-circle mx-auto">
                 <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
               </div>
-              <h2 class="mb-3">自治体独自情報発信</h2>
-              <h4 class="mb-4"><span class="tc"></span>情報</span>を<span class="tc">一元化</span>した自治体独自のプラットフォーム</h4>
+              <h2>自治体独自情報発信</h2>
+              <h4><span class="tc"></span>情報</span>を<span class="tc">一元化</span>した自治体独自のプラットフォーム</h4>
+              <h6>地域の魅力を自治体から発信。寄附者の共感を引き出します。</h6>
             </div>
           </div>
         </div>
@@ -172,11 +176,12 @@
               <img class="img-fluid" src="img/service-4.jpg" alt="">
             </div>
             <div class="service-text rounded p-5 w-100">
-              <div class="btn-square rounded-circle mx-auto mb-3">
+              <div class="btn-square rounded-circle mx-auto">
                 <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
               </div>
-              <h2 class="mb-3">寄附者情報の活用</h2>
-              <h4 class="mb-4">的確なアプローチで<span class="tc">ユーザー満足度</span>を<span class="tc">向上</span></h4>
+              <h2>寄附者情報の活用</h2>
+              <h4>的確なアプローチで<span class="tc">ユーザー満足度</span>を<span class="tc">向上</span></h4>
+              <h6>属性を解析し、個別にダイレクトなプロモーションを実現します。</h6>
             </div>
           </div>
         </div>
@@ -195,14 +200,14 @@
         <h1 class="display-5 mb-3">デザイン・機能</h1>
       </div>
       <div class="row wow fadeInUp" data-wow-delay="0.1s">
-        <div class="col-12 text-center">
+        <div class="col-12">
           <ul class="list-inline rounded mb-5" id="portfolio-flters">
             <li class="mx-2 active" data-filter="*">All</li>
-            <li class="mx-2" data-filter=".ds1">操作しやすいデザイン</li>
-            <li class="mx-2" data-filter=".ds2">絞り込み/キーワード検索機能</li>
-            <li class="mx-2" data-filter=".ds3">カスタム可能な情報発信</li>
-            <li class="mx-2" data-filter=".ds4">ハブサイト</li>
-            <li class="mx-2" data-filter=".ds5">アクセス解析</li>
+            <li class="mx-2" data-filter=".ds1"><i class="fa-regular fa-hand-point-up"></i> 操作しやすいデザイン</li>
+            <li class="mx-2" data-filter=".ds2"><i class="fa-solid fa-magnifying-glass"></i> 絞り込み/キーワード検索機能</li>
+            <li class="mx-2" data-filter=".ds3"><i class="fa-solid fa-file-signature"></i> カスタム可能な情報発信</li>
+            <li class="mx-2" data-filter=".ds4"><i class="fas fa-sitemap"></i> ハブサイト</li>
+            <li class="mx-2" data-filter=".ds5"><i class="fa-solid fa-chart-line"></i> アクセス解析</li>
           </ul>
         </div>
       </div>
@@ -214,9 +219,9 @@
           <div class="portfolio-inner rounded">
             <img class="img-fluid" src="img/design-1.png" alt="">
             <div class="portfolio-text">
-              <h4 class="text-white mb-4">ポイント！</h4>
+              <h4 class="text-white mb-4">直感的なナビゲーション</h4>
               <div class="d-flex">
-                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-1.png" data-lightbox="portfolio"><i
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-1z.png" data-lightbox="portfolio"><i
                     class="fa fa-eye"></i></a>
               </div>
             </div>
@@ -227,9 +232,9 @@
           <div class="portfolio-inner rounded">
             <img class="img-fluid" src="img/design-2.png" alt="">
             <div class="portfolio-text">
-              <h4 class="text-white mb-4">ポイント！</h4>
+              <h4 class="text-white mb-4">わかりやすいメニュー導線</h4>
               <div class="d-flex">
-                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-2.png" data-lightbox="portfolio"><i
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-2z.png" data-lightbox="portfolio"><i
                     class="fa fa-eye"></i></a>
               </div>
             </div>
@@ -242,9 +247,9 @@
           <div class="portfolio-inner rounded">
             <img class="img-fluid" src="img/design-3.png" alt="">
             <div class="portfolio-text">
-              <h4 class="text-white mb-4">ポイント！</h4>
+              <h4 class="text-white mb-4">フレキシブルな範囲検索機能</h4>
               <div class="d-flex">
-                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-3.png" data-lightbox="portfolio"><i
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-3z.png" data-lightbox="portfolio"><i
                     class="fa fa-eye"></i></a>
               </div>
             </div>
@@ -255,9 +260,9 @@
           <div class="portfolio-inner rounded">
             <img class="img-fluid" src="img/design-4.png" alt="">
             <div class="portfolio-text">
-              <h4 class="text-white mb-4">ポイント！</h4>
+              <h4 class="text-white mb-4">高速で正確な検索結果</h4>
               <div class="d-flex">
-                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-4.png" data-lightbox="portfolio"><i
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-4z.png" data-lightbox="portfolio"><i
                     class="fa fa-eye"></i></a>
               </div>
             </div>
@@ -268,9 +273,9 @@
           <div class="portfolio-inner rounded">
             <img class="img-fluid" src="img/design-5.png" alt="">
             <div class="portfolio-text">
-              <h4 class="text-white mb-4">ポイント！</h4>
+              <h4 class="text-white mb-4">カテゴリの絞り込み検索機能</h4>
               <div class="d-flex">
-                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-5.png" data-lightbox="portfolio"><i
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-5z.png" data-lightbox="portfolio"><i
                     class="fa fa-eye"></i></a>
               </div>
             </div>
@@ -320,20 +325,7 @@
 
 
 
-        <div class="col-lg-9 col-md-9 portfolio-item ds4 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="portfolio-inner rounded">
-            <img class="img-fluid" src="img/design-10.png" alt="">
-            <div class="portfolio-text">
-              <h4 class="text-white mb-4">各返礼品からポータルサイトへ</h4>
-              <div class="d-flex">
-                <a class="btn btn-lg-square rounded-circle mx-2" href="img/design-10.png" data-lightbox="portfolio"><i
-                    class="fa fa-eye"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 portfolio-item ds4 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-lg-12 portfolio-item ds4 wow fadeInUp" data-wow-delay="0.1s">
           <div class="portfolio-inner rounded">
             <img class="img-fluid" src="img/design-9.png" alt="">
             <div class="portfolio-text">
@@ -345,7 +337,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-lg-12 portfolio-item ds5 wow fadeInLeft" data-wow-delay="0.1s">
           <div class="portfolio-inner rounded">
@@ -383,42 +374,42 @@
 
         <div class="horizontal-timeline">
 
-          <ul class="list-inline items wow fadeInLeft" data-wow-delay="0.5s">
-            <li class="list-inline-item items-list wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="px-4">
+          <ul class="list-inline items wow" data-wow-delay="0.5s">
+            <li class="list-inline-item items-list" data-wow-delay="0.3s">
+              <div>
                 <div class="event-date">1</div>
                 <h4>ご提案</h4>
               </div>
             </li>
-            <li class="list-inline-item items-list wow fadeInLeft" data-wow-delay="0.5s">
-              <div class="px-4">
+            <li class="list-inline-item items-list" data-wow-delay="0.5s">
+              <div>
                 <div class="event-date">2</div>
                 <h4>コンテンツ戦略と設計</h4>
               </div>
             </li>
-            <li class="list-inline-item items-list wow fadeInLeft" data-wow-delay="0.7s">
-              <div class="px-4">
+            <li class="list-inline-item items-list" data-wow-delay="0.7s">
+              <div>
                 <div class="event-date">3</div>
                 <h4>サイト制作開始</h4>
                 <h5>N月</h5>
               </div>
             </li>
-            <li class="list-inline-item items-list wow fadeInLeft" data-wow-delay="0.9s">
-              <div class="px-4">
+            <li class="list-inline-item items-list" data-wow-delay="0.9s">
+              <div>
                 <div class="event-date">4</div>
                 <h4>返礼品データ・コンテンツ導入</h4>
                 <h5>N月+1月</h5>
               </div>
             </li>
-            <li class="list-inline-item items-list wow fadeInLeft" data-wow-delay="1.1s">
-              <div class="px-4">
+            <li class="list-inline-item items-list" data-wow-delay="1.1s">
+              <div>
                 <div class="event-date">5</div>
                 <h4>テスト・デバック</h4>
                 <h5>N月+2月</h5>
               </div>
             </li>
-            <li class="list-inline-item items-list wow fadeInLeft" data-wow-delay="1.5s">
-              <div class="px-4">
+            <li class="list-inline-item items-list" data-wow-delay="1.5s">
+              <div>
                 <div class="event-date">6</div>
                 <h4>サイト公開</h4>
                 <h5>N月+3月</h5>
@@ -488,52 +479,44 @@
             <div class="owl-carousel testimonial-carousel">
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t1.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t1s.png" alt="">
             <h4>返礼品詳細</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t2.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t2s.png" alt="">
             <h4>お申込手続き</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t3.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t3s.png" alt="">
             <h4>お気に入り一覧</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t4.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t4s.png" alt="">
             <h4>ふるさと納税の仕組み</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t5.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t5s.png" alt="">
             <h4>地域紹介</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t6.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t6s.png" alt="">
             <h4>地域情報</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t7.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t7s.png" alt="">
             <h4>地産品紹介</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
           <div class="testimonial-item">
-            <img class="img-fluid rounded mb-3" src="img/t8.png" alt="">
+            <img class="img-fluid rounded mb-3" src="img/t8s.png" alt="">
             <h4>観光地紹介</h4>
-            <p class="mb-4">ページ説明文ページ説明文ページ説明文ページ説明文ページ説明文</p>
           </div>
 
 
@@ -705,6 +688,7 @@
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/035b8225b0.js" crossorigin="anonymous"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
@@ -713,8 +697,6 @@
   <script src="lib/parallax/parallax.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>

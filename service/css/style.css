@@ -203,7 +203,7 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-caption .circle-bg p {
+.carousel-caption p {
   font-size: 44px;
   font-weight: bold;
   line-height: 1.4;
@@ -223,7 +223,7 @@ p {
     min-width: 360px;
   }
 
-  .carousel-caption .circle-bg p {
+  .carousel-caption p {
     font-size: 16px;
     font-weight: bold;
     line-height: 1.6;
@@ -333,12 +333,14 @@ p {
 
 .service-item .service-text h2,
 .service-item .service-text h4,
+.service-item .service-text h6,
 .service-item .service-text p {
   transition: .3;
 }
 
 .service-item:hover .service-text h2,
 .service-item:hover .service-text h4,
+.service-item:hover .service-text h6,
 .service-item:hover .service-text .tc {
   color: #FFFFFF;
 }
@@ -378,9 +380,11 @@ p {
 /*** Project Portfolio ***/
 
 #portfolio-flters {
-  display: inline-block;
   background: var(--light);
+  /*display: inline-block;*/
   padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #portfolio-flters li {
@@ -392,6 +396,20 @@ p {
   border-bottom: 2px solid transparent;
   font-size: 1.2rem;
 }
+@media (max-width: 768px) {
+  #portfolio-flters {
+    display: initial;
+  }
+  #portfolio-flters li {
+    display: flex;
+    align-items: center;
+  }
+  #portfolio-flters li svg{
+    padding-right: 10px;
+    margin: 0;
+  }
+}
+
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
@@ -484,7 +502,7 @@ p {
   vertical-align: top;
   position: relative;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 120px;
   margin-right: 0;
 }
 
@@ -517,7 +535,7 @@ p {
   padding-top: 3rem;
 }
 
-.horizontal-timeline .px-4 h5 {
+.horizontal-timeline h5 {
   color: #cc2518;
   font-weight: bold;
 }
@@ -652,6 +670,10 @@ li.list-group-item .rtxt {
 .testimonial-item {
   padding: 0 10px 0 0;
   margin: 10px 10px 0;
+}
+.testimonial-item h4,
+.testimonial-item p{
+  text-align: center;
 }
 
 .testimonial-item img {

@@ -87,6 +87,19 @@
         }
     });
 
+    //  timeline
+        window.addEventListener('DOMContentLoaded', function () {
+            const isMobile = window.matchMedia('(max-width: 767px)').matches;
+    
+            const listItems = document.querySelectorAll('.list-inline-item');
+            listItems.forEach((item, index) => {
+                const delay = 0.3 + index * 0.2; // オプション：適切な遅延を設定する
+                const animationClass = isMobile ? 'fadeInUp' : 'fadeInLeft';
+                item.classList.add('wow', animationClass);
+                item.dataset.wowDelay = delay + 's';
+            });
+        });
+
 
 })(jQuery);
 
