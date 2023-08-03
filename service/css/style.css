@@ -1,4 +1,13 @@
 /********** Template CSS **********/
+body{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+main{
+  flex: 1;
+}
+
 :root {
   --primary: #CC2518;
   --secondary: #525368;
@@ -286,7 +295,7 @@ p {
 }
 
 
-/*** Service ***/
+/*** Benefits ***/
 .service-item {
   position: relative;
   text-align: center;
@@ -377,7 +386,7 @@ p {
   width: 112px;
 }
 
-/*** Project Portfolio ***/
+/*** Design・Features ***/
 
 #portfolio-flters {
   background: var(--light);
@@ -396,15 +405,18 @@ p {
   border-bottom: 2px solid transparent;
   font-size: 1.2rem;
 }
+
 @media (max-width: 768px) {
   #portfolio-flters {
     display: initial;
   }
+
   #portfolio-flters li {
     display: flex;
     align-items: center;
   }
-  #portfolio-flters li svg{
+
+  #portfolio-flters li svg {
     padding-right: 10px;
     margin: 0;
   }
@@ -485,7 +497,6 @@ p {
   text-align: center;
 }
 
-/* ページ読み込み時とAllが選択された時のみ余白追加 */
 .portfolio-item:not(:last-child):not(.active),
 .portfolio-item.active[data-filter="*"] {
   margin-bottom: 100px;
@@ -558,9 +569,7 @@ p {
 }
 
 
-
-
-/*** Team ***/
+/*** Plan ***/
 .team-item {
   position: relative;
   overflow: hidden;
@@ -619,7 +628,7 @@ p {
 .list-group-item {
   display: flex;
   padding: 20px;
-  
+
 }
 
 li.list-group-item .rttl {
@@ -651,7 +660,7 @@ li.list-group-item .rtxt {
   }
 }
 
-/*** Testimonial ***/
+/*** History ***/
 .ih-head {
   display: flex;
   align-items: center;
@@ -671,8 +680,9 @@ li.list-group-item .rtxt {
   padding: 0 10px 0 0;
   margin: 10px 10px 0;
 }
+
 .testimonial-item h4,
-.testimonial-item p{
+.testimonial-item p {
   text-align: center;
 }
 
@@ -728,7 +738,7 @@ li.list-group-item .rtxt {
   }
 }
 
-/*** Quote ***/
+/*** Contact ***/
 .bg-light {
   background-color: rgb(204, 37, 24, 0.1) !important;
 }
@@ -869,31 +879,6 @@ span.wpcf7-not-valid-tip,
 
 
 /*** Footer ***/
-.footer .btn.btn-link {
-  display: block;
-  margin-bottom: 5px;
-  padding: 0;
-  text-align: left;
-  color: var(--light);
-  font-weight: normal;
-  text-transform: capitalize;
-  transition: .3s;
-}
-
-.footer .btn.btn-link::before {
-  position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-
-.footer .btn.btn-link:hover {
-  color: var(--primary);
-  letter-spacing: 1px;
-  box-shadow: none;
-}
-
 .copyright {
   color: var(--light);
   background: var(--dark);
