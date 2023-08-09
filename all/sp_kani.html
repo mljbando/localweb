@@ -48,89 +48,119 @@
   {#author :MLJ start #}
   {% block stylesheet %}
   <style>
-.container {
-  position: relative;
-}
+    .sp_kani_bg {
+      background-color: rgb(109, 156, 0, 0.2);
+      margin-bottom: 50px;
+      padding: 50px 0;
+    }
 
-.kani_title {
-  text-align: center;
-  position: absolute;
-  top: 0;
-  margin-top: 1rem; /* Adjust this value as needed to position the title properly */
-}
-
-    .sp_cate {
+    /*sp_catehead-------------*/
+    .sp_catehead {
       display: flex;
       justify-content: center;
-      text-align: center;
-    }
-    
-    @media screen and (max-width:768px) {
-      .sp_cate {
-        display: initial;
-      }
     }
 
-    .kani_cate {
+    .thumbnail {
       position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
     }
 
-    .kani_cate li {
-      width: 24%;
-      padding: 0.5rem;
-    }
-
-    .kani_cate li a {
-      display: block;
-    }
-
-    .kani_cate li a figure {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-
-    .kani_cate li a:hover figure::before {
-      opacity: 0;
-    }
-
-    .kani_cate li a figure::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      display: block;
-      width: 100%;
-      height: 100%;
-      content: "";
+    a.thumbnail:hover {
+      opacity: 0.8;
       transition: opacity 0.3s;
     }
 
-    .kani_cate li a h4 {
+    .thumbnail h4 {
       position: absolute;
-      top: 50%;
       left: 50%;
+      top: 50%;
       transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      padding: 5px;
       color: #fff;
-      font-weight: bold;
-      z-index: 2;
-      font-size: 2.4rem;
       width: 100%;
       text-align: center;
+      font-size: 2.5rem;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+      font-weight: bold;
     }
 
-    @media screen and (max-width: 768px) {
-      .info .kani_cate li {
-        margin-top: 5vw;
+    .c_til {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    /*sp_kani_read-------------*/
+    .sp_kani_read .card {
+      border-radius: 12px;
+      position: relative;
+      box-shadow: 0px 0px 15px -7px rgb(0 0 0 / 60%);
+    }
+
+    .sp_kani_read .card-header {
+      font-size: 2rem;
+      font-weight: bold;
+      background-color: #6d9c00;
+      height: 5rem;
+      border-radius: 12px 12px 0 0;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sp_kani_read .card-body {
+      padding: 2rem;
+    }
+
+    .sp_kani_read p.kani_read {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    .sp_kani_read_pic {
+      padding: 2rem;
+    }
+
+    .sp_kani_btn {
+      color: #fff;
+      width: 90%;
+      border: 1px solid #00B0F0;
+      background: #00B0F0;
+      border-radius: 12px;
+      padding: 12px 0;
+      text-align: center;
+      display: block;
+      font-size: 2rem;
+      margin: auto;
+      text-decoration: underline;
+    }
+
+
+    @media screen and (max-width:768px) {
+      .sp_catehead {
+        margin-top: 20px;
       }
 
-      .kani_cate li a figure {
-        border-radius: 8px;
+      .c_til {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
       }
+
+      .thumbnail h4 {
+        font-size: 1rem;
+        line-height: initial;
+      }
+
+      .sp_kani_bg {
+        margin-bottom: 10px;
+        padding: 10px 0;
+      }
+
     }
   </style>
   {% endblock %}
@@ -139,70 +169,904 @@
 
   {% block main %}
 
-  <main id="about">
-    <div class="container">
-      <img src="./img/lp_kani01.png" class="img">
+  <main id="">
+
+
+    <div class="container sp_kani_toppic">
+      <img src="./img/lp_kani01.jpg" class="img">
     </div>
 
-    <div class="container">
-      <div class="row">
 
-        <div class="sp_cate col-lg-12">
+    <div class="container-fluid sp_kani_bg">
 
+      <div class="container">
 
- 
+        <div class="row justify-content-center">
 
-          <ul class="kani_cate col-12 col-lg-5">
-            <div class="kani_title">カニの種類で選ぶ</div>
-            <li><a href="https://mombetsu.furusato-direct.jp/about">
-                <figure><img src="./img/lp_kani_cate1.png">
+          <div class="row sp_catehead col-lg-5">
+            <div class="c_til">カニの種類で選ぶ</div>
+            <div class="col-3">
+              <a href="#" class="thumbnail">
+                <div class="image text-center">
+                  <img src="./img/lp_kani_cate1.png" />
                   <h4>毛ガニ</h4>
-                </figure>
-              </a></li>
-            <li><a href="https://mombetsu.furusato-direct.jp/about">
-                <figure><img src="./img/lp_kani_cate2.png">
-                  <h4>毛ガニ</h4>
-                </figure>
-              </a></li>
-            <li><a href="https://mombetsu.furusato-direct.jp/about">
-                <figure><img src="./img/lp_kani_cate3.png">
-                  <h4>毛ガニ</h4>
-                </figure>
-              </a></li>
-            <li><a href="https://mombetsu.furusato-direct.jp/about">
-                <figure><img src="./img/lp_kani_cate4.png">
-                  <h4>毛ガニ</h4>
-                </figure>
-              </a></li>
-          </ul>
+                </div>
+              </a>
+            </div>
 
+            <div class="col-3">
+              <a href="#" class="thumbnail">
+                <div class="image">
+                  <img src="./img/lp_kani_cate2.png" />
+                  <h4>ズワイガニ</h4>
+                </div>
+              </a>
+            </div>
 
+            <div class="col-3">
+              <a href="#" class="thumbnail">
+                <div class="image">
+                  <img src="./img/lp_kani_cate3.png" />
+                  <h4>タラバガニ</h4>
+                </div>
+              </a>
+            </div>
 
-          <ul class="kani_cate col-12 col-lg-5">
-            <div class="kani_title">食べ方で選ぶ</div>
-            <li><a href="https://mombetsu.furusato-direct.jp/about">
-                <figure><img src="./img/lp_kani_cate5.png">
-                  <h4>毛ガニ</h4>
-                </figure>
-              </a></li>
-            <li><a href="https://mombetsu.furusato-direct.jp/about">
-                <figure><img src="./img/lp_kani_cate6.png">
-                  <h4>毛ガニ</h4>
-                </figure>
-              </a></li>
-            <li><a href="https://mombetsu.furusato-direct.jp/about">
-                <figure><img src="./img/lp_kani_cate7.png">
-                  <h4>毛ガニ</h4>
-                </figure>
-              </a></li>
-          </ul>
+            <div class="col-3">
+              <a href="#" class="thumbnail">
+                <div class="image">
+                  <img src="./img/lp_kani_cate4.png" />
+                  <h4>セット</h4>
+                </div>
+              </a>
+            </div>
+          </div>
 
+          <div class="row sp_catehead col-lg-5">
+            <div class="c_til">食べ方で選ぶ</div>
+            <div class="col-3">
+              <a href="#" class="thumbnail">
+                <div class="image">
+                  <img src="./img/lp_kani_cate5.png" />
+                  <h4>鍋<div>しゃぶしゃぶ</div>
+                  </h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-3">
+              <a href="#" class="thumbnail">
+                <div class="image">
+                  <img src="./img/lp_kani_cate6.png" />
+                  <h4>甲羅盛り</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-3">
+              <a href="#" class="thumbnail">
+                <div class="image">
+                  <img src="./img/lp_kani_cate7.png" />
+                  <h4>お惣菜</h4>
+                </div>
+              </a>
+            </div>
+          </div>
 
         </div>
 
       </div>
+
     </div>
 
+
+
+
+    <div class="container">
+      <div class="sp_kani_read mb-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-header">“カニ”のまち、オホーツク紋別</div>
+              <div class="card-body">
+                <p class="kani_read">北海道紋別市（ほっかいどうもんべつし）は、オホーツク海に面した、北海道の中でも有数の“豊かな漁場のまち”
+                  として知られ、特にカニの一大産地として全国的に有名な“カニのまち”
+                  です。<br><br>
+                  寒流が流れ海水温が低いオホーツク海はミネラルが多く、栄養豊富なプランクトンの生息地で、そのプランクトンを食べて育った海産物は、どれも味わい豊かな極上の海産物ばかり！！<br><br>
+                  そんなオホーツクの恵みをたっぷり受けて育った 、オホーツク紋別が誇る自慢の“極上のカニ”をご紹介します。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="sp_kani_read_pic">
+              <img src="./img/lp_kani02.png" class="img">
+            </div>
+            <a class="sp_kani_btn" href="https://mombetsu.furusato-direct.jp/about/" role="button">＞＞オホーツク紋別をもっと知る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="top">
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">ピックアップ<span>迷ったときはこれで決まり！担当者がおすすめするイチオシのお礼の品</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="903">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/903">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2043558.jpg"
+                    alt="28-11 【厳選部位のみ】本ズワイガニしゃぶしゃぶ(たっぷり1kg)≪消費者応援！寄附金額改訂！≫" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2043558.jpg"
+                      alt="28-11 【厳選部位のみ】本ズワイガニしゃぶしゃぶ(たっぷり1kg)≪消費者応援！寄附金額改訂！≫" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>28,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">28-11 【厳選部位のみ】本ズワイガニしゃぶしゃぶ(たっぷり1kg)≪消費者応援！寄附金額改訂！≫</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1500">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1500">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1655266.jpg"
+                    alt="10-417 北海道産毛ガニ　500～650g×1杯" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1655266.jpg"
+                      alt="10-417 北海道産毛ガニ　500～650g×1杯" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-417 北海道産毛ガニ　500～650g×1杯</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="643">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/643">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/506859.jpg"
+                    alt="20-209 毛がに甲羅盛（2個）【殻剥き不要！毛ガニの美味しいところだけをイイとこどり】" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/506859.jpg"
+                      alt="20-209 毛がに甲羅盛（2個）【殻剥き不要！毛ガニの美味しいところだけをイイとこどり】" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>20,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">20-209 毛がに甲羅盛（2個）【殻剥き不要！毛ガニの美味しいところだけをイイとこどり】</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1389">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1389">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg"
+                    alt="10-393 ボイルずわいがに姿約570ｇ～650ｇ" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg"
+                      alt="10-393 ボイルずわいがに姿約570ｇ～650ｇ" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-393 ボイルずわいがに姿約570ｇ～650ｇ</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="935">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/935">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/860985.jpg"
+                    alt="26-5 【北海道紋別産】プレミアム本ずわい甲羅盛り(特盛) 2個 【かにみそまで完全無添加】【化粧箱入り】(かに ずわいがに 高品質) " loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/860985.jpg"
+                      alt="26-5 【北海道紋別産】プレミアム本ずわい甲羅盛り(特盛) 2個 【かにみそまで完全無添加】【化粧箱入り】(かに ずわいがに 高品質) " loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>26,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">26-5 【北海道紋別産】プレミアム本ずわい甲羅盛り(特盛) 2個 【かにみそまで完全無添加】【化粧箱入り】(かに ずわいがに 高品質) </p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="648">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/648">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/516556.jpg"
+                    alt="22-34 生冷ずわいがに鍋セット" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/516556.jpg"
+                      alt="22-34 生冷ずわいがに鍋セット" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>22,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">22-34 生冷ずわいがに鍋セット</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1538">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1538">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1702906.jpg"
+                    alt="30-84 ボイルタラバガニ片脚800g" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1702906.jpg"
+                      alt="30-84 ボイルタラバガニ片脚800g" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>30,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">30-84 ボイルタラバガニ片脚800g</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1675">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1675">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2026618.jpg"
+                    alt="10-468 特大かにしゅうまい(6個入)×3ｐ" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2026618.jpg"
+                      alt="10-468 特大かにしゅうまい(6個入)×3ｐ" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-468 特大かにしゅうまい(6個入)×3ｐ</p>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">カニの種類で選ぶ</p>
+            <p class="toptitle">毛ガニ<span>芳醇なカニ味噌としっとりとした身質は極上の味わい。</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1500">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1500">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1655266.jpg"
+                    alt="10-417 北海道産毛ガニ　500～650g×1杯" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1655266.jpg"
+                      alt="10-417 北海道産毛ガニ　500～650g×1杯" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-417 北海道産毛ガニ　500～650g×1杯</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1721">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1721">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2056513.jpg"
+                    alt="36-14 流氷明け浜ゆで毛ガニ　特大2杯" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2056513.jpg"
+                      alt="36-14 流氷明け浜ゆで毛ガニ　特大2杯" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>36,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">36-14 流氷明け浜ゆで毛ガニ　特大2杯</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1524">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1524">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1670544.jpg"
+                    alt="25-38 【北海道紋別産】毛がに姿 2尾計約800g　【無添加】 (かに 毛がに 高品質) " loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1670544.jpg"
+                      alt="25-38 【北海道紋別産】毛がに姿 2尾計約800g　【無添加】 (かに 毛がに 高品質) " loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>25,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">25-38 【北海道紋別産】毛がに姿 2尾計約800g　【無添加】 (かに 毛がに 高品質) </p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="916">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/916">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/811023.jpg"
+                    alt="45-6 流氷明け浜ゆで毛ガニ約400g×5尾" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/811023.jpg"
+                      alt="45-6 流氷明け浜ゆで毛ガニ約400g×5尾" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>45,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">45-6 流氷明け浜ゆで毛ガニ約400g×5尾</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">ズワイガニ<span>活のまま水揚げ後にボイル加工。高鮮度で身入り抜群！</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1389">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1389">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg"
+                    alt="10-393 ボイルずわいがに姿約570ｇ～650ｇ" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg"
+                      alt="10-393 ボイルずわいがに姿約570ｇ～650ｇ" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-393 ボイルずわいがに姿約570ｇ～650ｇ</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1497">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1497">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1635325.jpg"
+                    alt="18-32 本ずわいがに姿 大型サイズ2杯" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1635325.jpg"
+                      alt="18-32 本ずわいがに姿 大型サイズ2杯" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>18,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">18-32 本ずわいがに姿 大型サイズ2杯</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1067">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1067">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1000330.jpg"
+                    alt="10-328 ボイルずわいがに姿切り1kg" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1000330.jpg"
+                      alt="10-328 ボイルずわいがに姿切り1kg" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-328 ボイルずわいがに姿切り1kg</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1555">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1555">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1783906.jpg"
+                    alt="20-218 【特大4L～5L】ボイル本ずわいがに肩脚　4～5肩(約1.5kg)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1783906.jpg"
+                      alt="20-218 【特大4L～5L】ボイル本ずわいがに肩脚　4～5肩(約1.5kg)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>20,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">20-218 【特大4L～5L】ボイル本ずわいがに肩脚　4～5肩(約1.5kg)</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1146">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1146">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096365.jpg"
+                    alt="18-24 【北海道紋別産】ずわいがにカット 約400g (無添加 かに ずわいがに 高品質) " loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096365.jpg"
+                      alt="18-24 【北海道紋別産】ずわいがにカット 約400g (無添加 かに ずわいがに 高品質) " loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>18,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">18-24 【北海道紋別産】ずわいがにカット 約400g (無添加 かに ずわいがに 高品質) </p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1318">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1318">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1290903.jpg"
+                    alt="16-18 【北海道紋別産】ずわいがに爪 400g (無添加 かに ずわいがに 高品質) " loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1290903.jpg"
+                      alt="16-18 【北海道紋別産】ずわいがに爪 400g (無添加 かに ずわいがに 高品質) " loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>16,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">16-18 【北海道紋別産】ずわいがに爪 400g (無添加 かに ずわいがに 高品質) </p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="932">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/932">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/860977.jpg"
+                    alt="18-20 【北海道紋別産】ずわいがに かにみそ55g 2本　【無添加】 (かに ずわいがに 高品質) " loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/860977.jpg"
+                      alt="18-20 【北海道紋別産】ずわいがに かにみそ55g 2本　【無添加】 (かに ずわいがに 高品質) " loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>18,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">18-20 【北海道紋別産】ずわいがに かにみそ55g 2本　【無添加】 (かに ずわいがに 高品質) </p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="904">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/904">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2043549.jpg"
+                    alt="14-45 お刺身用 本ズワイガニしゃぶしゃぶセット500g≪消費者応援！寄附金額改訂！≫" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2043549.jpg"
+                      alt="14-45 お刺身用 本ズワイガニしゃぶしゃぶセット500g≪消費者応援！寄附金額改訂！≫" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>14,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">14-45 お刺身用 本ズワイガニしゃぶしゃぶセット500g≪消費者応援！寄附金額改訂！≫</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">タラバガニ<span>身入りが良く、甘くてジューシーな味わい、食べ応え抜群！！</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1538">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1538">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1702906.jpg"
+                    alt="30-84 ボイルタラバガニ片脚800g" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1702906.jpg"
+                      alt="30-84 ボイルタラバガニ片脚800g" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>30,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">30-84 ボイルタラバガニ片脚800g</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1471">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1471">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1587307.jpg"
+                    alt="105-9 ボイルタラバガニ片脚（5Ｌサイズ）3kg" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1587307.jpg"
+                      alt="105-9 ボイルタラバガニ片脚（5Ｌサイズ）3kg" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>105,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">105-9 ボイルタラバガニ片脚（5Ｌサイズ）3kg</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1161">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1161">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096408.jpg"
+                    alt="22-48 【北海道紋別産】たらばがにカット 約400g　(無添加 かに たらばがに 高品質)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096408.jpg"
+                      alt="22-48 【北海道紋別産】たらばがにカット 約400g　(無添加 かに たらばがに 高品質)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>22,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">22-48 【北海道紋別産】たらばがにカット 約400g　(無添加 かに たらばがに 高品質)</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1140">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1140">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096347.jpg"
+                    alt="44-10 【北海道紋別産】たらばがにカット 約800g　(無添加 かに たらばがに 高品質)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096347.jpg"
+                      alt="44-10 【北海道紋別産】たらばがにカット 約800g　(無添加 かに たらばがに 高品質)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>44,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">44-10 【北海道紋別産】たらばがにカット 約800g　(無添加 かに たらばがに 高品質)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">セット<span>三大がにを贅沢に楽しむなら、セットがおすすめ！</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1165">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1165">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096420.jpg"
+                    alt="92-2 【すべて紋別産】三大がに甲羅盛りセット　【たらばがに】【本ずわいがに】【毛がに】" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096420.jpg"
+                      alt="92-2 【すべて紋別産】三大がに甲羅盛りセット　【たらばがに】【本ずわいがに】【毛がに】" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>92,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">92-2 【すべて紋別産】三大がに甲羅盛りセット　【たらばがに】【本ずわいがに】【毛がに】</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1002">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1002">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/900119.jpg"
+                    alt="15-100 オール紋別産【豪華】三大がに海鮮セット　化粧箱入り　(北海道産　かに　たらばがに　毛がに　本ずわいがに)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/900119.jpg"
+                      alt="15-100 オール紋別産【豪華】三大がに海鮮セット　化粧箱入り　(北海道産　かに　たらばがに　毛がに　本ずわいがに)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>15,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">15-100 オール紋別産【豪華】三大がに海鮮セット　化粧箱入り　(北海道産　かに　たらばがに　毛がに　本ずわいがに)</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="542">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/542">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/482023.jpg"
+                    alt="60-14 【紋別産本ずわい・毛がに使用】プレミアム甲羅盛りセット (特盛／うに／いくら／毛がに)【化粧箱入り】　(北海道産　高品質)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/482023.jpg"
+                      alt="60-14 【紋別産本ずわい・毛がに使用】プレミアム甲羅盛りセット (特盛／うに／いくら／毛がに)【化粧箱入り】　(北海道産　高品質)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>60,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">60-14 【紋別産本ずわい・毛がに使用】プレミアム甲羅盛りセット (特盛／うに／いくら／毛がに)【化粧箱入り】　(北海道産　高品質)</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1260">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1260">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1157784.jpg"
+                    alt="40-105 【北海道紋別産】ずわいがに・たらばがにカット 各約400g　(無添加　かに　ずわいがに　たらばかに　高品質)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1157784.jpg"
+                      alt="40-105 【北海道紋別産】ずわいがに・たらばがにカット 各約400g　(無添加　かに　ずわいがに　たらばかに　高品質)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>40,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">40-105 【北海道紋別産】ずわいがに・たらばがにカット 各約400g　(無添加　かに　ずわいがに　たらばかに　高品質)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">食べ方で選ぶ</p>
+            <p class="toptitle">鍋・しゃぶしゃぶ<span>芳醇なカニ味噌としっとりとした身質は極上の味わい。</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="903">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/903">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2043558.jpg"
+                    alt="28-11 【厳選部位のみ】本ズワイガニしゃぶしゃぶ(たっぷり1kg)≪消費者応援！寄附金額改訂！≫" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2043558.jpg"
+                      alt="28-11 【厳選部位のみ】本ズワイガニしゃぶしゃぶ(たっぷり1kg)≪消費者応援！寄附金額改訂！≫" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>28,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">28-11 【厳選部位のみ】本ズワイガニしゃぶしゃぶ(たっぷり1kg)≪消費者応援！寄附金額改訂！≫</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1332">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1332">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1304064.jpg"
+                    alt="35-22 【紋別産本ずわいがに使用】ずわいがにしゃぶしゃぶ 600g ( かに ずわいがに 　高品質) " loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1304064.jpg"
+                      alt="35-22 【紋別産本ずわいがに使用】ずわいがにしゃぶしゃぶ 600g ( かに ずわいがに 　高品質) " loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>35,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">35-22 【紋別産本ずわいがに使用】ずわいがにしゃぶしゃぶ 600g ( かに ずわいがに 　高品質) </p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="648">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/648">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/516556.jpg"
+                    alt="22-34 生冷ずわいがに鍋セット" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/516556.jpg"
+                      alt="22-34 生冷ずわいがに鍋セット" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>22,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">22-34 生冷ずわいがに鍋セット</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1499">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1499">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1655261.jpg"
+                    alt="14-25 手間なし！極上生ずわいがにセット約900g(カット済み)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1655261.jpg"
+                      alt="14-25 手間なし！極上生ずわいがにセット約900g(カット済み)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>14,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">14-25 手間なし！極上生ずわいがにセット約900g(カット済み)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">甲羅盛り<span>三大がにを贅沢に楽しむなら、セットがおすすめ！</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="643">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/643">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/506859.jpg"
+                    alt="20-209 毛がに甲羅盛（2個）【殻剥き不要！毛ガニの美味しいところだけをイイとこどり】" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/506859.jpg"
+                      alt="20-209 毛がに甲羅盛（2個）【殻剥き不要！毛ガニの美味しいところだけをイイとこどり】" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>20,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">20-209 毛がに甲羅盛（2個）【殻剥き不要！毛ガニの美味しいところだけをイイとこどり】</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="935">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/935">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/860985.jpg"
+                    alt="26-5 【北海道紋別産】プレミアム本ずわい甲羅盛り(特盛) 2個 【かにみそまで完全無添加】【化粧箱入り】(かに ずわいがに 高品質) " loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/860985.jpg"
+                      alt="26-5 【北海道紋別産】プレミアム本ずわい甲羅盛り(特盛) 2個 【かにみそまで完全無添加】【化粧箱入り】(かに ずわいがに 高品質) " loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>26,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">26-5 【北海道紋別産】プレミアム本ずわい甲羅盛り(特盛) 2個 【かにみそまで完全無添加】【化粧箱入り】(かに ずわいがに 高品質) </p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1154">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1154">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096397.jpg"
+                    alt="60-36 【北海道紋別産】たらばがに一杯盛り 600g　【お祝い事や自分へのご褒美にも】" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1096397.jpg"
+                      alt="60-36 【北海道紋別産】たらばがに一杯盛り 600g　【お祝い事や自分へのご褒美にも】" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>60,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">60-36 【北海道紋別産】たらばがに一杯盛り 600g　【お祝い事や自分へのご褒美にも】</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1672">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1672">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2026609.jpg"
+                    alt="10-467 紅ずわいがに甲羅盛り(100ｇ×5個)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2026609.jpg"
+                      alt="10-467 紅ずわいがに甲羅盛り(100ｇ×5個)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-467 紅ずわいがに甲羅盛り(100ｇ×5個)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="container">
+        <section class="recomm">
+          <div>
+            <p class="toptitle">お惣菜<span>三大がにを贅沢に楽しむなら、セットがおすすめ！</span></p>
+          </div>
+          <ul class="p-box">
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1675">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/1675">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2026618.jpg"
+                    alt="10-468 特大かにしゅうまい(6個入)×3ｐ" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/2026618.jpg"
+                      alt="10-468 特大かにしゅうまい(6個入)×3ｐ" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-468 特大かにしゅうまい(6個入)×3ｐ</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="231">
+    <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/231">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480964.jpg"
+                    alt="15-9 【紋別産本ずわいがに使用】ずわいがにグラタン 4個　(北海道産　かに　お惣菜　グルメ　海鮮)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480964.jpg"
+                      alt="15-9 【紋別産本ずわいがに使用】ずわいがにグラタン 4個　(北海道産　かに　お惣菜　グルメ　海鮮)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>15,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">15-9 【紋別産本ずわいがに使用】ずわいがにグラタン 4個　(北海道産　かに　お惣菜　グルメ　海鮮)</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="433">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/433">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/481614.jpg"
+                    alt="10-186 【紋別産たらばがに使用】　たらばがにグラタン　(北海道産　国産)" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/481614.jpg"
+                      alt="10-186 【紋別産たらばがに使用】　たらばがにグラタン　(北海道産　国産)" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-186 【紋別産たらばがに使用】　たらばがにグラタン　(北海道産　国産)</p>
+              </a>
+            </li>
+            <li class="reclist">
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="588">
+  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+</button>-->
+              <a href="https://mombetsu.furusato-direct.jp/products/detail/588">
+                <div class="mask">
+                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/482128.jpg"
+                    alt="10-228 本ずわいかにめし(3食セット)≪レンジ調理≫" loading="lazy">
+                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/482128.jpg"
+                      alt="10-228 本ずわいかにめし(3食セット)≪レンジ調理≫" loading="lazy"></div>
+                  <div class="price">
+                    <p>寄付金額<span>10,000</span>円</p>
+                  </div>
+                </div>
+                <p class="product_name">10-228 本ずわいかにめし(3食セット)≪レンジ調理≫</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+
+
+
+    </div>
 
   </main>
 
