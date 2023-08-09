@@ -389,6 +389,16 @@ breakpoints: {
 }
 });
 
+/**
+* Swiper sw_topbnr
+*/
+new Swiper('.sw_topbnr', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 
 
 /*
@@ -514,17 +524,17 @@ window.addEventListener('load', ()=>{
         //var pos = $('main').offset();        //Get the height of the main tag beyond mv and store it in the variable [pos]
         //if ($(this).scrollTop() > pos.top) { //If scrolled from the variable [pos] 
         if (window.pageYOffset > 250) {//スクロールタイミング
-          $('header').slideDown(400);//.fadeIn
+          $('header-cate').slideDown(400);//.fadeIn
         } else {
-          $('header').slideUp(400);//.fadeOut
+          $('header-cate').slideUp(400);//.fadeOut
         }
       }); 
      
  } else {
      /*ヘッダー分mainの高さ調整*/
-    hsize = $('header').outerHeight();//ヘッダーの高さを取得
+    hsize = $('header-cate').outerHeight();//ヘッダーの高さを取得
     $("main").css("padding-top", hsize + "px");//取得したヘッダーの高さ分追加指定
-    document.querySelector('header').style.display = 'block';
+    document.querySelector('header-cate').style.display = 'block';
 
  }
 
