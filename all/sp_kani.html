@@ -83,7 +83,6 @@
 
     .box-line {
       position: relative;
-      /*margin-top: 3em;*/
       padding: 1vw;
       border: solid 2px #000;
       border-radius: 12px;
@@ -126,6 +125,7 @@
       color: #000;
       font-weight: bold;
     }
+
     .sp_kani_btn {
       color: #fff;
       width: 100%;
@@ -139,57 +139,152 @@
       margin-top: 1rem;
       text-decoration: underline;
     }
+
     p.kani_read {
       font-size: 2rem;
       line-height: 3rem;
     }
+
+    .kani_title {
+      font-weight: bold;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      margin-bottom: 2rem;
+    }
+
     .sp_kani_read_pic {
       padding: 0rem 5rem 0rem;
     }
 
-    /*sp_kani_read-------------
-    .sp_kani_read .card {
-      border-radius: 12px;
+    .arrow_box {
       position: relative;
-      box-shadow: 0px 0px 15px -7px rgb(0 0 0 / 60%);
-    }
-
-    .sp_kani_read .card-header {
-      font-size: 2rem;
-      font-weight: bold;
-      background-color: #6d9c00;
-      height: 5rem;
-      border-radius: 12px 12px 0 0;
+      display: inline-block;
+      margin: 2rem 0;
+      padding: 1.5rem 3rem;
+      min-width: 120px;
+      max-width: 100%;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+      background: rgb(172, 108, 40);
+      border-radius: 12px;
+      background: linear-gradient(90deg, rgba(172, 108, 40, 1) 0%, rgba(203, 155, 14, 1) 50%, rgba(172, 108, 40, 1) 100%);
     }
 
-    .sp_kani_read .card-body {
-      padding: 2rem;
+    .arrow_box:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      border: 10px solid transparent;
+      border-top: 10px solid rgba(203, 155, 14, 1);
     }
 
-    .sp_kani_read p.kani_read {
-      font-size: 2rem;
-      line-height: 3rem;
+    .arrow_boxw {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      padding: 1rem 3rem;
+      min-width: 120px;
+      max-width: 100%;
+      color: #000;
+      font-size: 3rem;
+      font-weight: bold;
+      background: #FFF;
+      border: solid 3px #000;
+      box-sizing: border-box;
+      border-radius: 12px;
     }
 
-    .sp_kani_read_pic {
-      padding: 2rem;
+    .arrow_boxw:before {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      left: 50%;
+      margin-left: -15px;
+      border: 12px solid transparent;
+      border-top: 12px solid #FFF;
+      z-index: 2;
     }
-*/
- 
 
+    .arrow_boxw:after {
+      content: "";
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      margin-left: -17px;
+      border: 14px solid transparent;
+      border-top: 14px solid #000;
+      z-index: 1;
+    }
+
+    .arrow_box p,
+    .arrow_boxw p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .subread {
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 1.5em;
+      text-decoration: underline;
+      margin-left: 2rem;
+    }
 
     @media screen and (max-width:768px) {
+
+      .box-line .box-title,
+      .box-line2 .box-title {
+        left: initial;
+        font-size: 2rem;
+      }
+
+      p.kani_read {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 1rem 0;
+      }
+
+      .sp_kani_read_pic {
+        padding: initial;
+      }
+
+      .sp_kani_btn {
+        font-size: 1.8rem;
+      }
+
+      .arrow_box,
+      .arrow_boxw {
+        display: block;
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .subread {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        margin-left: initial;
+      }
+
+      .arrow_boxw {
+        margin-bottom: 2rem;
+      }
+
+      .kani_title {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 1rem 0;
+      }
+
       .sp_catehead {
         margin-top: 20px;
       }
 
       .thumbnail h4 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: initial;
       }
 
@@ -295,61 +390,30 @@
         <div class="col-lg-5">
           <div class="box-line2 h-100">
             <div class="box-title">“カニ”のまち、オホーツク紋別</div>
-            <p class="kani_read">北海道紋別市（ほっかいどうもんべつし）は、オホーツク海に面した、北海道の中でも有数の“豊かな漁場のまち”
-              として知られ、特にカニの一大産地として全国的に有名な“カニのまち”
+            <p class="kani_read">北海道紋別市（ほっかいどうもんべつし）は、オホーツク海に面した、北海道の中でも有数の“豊かな漁場のまち” として知られ、特にカニの一大産地として全国的に有名な“カニのまち”
               です。<br><br>
-              寒流が流れ海水温が低いオホーツク海はミネラルが多く、栄養豊富なプランクトンの生息地で、そのプランクトンを食べて育った海産物は、どれも味わい豊かな極上の海産物ばかり！！<br><br>
+              寒流が流れ、海水温が低いオホーツク海はミネラルが多く、栄養豊富なプランクトンの生息地で、そのプランクトンを食べて育った海産物はどれも味わい豊かな極上の海産物ばかりです。<br><br>
               そんなオホーツクの恵みをたっぷり受けて育った 、オホーツク紋別が誇る自慢の“極上のカニ”をご紹介します。
             </p>
           </div>
         </div>
         <div class="col-lg-4 py-5">
           <div class="sp_kani_read_pic">
-            <img src="./img/lp_kani02.png" class="img">
+            <img src="./img/lp_kani02.png" class="img-fluid">
             <a class="sp_kani_btn" href="https://mombetsu.furusato-direct.jp/about/" role="button">＞＞オホーツク紋別をもっと知る</a>
           </div>
         </div>
       </div>
     </div>
-
-
-    <!--
-
-    <div class="container">
-      <div class="sp_kani_read mb-lg-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="card h-100">
-              <div class="card-header">“カニ”のまち、オホーツク紋別</div>
-              <div class="card-body">
-                <p class="kani_read">北海道紋別市（ほっかいどうもんべつし）は、オホーツク海に面した、北海道の中でも有数の“豊かな漁場のまち”
-                  として知られ、特にカニの一大産地として全国的に有名な“カニのまち”
-                  です。<br><br>
-                  寒流が流れ海水温が低いオホーツク海はミネラルが多く、栄養豊富なプランクトンの生息地で、そのプランクトンを食べて育った海産物は、どれも味わい豊かな極上の海産物ばかり！！<br><br>
-                  そんなオホーツクの恵みをたっぷり受けて育った 、オホーツク紋別が誇る自慢の“極上のカニ”をご紹介します。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="sp_kani_read_pic">
-              <img src="./img/lp_kani02.png" class="img">
-            </div>
-            <a class="sp_kani_btn" href="https://mombetsu.furusato-direct.jp/about/" role="button">＞＞オホーツク紋別をもっと知る</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
--->
-
 
     <div id="top">
 
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">ピックアップ<span>迷ったときはこれで決まり！担当者がおすすめするイチオシのお礼の品</span></p>
+            <div class="arrow_box">
+              <p>ピックアップ</p>
+            </div><span class="subread">迷ったときはこれで決まり！担当者がおすすめするイチオシのお礼の品</span>
           </div>
           <ul class="p-box">
             <li class="reclist">
@@ -498,9 +562,28 @@
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">カニの種類で選ぶ</p>
-            <p class="toptitle">毛ガニ<span>芳醇なカニ味噌としっとりとした身質は極上の味わい。</span></p>
+            <div class="arrow_box">
+              <p>カニの種類で選ぶ</p>
+            </div>
           </div>
+          <div>
+            <div class="arrow_boxw">
+              <p>毛ガニ</p>
+            </div><span class="subread">芳醇なカニ味噌としっとりとした身質は極上の味わい。</span>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6 py-lg-5">
+              <img src="./img/lp_kani_cate1t.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="kani_title">身はぷりぷり！濃厚な旨味を堪能しよう。</div>
+              <p class="kani_read">
+                流氷下に生息するプランクトンを餌にし栄養を蓄え、オホーツクの極寒で育つため身の締まった毛ガニとなります。<br><br>ミソと身入りが良い堅ガニを厳選し、活きた状態で浜ゆでしているので鮮度抜群です。
+              </p>
+            </div>
+          </div>
+
           <ul class="p-box">
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1500">
@@ -578,8 +661,23 @@
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">ズワイガニ<span>活のまま水揚げ後にボイル加工。高鮮度で身入り抜群！</span></p>
+            <div class="arrow_boxw">
+              <p>ズワイガニ</p>
+            </div><span class="subread">贅沢な味わい！オホーツクの恵みが凝縮された逸品。</span>
           </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6 py-lg-5">
+              <img src="./img/lp_kani_cate2t.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="kani_title">カニの聖地、オホーツクで獲れた高鮮度のズワイガニ。</div>
+              <p class="kani_read">
+                オホーツク近海で漁獲されたずわいがにを活のまま水揚げ後に直ぐ選別しボイル加工。<br><br>高鮮度で身入りバツグン！カニ味噌も十分に楽しめます。<br><br>濃厚なかにミソは剥き身と和えて食べるとより一層美味しく召し上がれます。
+              </p>
+            </div>
+          </div>
+
           <ul class="p-box">
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1389">
@@ -725,8 +823,23 @@
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">タラバガニ<span>身入りが良く、甘くてジューシーな味わい、食べ応え抜群！！</span></p>
+            <div class="arrow_boxw">
+              <p>タラバガニ</p>
+            </div><span class="subread">海の幸の極み！高鮮度で身入りが良くプリプリの食感。</span>
           </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6 py-lg-5">
+              <img src="./img/lp_kani_cate3t.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="kani_title">甘くてジューシーな味わい。身入りが良く食べ応え抜群！！</div>
+              <p class="kani_read">
+                ミネラルとプランクトンを多く含む冷たく広大なロシア海域で漁獲されたたらばがにを、漁獲後直ぐに熟練加工員が厳しい目利きで選別し丁寧に切足を製造し急速凍結しました。<br><br>そのまま解凍して豪快にかぶりついても良し、贅沢にお鍋や天ぷら、フライでも美味しく召し上がれます。
+              </p>
+            </div>
+          </div>
+
           <ul class="p-box">
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1538">
@@ -803,8 +916,23 @@
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">セット<span>三大がにを贅沢に楽しむなら、セットがおすすめ！</span></p>
+            <div class="arrow_boxw">
+              <p>カニのセット</p>
+            </div><span class="subread">海の恵み、贅沢なカニのセットで至福のひとときを。</span>
           </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6 py-lg-5">
+              <img src="./img/lp_kani_cateh4.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="kani_title">三大カニの味わいを存分に堪能したい方はセットがおススメ！</div>
+              <p class="kani_read">
+                上品な味わいの毛がに、かにの王様たらばがに、かにの女王ずわいがに。三大ガニそれぞの味わいを贅沢に楽しむならセットがおすすめ。<br><br>オホーツクで育った極上のカニを存分にお楽しみください。
+              </p>
+            </div>
+          </div>
+
           <ul class="p-box">
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1165">
@@ -882,9 +1010,28 @@
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">食べ方で選ぶ</p>
-            <p class="toptitle">鍋・しゃぶしゃぶ<span>芳醇なカニ味噌としっとりとした身質は極上の味わい。</span></p>
+            <div class="arrow_box">
+              <p>食べ方で選ぶ</p>
+            </div>
           </div>
+          <div>
+            <div class="arrow_boxw">
+              <p>鍋・しゃぶしゃぶ</p>
+            </div><span class="subread">鍋やしゃぶしゃぶでオホーツクの味覚を楽しむ。</span>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6 py-lg-5">
+              <img src="./img/lp_kani_cateh5.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="kani_title">カニの風味を楽しむなら、鍋やしゃぶしゃぶがおすすめ。</div>
+              <p class="kani_read">新鮮なカニと旬の野菜で“カニ鍋”
+                を楽しんだり、シンプルながらも贅沢な味わいが楽しめる”カニのしゃぶしゃぶ”を楽しんだり。友人や家族と特別で贅沢な時間を楽しむなら、鍋やしゃぶしゃぶがおすすめ！
+              </p>
+            </div>
+          </div>
+
           <ul class="p-box">
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="903">
@@ -962,8 +1109,23 @@
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">甲羅盛り<span>三大がにを贅沢に楽しむなら、セットがおすすめ！</span></p>
+            <div class="arrow_boxw">
+              <p>甲羅盛り</p>
+            </div><span class="subread">職人技が鮮度の決め手。“美味しい”を詰め込んだ極上の逸品。</span>
           </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6 py-lg-5">
+              <img src="./img/lp_kani_cateh6.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="kani_title">豪華な海の玉手箱。カニ本来の美味しさを楽しむ。</div>
+              <p class="kani_read">
+                丁寧に手でほぐし、カニの美味しいところだけを贅沢に盛り付けた「甲羅盛り」。鮮度を落とさないよう、職人が手作業で素早くさばき、急速凍結しています。かに本来のおいしさを余すところなく楽しめる見た目も豪華な逸品です。
+              </p>
+            </div>
+          </div>
+
           <ul class="p-box">
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="643">
@@ -1042,8 +1204,23 @@
       <div class="container">
         <section class="recomm">
           <div>
-            <p class="toptitle">お惣菜<span>三大がにを贅沢に楽しむなら、セットがおすすめ！</span></p>
+            <div class="arrow_boxw">
+              <p>お惣菜</p>
+            </div><span class="subread">食卓を彩るバリエーション豊かな“カニのお惣菜”。</span>
           </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6 py-lg-5">
+              <img src="./img/lp_kani_cateh7.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="kani_title">オホーツクの味覚を手軽に楽しめるお惣菜。</div>
+              <p class="kani_read">
+                新鮮なカニをふんだんに使った多彩な“カニのお惣菜”は、いつもの食卓をちょっと特別な食卓へとしてくれます。<br><br>オホーツクの恵みを気軽に楽しめる、オホーツクの新鮮なカニを使用したお惣菜をお楽しみください。
+              </p>
+            </div>
+          </div>
+
           <ul class="p-box">
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1675">
