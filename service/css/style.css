@@ -645,7 +645,7 @@ li.list-group-item .rtxt {
   font-weight: bold;
   text-align: center;
   color: var(--dark);
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 @media (max-width: 768px) {

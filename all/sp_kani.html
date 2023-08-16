@@ -37,9 +37,9 @@
 
 
 
-  {% extends 'default_frame.twig' %}
+  <!--{% extends 'default_frame.twig' %}
   {#author :MLJ start #}
-  {% block stylesheet %}
+  {% block stylesheet %}-->
   <style>
     html{
       scroll-padding-top: 50px;
@@ -148,7 +148,9 @@
       line-height: 3rem;
       margin-bottom: 2rem;
     }
-
+.sp_kani_toppic{
+  margin-top: 68px;
+}
     .sp_kani_read_pic {
       padding: 0rem 5rem 0rem;
     }
@@ -232,6 +234,9 @@
 
     @media screen and (max-width:768px) {
 
+      .sp_kani_toppic{
+      margin-top: 60px;
+     }
       .box-line .box-title,
       .box-line2 .box-title {
         left: initial;
@@ -241,7 +246,7 @@
       p.kani_read {
         font-size: 1.5rem;
         line-height: 2rem;
-        padding: 1rem 0;
+        padding: 1rem .5rem;
       }
 
       .sp_kani_read_pic {
@@ -292,11 +297,9 @@
 
     }
   </style>
-  {% endblock %}
+<!--  {% endblock %}
   {#author :MLJ end #}
-
-
-  {% block main %}
+  {% block main %}-->
 
   <main id="about">
 
@@ -1299,7 +1302,7 @@
 
   </main>
 
-  {% endblock %}
+  <!--{% endblock %}-->
 
   <a class="totopfade" href="{{ url('homepage') }}"><img src="./img/totop.png"></a>
   <footer>
