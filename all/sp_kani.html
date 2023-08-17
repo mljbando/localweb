@@ -75,12 +75,40 @@
       /*background: rgba(255, 255, 255, 0.4);*/
     }
 
-    .cateimg {
+    .box-line .cateimg {
       padding: .3rem;
+    }
+
+    .box-line2 .cateimg {
+      padding: .4rem;
+    }
+
+    .box-line3 .cateimg {
+      padding: .8rem;
     }
 
     .box-line {
       position: relative;
+      padding: 1vw;
+      border: solid 2px #000;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .box-line2 {
+      position: relative;
+      /*margin-top: 3em;*/
+      padding: 1vw;
+      border: solid 2px #000;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .box-line3 {
+      position: relative;
+      /*margin-top: 3em;*/
       padding: 1vw;
       border: solid 2px #000;
       border-radius: 12px;
@@ -101,16 +129,6 @@
       font-weight: bold;
     }
 
-    .box-line2 {
-      position: relative;
-      /*margin-top: 3em;*/
-      padding: 1vw;
-      border: solid 2px #000;
-      border-radius: 12px;
-      display: flex;
-      justify-content: center;
-    }
-
     .box-line2 .box-title {
       position: absolute;
       display: inline-block;
@@ -122,6 +140,27 @@
       background: #FFF;
       color: #000;
       font-weight: bold;
+    }
+
+    .box-line3 .box-title {
+      position: absolute;
+      display: inline-block;
+      top: -18px;
+      left: 30px;
+      padding: 0 9px;
+      line-height: 1;
+      font-size: 2.5rem;
+      background: #FFF;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .centered-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
     }
 
     .sp_kani_btn {
@@ -156,6 +195,7 @@
 
     .sp_kani_read_pic {
       padding: 0rem 5rem 0rem;
+      text-align: center;
     }
 
     .arrow_box {
@@ -242,7 +282,8 @@
       }
 
       .box-line .box-title,
-      .box-line2 .box-title {
+      .box-line2 .box-title,
+      .box-line3 .box-title {
         left: initial;
         font-size: 2rem;
       }
@@ -299,6 +340,27 @@
         padding: 10px 0;
       }
 
+      .box-line2 .cateimg {
+        padding: .3rem;
+      }
+
+      .box-line3 .cateimg {
+        padding: 0 2rem;
+      }
+
+      .m_pic {
+        margin-top: 2rem;
+      }
+    }
+
+    @media screen and (min-width:1441px) and (max-width:3840px) {
+      .m_pic {
+        width: 60%;
+      }
+
+      .sp_kani_btn {
+        width: 80%;
+      }
     }
   </style>
   <!--  {% endblock %}
@@ -355,7 +417,7 @@
         </div>
 
         <div class="row sp_catehead col-lg-4">
-          <div class="box-line">
+          <div class="box-line2">
             <div class="box-title">食べ方で選ぶ</div>
             <div class="col-3 col-lg-4 p-lg-1">
               <a href="#kani5" class="thumbnail">
@@ -385,14 +447,31 @@
           </div>
         </div>
 
+        <div class="row sp_catehead col-6 col-sm-5 col-lg-2">
+          <div class="box-line3">
+            <div class="box-title">ピックアップ</div>
+            <div class="col-9">
+              <a href="#kani0" class="thumbnail">
+                <div class="cateimg mx-auto">
+                  <img src="./img/lp_kani_cate0.png" />
+                  <h4>イチオシ！
+                </div>
+                </h4>
+            </div>
+            </a>
+          </div>
+        </div>
+        
       </div>
+
+    </div>
     </div>
 
 
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center align-items-end">
         <div class="col-lg-5">
-          <div class="box-line2 h-100">
+          <div class="box-line2">
             <div class="box-title">“カニ”のまち、オホーツク紋別</div>
             <p class="kani_read">北海道紋別市（ほっかいどうもんべつし）は、オホーツク海に面した、北海道の中でも有数の“豊かな漁場のまち” として知られ、特にカニの一大産地として全国的に有名な“カニのまち”
               です。<br><br>
@@ -401,10 +480,12 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-4 py-5">
+        <div class="col-lg-4 col-md-6">
           <div class="sp_kani_read_pic">
-            <img src="./img/lp_kani02.png" class="img-fluid">
-            <a class="sp_kani_btn" href="https://mombetsu.furusato-direct.jp/about/" role="button">＞＞オホーツク紋別をもっと知る</a>
+            <div class="centered-content">
+              <img src="./img/lp_kani02.png" class="m_pic">
+              <a class="sp_kani_btn" href="https://mombetsu.furusato-direct.jp/about/" role="button">＞＞オホーツク紋別をもっと知る</a>
+            </div>
           </div>
         </div>
       </div>
@@ -412,7 +493,7 @@
 
     <div id="top">
 
-      <div class="container">
+      <div class="container" id="kani0">
         <section class="recomm">
           <div>
             <div class="arrow_box">
@@ -472,22 +553,18 @@
               </a>
             </li>
             <li class="reclist">
-              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="1389">
-  <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
-</button>-->
-              <a href="https://mombetsu.furusato-direct.jp/products/detail/1389">
-                <div class="mask">
-                  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg"
-                    alt="10-393 ボイルずわいがに姿約570ｇ～650ｇ" loading="lazy">
-                  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg"
-                      alt="10-393 ボイルずわいがに姿約570ｇ～650ｇ" loading="lazy"></div>
-                  <div class="price">
-                    <p>寄付金額<span>10,000</span>円</p>
-                  </div>
-                </div>
-                <p class="product_name">10-393 ボイルずわいがに姿約570ｇ～650ｇ</p>
-              </a>
-            </li>
+              <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="eWLg3OnPhFJv06CxsXv1sLLdl8D4PCJ6YBcguwu8AFo" data-method="post" data-product_id="1389">
+              <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+          </button>-->
+      <a href="https://mombetsu.furusato-direct.jp/products/detail/1389">
+  <div class="mask">
+  <img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg" alt="10-473 ボイルずわいがに姿2尾（計約1.1kg前後）" loading="lazy">
+  <div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445006.jpg" alt="10-473 ボイルずわいがに姿2尾（計約1.1kg前後）" loading="lazy"></div>
+  <div class="price"><p>寄付金額<span>10,000</span>円</p></div>
+  </div>
+  <p class="product_name">10-473 ボイルずわいがに姿2尾（計約1.1kg前後）</p>
+  </a>
+  </li>
             <li class="reclist">
               <!--<button id="favorite" class="favorite" url="https://mombetsu.furusato-direct.jp/plg_product_favorite/api/add" token-for-anchor="kbw_HIAtI7NVlVHkUKIZ1ZOnuC9EepS1MXaGHsBBzgk" data-method="post" data-product_id="935">
   <i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
