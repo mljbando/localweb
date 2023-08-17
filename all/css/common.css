@@ -3,7 +3,8 @@ html {font-size:62.5%;}
 header {width:100%;display:/*none*/block;position:fixed;top:0;left:0;box-sizing:border-box;}
 header-cate {width:100%;display:none;position:fixed;top:70px;left:0;box-sizing:border-box;}
 body {margin:0px;padding:0px;overflow:auto;background:#fff;box-sizing:border-box;line-height:1.5em;font-size:1.6em;font-family:'Noto Sans JP', serif;font-weight:400;color:#333;}
-main {width:100%;/*overflow:hidden;*/margin:auto;display:block;/*padding:0 0 100px;*/padding:0 0 30px;}
+main {width:100%;/*overflow:hidden;*/margin:auto;display:block;/*padding:0 0 100px;*/padding:0 0 30px;margin-top: 68px;}
+#top {margin-top: 0;}
 input {font-family:'Noto Sans JP', 'sans-serif';color:#333;cursor:text;width:100%;border:1px solid #878787;border-radius:8px;padding:10px;display:block;}
 ::placeholder {color:#878787;}
 a {cursor:pointer;transition:all 0.2s ease-in-out;}
@@ -386,7 +387,7 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
 @media screen and (min-width:769px) {
 .pc {display:block;}
   .sp {display:none;}
-  main {min-height:calc(100vh - 420px);}/*main {min-height:calc(100vh - 478px);}*/
+  main {min-height:calc(100vh - 420px);margin-top: 68px;}/*main {min-height:calc(100vh - 478px);}*/
   .container.small {max-width:760px;}
   .popup .M_categories li a {min-width:94px;}
   footer nav ul, footer .subnav {display:flex;flex-wrap:wrap;}
@@ -732,7 +733,7 @@ body {font-size:1.4rem;}
 /* ------ topani area ------- */
 .topani {width: 100%;overflow:hidden;position:relative;}
 @media screen and (min-width:769px) and (max-width:3840px) {
-.topani {min-height:80vh;}
+.topani {min-height:80vh;margin-top: 68px;}
 }
 @media screen and (max-width:768px) {
 .topani {min-height:/*70*/40vh;margin-top: 60px;}
