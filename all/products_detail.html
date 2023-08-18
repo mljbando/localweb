@@ -24,6 +24,18 @@
 	<link rel="stylesheet" property="stylesheet" href="./css/common.css" media="all">
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+.ec-layoutRole__contents {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+	</style>
 </head>
 
 <body>
@@ -32,7 +44,7 @@
 
 
 		<div class="container">
-			<a class="logo" href="./"><img src="./img/logo.png"><span>紋別市<br class="sp">ふるさと納税<br class="sp">特設サイト</span></a>
+			<a class="logo" href="./"><img src="./img/logo.png"><span>紋別市<br class="sp">ふるさと納税<br class="sp">総合サイト</span></a>
 			<nav>
 				<ul>
 					<li><a href="./about/"><span class="fi ti-location-pin"></span>
@@ -188,548 +200,464 @@
 
 	</header-cate>
 
+	<div class="ec-layoutRole__contents">
 
 
-	<div class="mv">
-
-		<div class="topani">
-			<div class="t-inner">
-				<ul class="t-slide">
-					<li class="t-slide_item">
-						<img class="t-slide_img" src="./img/animeslider1.jpg" loading="lazy" alt="" />
-					</li>
-					<li class="t-slide_item">
-						<img class="t-slide_img" src="./img/animeslider2.jpg" loading="lazy" alt="" />
-					</li>
-					<li class="t-slide_item">
-						<img class="t-slide_img" src="./img/animeslider3.jpg" loading="lazy" alt="" />
-					</li>
-					<li class="t-slide_item">
-						<img class="t-slide_img" src="./img/animeslider4.jpg" loading="lazy" alt="" />
-					</li>
-					<li class="t-slide_item">
-						<img class="t-slide_img" src="./img/animeslider5.jpg" loading="lazy" alt="" />
-					</li>
-					<li class="t-slide_item">
-						<img class="t-slide_img" src="./img/animeslider6.jpg" loading="lazy" alt="" />
-					</li>
-				</ul>
-				<div class="topa_heading">
-					<p class="topani_title">北海道紋別市</p>
-					<p class="topani_titles">オホーツクの自然とともに歩むまち</p>
-				</div>
-			</div>
-		</div>
-
-	</div>
+		<main id="gift" class="detail">
+			<div class="container">
 
 
-	<main id="top">
-		<div class="pt_plus"></div>
 
-		<div class="container">
+				<div class="floating_cart">
+					<style>
+						.floating_cart .form-group {
+							display: none;
+						}
+					</style>
 
-			<section class="intro">
-				<div class="pickup">
-					<a href="./news/detail.html">
-						<p class="date">2022.06.10</p>
-						<p class="text">本日、人気の返礼品が再入荷いたしました。柔らかな国産牛を使った数量100個の限定品となりますので、この機会にぜひご覧ください。</p>
-					</a>
+					<div class="addition">
+						<button
+							onclick="location.href='https://mombetsu.furusato-direct.jp/products/list?orderby=1'"><span>お礼の品一覧へ戻る</span></button>
+						<button onclick="location.href='https://mombetsu.furusato-direct.jp/cart'">寄付カートへ進む</button>
+					</div>
+
+					<form action="https://mombetsu.furusato-direct.jp/products/add_cart/141" method="post" id="form1"
+						name="form1">
+						<div class="default">
+							<p class="price">
+								寄付金額<span>14,000</span>円</p>
+
+							<button type="submit" class="add-cart go-cart">寄付カートに入れる</button>
+
+						</div>
+
+
+						<input type="hidden" id="product_id" name="product_id" value="141" /><input type="hidden" id="ProductClass"
+							name="ProductClass" value="141" />
+						<div class="form-group"><label for="quantity" class="required">Quantity</label><input type="number"
+								id="quantity" name="quantity" required="required" min="1" maxlength="9" class="form-control"
+								value="1" />
+						</div><input type="hidden" id="_token" name="_token" value="yTkmqrnoM0KOGQzZjqJkDUWU18DE2T_NeEHypgKDEG4" />
+
+					</form>
+
 				</div>
 
-			</section>
 
-		</div>
-
-		<div class="container">
-
-			<div class="col-12 d-lg-flex justify-content-center">
-				<div class="top-bnr col-lg-6 mb-4 px-lg-2 position-relative">
-					<img src="./img/bnr_sp_kani.png"><a href="sp_kani.html" class="stretched-link"></a>
-				</div>
-			</div>
-
-			<div class="col-12 d-lg-flex justify-content-center d-none d-md-block">
-				<div class="top-bnr col-lg-6 mb-4 px-lg-2 position-relative">
-					<img src="./img/bnr_sp_kani.png"><a href="sp_kani.html" class="stretched-link"></a>
-				</div>
-				<div class="top-bnr col-lg-6 mb-4 px-lg-2 position-relative">
-					<img src="./img/bnr_sp_kani.png"><a href="sp_kani.html" class="stretched-link"></a>
-				</div>
-			</div>
-
-			<div class="col-12 d-lg-flex justify-content-center d-none d-md-block">
-				<div class="top-bnr col-lg-4 mb-4 px-lg-2 position-relative">
-					<img src="./img/bnr_sp_kani.png"><a href="sp_kani.html" class="stretched-link"></a>
-				</div>
-				<div class="top-bnr col-lg-4 mb-4 px-lg-2 position-relative">
-					<img src="./img/bnr_sp_kani.png"><a href="sp_kani.html" class="stretched-link"></a>
-				</div>
-				<div class="top-bnr col-lg-4 mb-4 px-lg-2 position-relative">
-					<img src="./img/bnr_sp_kani.png"><a href="sp_kani.html" class="stretched-link"></a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="container d-md-none">
-
-			<div class="swiper sw_topbnr">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><a href="sp_kani.html"><img src="./img/bnr_sp_kani.png"></a></div>
-					<div class="swiper-slide"><a href="sp_kani.html"><img src="./img/bnr_sp_kani.png"></a></div>
-					<div class="swiper-slide"><a href="sp_kani.html"><img src="./img/bnr_sp_kani.png"></a></div>
-				</div>
-
-				<div class="bnr_pn mt-5">
-					<div class="swiper-pagination"></div>
-				</div>
-
-			</div>
-
-		</div>
+				<section class="sec1">
 
 
-		<div class="container">
-
-			<section class="recomm">
-				<p class="toptitle">お礼の品セレクト</p>
-
-				<ul class="p-box">
-					<li class="reclist"><a href="https://mombetsu.furusato-direct.jp/products/detail/141">
-							<div class="mask">
-								<div class="recomm-bg"><img src="./img/icon_recow01.png"></div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic"
-									src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480741.jpg">
-								<div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480741.jpg"></div>
-								<div class="price">
-									<p>寄付金額<span>14,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">14-22 オホーツク産ホタテ玉冷大(1kg)</p>
-						</a></li>
-					<li class="reclist"><a href="https://mombetsu.furusato-direct.jp/products/detail/686">
-							<div class="mask">
-								<div class="recomm-bg"><img src="./img/icon_recow01.png"></div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic"
-									src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/534400.jpg">
-								<div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/534400.jpg"></div>
-								<div class="price">
-									<p>寄付金額<span>13,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">13-37 【2023年6月以降発送】 【訳あり】帆立『まる特』フレーク1.2kg</p>
-						</a></li>
-					<li class="reclist"><a href="https://mombetsu.furusato-direct.jp/products/detail/1403">
-							<div class="mask">
-								<div class="recomm-bg"><img src="./img/icon_recow01.png"></div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic"
-									src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445088.jpg">
-								<div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/1445088.jpg"></div>
-								<div class="price">
-									<p>寄付金額<span>10,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">10-412 【数量限定】令和4年 訳あり 北海道ブレンド米20kg（5kg×4）</p>
-						</a></li>
-					<li class="reclist"><a href="https://mombetsu.furusato-direct.jp/products/detail/1023">
-							<div class="mask">
-								<div class="recomm-bg"><img src="./img/icon_recow01.png"></div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic"
-									src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/943983.jpg">
-								<div class="c-pic"><img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/943983.jpg"></div>
-								<div class="price">
-									<p>寄付金額<span>10,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">10-330 鱒いくら醤油漬け200g×2パック 合計400g</p>
-						</a></li>
-				</ul>
-
-			</section>
-
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-		<div class="container">
-
-			<section class="ranking">
-				<p class="toptitle">人気ランキング</p>
-				<ul class="p-box">
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">1</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/12-13_1.png">
-								<div class="c-pic"><img src="./img/gift/12-13_1.png"></div>
-								<div class="price">
-									<p>寄付金額<span>12,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">12-13 オホーツク産ホタテ玉冷大(1kg)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">2</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/18-22.png">
-								<div class="c-pic"><img src="./img/gift/18-22.png"></div>
-								<div class="price">
-									<p>寄付金額<span>18,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">18-22 大粒！冷凍帆立貝柱500ｇ×3</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">3</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/24-4_1.png">
-								<div class="c-pic"><img src="./img/gift/24-4_1.png"></div>
-								<div class="price">
-									<p>寄付金額<span>24,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">24-4 オホーツク産ホタテ玉冷大2kg</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">4</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/17-8.png">
-								<div class="c-pic"><img src="./img/gift/17-8.png"></div>
-								<div class="price">
-									<p>寄付金額<span>17,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">17-8 鱒いくら醤油漬け200g×4パック 合計800g</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">4</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/17-8.png">
-								<div class="c-pic"><img src="./img/gift/17-8.png"></div>
-								<div class="price">
-									<p>寄付金額<span>17,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">17-8 鱒いくら醤油漬け200g×4パック 合計800g</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">4</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/17-8.png">
-								<div class="c-pic"><img src="./img/gift/17-8.png"></div>
-								<div class="price">
-									<p>寄付金額<span>17,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">17-8 鱒いくら醤油漬け200g×4パック 合計800g</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">4</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/17-8.png">
-								<div class="c-pic"><img src="./img/gift/17-8.png"></div>
-								<div class="price">
-									<p>寄付金額<span>17,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">17-8 鱒いくら醤油漬け200g×4パック 合計800g</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask">
-								<div class="ranktag">4</div><button class="favorite"><i
-										class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/17-8.png">
-								<div class="c-pic"><img src="./img/gift/17-8.png"></div>
-								<div class="price">
-									<p>寄付金額<span>17,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">17-8 鱒いくら醤油漬け200g×4パック 合計800g</p>
-						</a></li>
-				</ul>
-
-				<div class="ac-open">
-					<ul class="p-box">
-						<li><a href="./gift/detail.html">
-								<div class="mask">
-									<div class="ranktag">5</div><button class="favorite"><i
-											class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/10-379.png">
-									<div class="c-pic"><img src="./img/gift/10-379.png"></div>
-									<div class="price">
-										<p>寄付金額<span>10,000</span>円</p>
+					<div class="Lside">
+						<div id="thum-slide" class="slider-pro">
+							<ul class="sp-thumbnails">
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480741.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480741.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
 									</div>
-								</div>
-								<p class="product_name">10-379 【訳あり】オホーツク海産ほたて干し貝柱300g（割れ欠け含）</p>
-							</a></li>
-						<li><a href="./gift/detail.html">
-								<div class="mask">
-									<div class="ranktag">6</div><button class="favorite"><i
-											class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/12-15.png">
-									<div class="c-pic"><img src="./img/gift/12-15.png"></div>
-									<div class="price">
-										<p>寄付金額<span>12,000</span>円</p>
+								</li>
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480742.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480742.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
 									</div>
-								</div>
-								<p class="product_name">12-15 乾燥帆立貝柱　200g</p>
-							</a></li>
-						<li><a href="./gift/detail.html">
-								<div class="mask">
-									<div class="ranktag">7</div><button class="favorite"><i
-											class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/10-233.png">
-									<div class="c-pic"><img src="./img/gift/10-233.png"></div>
-									<div class="price">
-										<p>寄付金額<span>10,000</span>円</p>
+								</li>
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480743.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480743.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
 									</div>
-								</div>
-								<p class="product_name">10-233 オホーツク産ホタテ玉冷中1.2kg(600g×2P)</p>
-							</a></li>
-						<li><a href="./gift/detail.html">
-								<div class="mask">
-									<div class="ranktag">8</div><button class="favorite"><i
-											class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/15-115.png">
-									<div class="c-pic"><img src="./img/gift/15-115.png"></div>
-									<div class="price">
-										<p>寄付金額<span>15,000</span>円</p>
+								</li>
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480744.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480744.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
 									</div>
-								</div>
-								<p class="product_name">15-115 オホーツク産ホタテ玉冷　特大(1kg)</p>
-							</a></li>
-						<li><a href="./gift/detail.html">
-								<div class="mask">
-									<div class="ranktag">9</div><button class="favorite"><i
-											class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/100-22.png">
-									<div class="c-pic"><img src="./img/gift/100-22.png"></div>
-									<div class="price">
-										<p>寄付金額<span>100,000</span>円</p>
+								</li>
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844341.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844341.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
 									</div>
-								</div>
-								<p class="product_name">100-22 お刺身用冷凍帆立貝柱(5kg)</p>
-							</a></li>
-						<li><a href="./gift/detail.html">
-								<div class="mask">
-									<div class="ranktag">10</div><button class="favorite"><i
-											class="fa-sharp fa-solid fa-heart"></i></button><img class="b-pic" src="./img/gift/11-55.png">
-									<div class="c-pic"><img src="./img/gift/11-55.png"></div>
-									<div class="price">
-										<p>寄付金額<span>11,000</span>円</p>
+								</li>
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844342.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844342.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
 									</div>
-								</div>
-								<p class="product_name">11-55 北海道オホーツク海産ほたて玉冷1kg</p>
-							</a></li>
-					</ul>
-				</div>
-				<a class="btn ac-btn"><span>もっと見る</span></a>
-			</section>
+								</li>
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844343.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844343.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
+									</div>
+								</li>
+								<li class="sp-thumbnail">
+									<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844344.jpg"
+										alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+									<div class="c-pic">
+										<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844344.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+											loading="lazy">
+									</div>
+								</li>
+							</ul>
+							<ul class="sp-slides">
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480741.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480741.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480742.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480742.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480743.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480743.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480744.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/480744.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844341.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844341.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844342.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844342.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844343.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844343.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+								<li class="sp-slide">
+									<div class="sp-image">
+										<img class="b-pic" src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844344.jpg"
+											alt="14-22 オホーツク産ホタテ玉冷大(1kg)" loading="lazy">
+										<div class="c-pic">
+											<img src="//d2xf9yvm8p5xm3.cloudfront.net/images/012190/844344.jpg" alt="14-22 オホーツク産ホタテ玉冷大(1kg)"
+												loading="lazy">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="marks">
+								<li class="icons">
+									<button class="share" onclick="showBalloon()">
+										<img src="./img/icon_share.png">
+									</button>
 
-		</div>
-		<!--/container-->
-		<div class="container">
-
-			<section class="newgift">
-				<h3>新着のお礼の品</h3>
-				<ul class="p-box">
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite red"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/260-2.png">
-								<div class="c-pic"><img src="./img/gift/260-2.png"></div>
-								<div class="price">
-									<p>寄付金額<span>260,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">260-2 プレミアム本ずわい甲羅盛り(特盛)　定期便(5回)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/300-8.png">
-								<div class="c-pic"><img src="./img/gift/300-8.png"></div>
-								<div class="price">
-									<p>寄付金額<span>300,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">300-8 プレミアム甲羅盛りセット　定期便(5回)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/47-3.png">
-								<div class="c-pic"><img src="./img/gift/47-3.png"></div>
-								<div class="price">
-									<p>寄付金額<span>47,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">47-3 cafe ほの香のケーキ定期便(4回)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/74-1.png">
-								<div class="c-pic"><img src="./img/gift/74-1.png"></div>
-								<div class="price">
-									<p>寄付金額<span>74,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">74-1 プレミアム本ずわい甲羅盛り　定期便(3回)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/74-1.png">
-								<div class="c-pic"><img src="./img/gift/74-1.png"></div>
-								<div class="price">
-									<p>寄付金額<span>74,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">74-1 プレミアム本ずわい甲羅盛り　定期便(3回)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/74-1.png">
-								<div class="c-pic"><img src="./img/gift/74-1.png"></div>
-								<div class="price">
-									<p>寄付金額<span>74,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">74-1 プレミアム本ずわい甲羅盛り　定期便(3回)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/74-1.png">
-								<div class="c-pic"><img src="./img/gift/74-1.png"></div>
-								<div class="price">
-									<p>寄付金額<span>74,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">74-1 プレミアム本ずわい甲羅盛り　定期便(3回)</p>
-						</a></li>
-					<li><a href="./gift/detail.html">
-							<div class="mask"><button class="favorite"><i class="fa-sharp fa-solid fa-heart"></i></button><img
-									class="b-pic" src="./img/gift/74-1.png">
-								<div class="c-pic"><img src="./img/gift/74-1.png"></div>
-								<div class="price">
-									<p>寄付金額<span>74,000</span>円</p>
-								</div>
-							</div>
-							<p class="product_name">74-1 プレミアム本ずわい甲羅盛り　定期便(3回)</p>
-						</a></li>
-
-				</ul>
-				<a class="btn" href="./gift/">お礼の品一覧</a>
-			</section>
-
-		</div>
-		<!--/container-->
-
-
-		<div class="container">
-
-			<section class="info">
-				<h3>セクションタイトル</h3>
-				<ul class="coverlink">
-					<li><a href="">
-							<figure><img src="./img/info_pic1.png">
-								<h4>紋別市の紹介</h4>
-							</figure>
-							<p>流氷と大地の恵みを活かし、人が輝き躍動するまち。紋別市の魅力を余すことなくご紹介いたします。</p>
-						</a></li>
-					<li><a href="">
-							<figure><img src="./img/info_pic2.png">
-								<h4>寄付の使い道</h4>
-							</figure>
-							<p>ふるさと納税の寄付の使い道をご紹介。皆さまからのご厚意が、紋別市の未来を築きます。</p>
-						</a></li>
-					<li><a href="">
-							<figure><img src="./img/info_pic4.png">
-								<h4>事業者の紹介</h4>
-							</figure>
-							<p>お礼の品を提供している紋別市を盛り上げるべく奮闘している事業者の皆さまをご紹介いたします。</p>
-						</a></li>
-					<li><a href="">
-							<figure><img src="./img/info_pic4.png">
-								<h4>事業者の紹介</h4>
-							</figure>
-							<p>お礼の品を提供している紋別市を盛り上げるべく奮闘している事業者の皆さまをご紹介いたします。</p>
-						</a></li>
-				</ul>
-
-			</section>
-		</div>
-
-
-
-
-		<section id="greeting">
-			<div class="greeting">
-				<div class="contents">
-
-					<h3>首長からのご挨拶</h3>
-
-					<div class="col-12 mx-auto">
-						<div class="row p-5">
-							<div class="col-xl-4">
-								<img class="img-fluid mb-4 mb-xl-0" src="./img/mayor_mombetsu.jpg" loading="lazy">
-							</div>
-							<div class="col-xl-8">
-
-								<p>ふるさと納税制度へのご協力をお願いします</p>
-								<p>海や山や川そして流氷は、すべての人々にとってかけがえのない大切な自然です。</p>
-								<p>紋別市は、青く澄み渡るオホーツク海、緑あふれる山々、広大な牧草地帯など美しい自然に囲まれ、そのオホーツクの海や豊かな大地からの贈りもの、新鮮で安全な海の幸・山の幸に恵まれています。</p>
-								<p>そして、そこには多くの産業の営みと自然と調和したオホーツクの暮らしがあります。</p>
-								<p>しかし、地球温暖化の影響なのか、このところオホーツクの流氷は年々減少化傾向にあり、海洋環境や動植物への影響が心配されているほか、オホーツク海屈指の漁業や観光などへの影響も危惧されているところです。
-								</p>
-								<p>「オホーツクの流氷と自然」は、私たち紋別市民にとって大切なかけがえのない財産であるとともに、北海道、日本の環境保全のためにも守り残していかなければならない財産です。</p>
-								<p>そこで本市では、多くの人々から「寄附金」という応援をいただきながら、環境保全の取り組みや地域の活性化のために、このたび、『オホーツクの流氷と自然を守る寄附条例』を制定しました。</p>
-								<p>
-									「紋別に行ったことがある」「昔、紋別に住んでいた」「紋別が好きだ」など、本市とゆかりのある方々、あるいは、現在市内に住んでいる方々に、是非、本市の取り組みに賛同していただけるよう、皆さまの応援を心からお待ちしておりますのでよろしくお願いします。
-								</p>
-								<p class="signe-mayor">令和4年1月1日<br>宮川　良一</p>
-
-							</div>
+									<button class="favorite" onclick="addFavoriteProduct(141)">
+										<i class="fa-sharp fa-solid fa-heart" style="color: gray;"></i>
+									</button>
+								</li>
+							</ul>
 						</div>
 					</div>
 
+
+					<div class="Rside">
+						<div class="part">
+							<h3 class="product">14-22 オホーツク産ホタテ玉冷大(1kg)</h3>
+							<p>お刺身・フライ・バター焼き・ホタテマリネ等さまざまな料理に使用出来ます。<br />
+								オホーツク産のホタテは、北海道内でも稚貝（一年貝）を放流してから4年間流氷や水温の低い荒波の中で逞しく育つ為、養殖とは、まったく違い旨味が凝縮されており食感も良いと言われております。<br />
+								大粒で食べ応え抜群！ドドーンとたっぷり1kg<br />
+								パッケージがチャック付きの袋に改良されたので、保存が便利になりました！<br />
+								<br />
+								【2022年10月1日より、寄附額を改定させていただきました。】<br />
+								　数年続いておりました原材料の高騰や諸経費の値上がりに対し、企業努力を重ねてまいりましたが、今後も皆さまに返礼品を提供させていただくために、誠に不本意ではございますが、寄附金額を改定させていただくことになりました。<br />
+								　寄附金額が上がってしまいますが、皆さまのご期待を裏切らないよう、精進いたします。何卒ご理解のほどお願い申し上げますとともに、変わらぬご愛顧をお願い申し上げます。
+							</p>
+						</div>
+
+
+
+						<div class="part">
+							<h3>お礼の品詳細</h3>
+
+							<dl class="category">
+								<dt>カテゴリー</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="https://mombetsu.furusato-direct.jp/products/list?category_id=3">
+												<span>魚貝類</span>
+											</a> <span>＞</span>
+											<a href="https://mombetsu.furusato-direct.jp/products/list?category_id=62">
+												<span>アワビ・ホタテ・他</span>
+											</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>内容量</dt>
+								<dd>
+									<p>大玉サイズ 1kg<br />
+										【原産地】オホーツク産<br />
+										【加工・製造地】紋別市</p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>アレルギー表示</dt>
+								<dd>なし </dd>
+							</dl>
+
+							<dl>
+								<dt>消費期限/賞味期限</dt>
+								<dd>発送日より1年</dd>
+							</dl>
+
+							<dl>
+								<dt>事業者名</dt>
+								<dd>
+									<p class="Fbold">(株)本間水産</p>
+									<a class="others" href="https://mombetsu.furusato-direct.jp/products/list?operator_name=(株)本間水産">
+										他のお礼の品を見る
+									</a>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>管理ID</dt>
+								<dd>14-22</dd>
+							</dl>
+						</div>
+
+						<div class="part">
+							<h3>お申し込みについて</h3>
+							<dl>
+								<dt>申込条件</dt>
+								<dd>何度も申し込み可</dd>
+							</dl>
+							<dl>
+								<dt>申込期日</dt>
+								<dd>通年</dd>
+							</dl>
+							<dl>
+								<dt>発送期日</dt>
+								<dd>入金確認後順次～最長1カ月半程度(着日・着曜日指定不可)
+									※お申込状況によっては発送までにお時間がかかる場合があります。</dd>
+							</dl>
+							<dl>
+								<dt>配送方法</dt>
+								<dd>冷凍配送</dd>
+							</dl>
+						</div>
+
+						<div class="part">
+							<h3>ふるさと納税の手続きについて</h3>
+							<p>ふるさと納税は、現在居住地の自治体に対して支払っている住民税を、自分が応援したい自治体に『寄付』という形で振替納税が出来る制度です。<br>
+								自治体への寄付金は、2,000円を超える額について、個人の年収に伴った控除額の上限内で納税が受けられます。</p>
+							<a class="btn-re" href="/guide">もっと詳しく</a>
+						</div>
+
+
+
+
+					</div>
+
+
+				</section>
+
+
+				<div id="kifu_bnrs">
+					<div class="part">
+						<h3>ポータルサイトから寄付する</h3>
+
+						<ul class="kifu_bnrs">
+
+							<li>
+								<a id="bnr_choice" href="https://www.furusato-tax.jp/city/product/01219/0" target="_blank">
+									<img src="./img/bnr/kifu_choice.png" alt="ふるさとチョイス">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_ana" href="https://furusato.ana.co.jp/01219/" target="_blank">
+									<img src="./img/bnr/kifu_ana.png" alt="ANAのふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_satofull"
+									href="https://h.accesstrade.net/sp/cc?rk=0100kid000har3&amp;url=https%3A%2F%2Fwww.satofull.jp%2Fcity-mombetsu-hokkaido%2F"
+									target="_blank">
+									<img src="./img/bnr/kifu_satofull.png" alt="さとふる">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_rakuten"
+									href="https://hb.afl.rakuten.co.jp/hgc/2e287241.d9aa9d80.2e287242.8baf850c/?pc=http%3A%2F%2Fwww.rakuten.co.jp%2Ff012190-mombetsu%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJoeWJyaWRfdXJsIiwiY29sIjoxLCJjYXQiOiIxIiwiYmFuIjoiMTYzOTY1MSIsImFtcCI6ZmFsc2V9"
+									target="_blank">
+									<img src="./img/bnr/kifu_rakuten.png" alt="楽天ふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_nippon" href="https://furusato-nippon.com/hokkaido/012190" target="_blank">
+									<img src="./img/bnr/kifu_nippon.png" alt="ふるさと納税ニッポン">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_furunavi" href="https://furunavi.jp/Municipal/Product/Search?municipalid=19" target="_blank">
+									<img src="./img/bnr/kifu_furunavi.png" alt="ふるなび">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_wowma" href="https://furusato.wowma.jp/012190/" target="_blank">
+									<img src="./img/bnr/kifu_wowma.png" alt="au PAYふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_saisoncard" href="https://furusato.saisoncard.co.jp/city.php?n=012190" target="_blank">
+									<img src="./img/bnr/kifu_saisoncard.png" alt="セゾンのふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_fururi" href="https://fururi.jp/city/01_hokkaido/2190_mombetsu/" target="_blank">
+									<img src="./img/bnr/kifu_fururi.png" alt="ふるり">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_honpo"
+									href="https://furusatohonpo.jp/donate/municipality/?localGovernmentId=81459d3a-00e0-494d-9977-72dc5031de60"
+									target="_blank">
+									<img src="./img/bnr/kifu_honpo.png" alt="ふるさと本舗">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_palette" href="https://tokyu-furusato.jp/city/detail/012190" target="_blank">
+									<img src="./img/bnr/kifu_palette.png" alt="ふるさとパレット">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_gcall" href="https://www.g-call.com/furusato/city/?ygo_no=29244&amp;pg=1#pgtop"
+									target="_blank">
+									<img src="./img/bnr/kifu_gcall.png" alt="G-Callふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_plus" href="https://furusatoplus.com/local/012190/" target="_blank">
+									<img src="./img/bnr/kifu_plus.png" alt="ふるさとぷらす">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_premium" href="https://26p.jp/areas/monbetsu-city" target="_blank">
+									<img src="./img/bnr/kifu_premium.png" alt="ふるさとプレミアム">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_jre" href="https://www.jreastmall.com/shop/c/cf081/" target="_blank">
+									<img src="./img/bnr/kifu_jre.png" alt="JRE MALL ふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_jal" href="https://furusato.jal.co.jp/municipality/012190" target="_blank">
+									<img src="./img/bnr/kifu_jal.png" alt="JALふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_furulabo" href="https://furusato.asahi.co.jp/city/detail/012190" target="_blank">
+									<img src="./img/bnr/kifu_furulabo.png" alt="ふるラボ">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_mitsukoshi" href="https://mifurusato.jp/j/012190.html" target="_blank">
+									<img src="./img/bnr/kifu_mitsukoshi.png" alt="三越伊勢丹ふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_gurusuguri"
+									href="https://gurusuguri.com/shop/city_mombetsu/?push_page_id=0_1__&amp;push_slot_id=CL-05&amp;push_campaign_id=8&amp;moduleclick=t"
+									target="_blank">
+									<img src="./img/bnr/kifu_gurusuguri.png" alt="ぐるすぐり">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_hyakusen" href="https://dshopping-furusato.docomo.ne.jp/jichitai/012190" target="_blank">
+									<img src="./img/bnr/kifu_hyakusen.png" alt="ふるさと納税百選">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_mynavi"
+									href="https://h.accesstrade.net/sp/cc?rk=0100p8z500har3&amp;url=https%3A%2F%2Ffurusato.mynavi.jp%2Fmunicipal%2Fdetail%2F012190%2F"
+									target="_blank">
+									<img src="./img/bnr/kifu_mynavi.png" alt="マイナビふるさと納税">
+								</a>
+							</li>
+							<li>
+								<a id="bnr_furusatomarket" href="https://furusatomarkets.jp/area/city/19" target="_blank">
+									<img src="./img/bnr/kifu_furusatomarket.png" alt="ふるさとマーケット">
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
 				</div>
+
+
+
 			</div>
-		</section>
+		</main>
 
-		<!--/container-->
-
-
-		<div class="container">
-
-			<section class="info">
-				<h3>お知らせ</h3>
-				<ul class="news">
-					<li><a href="./news/detail.html">
-							<p class="date">2022.09.10</p>
-							<p class="text">本日、人気の返礼品が再入荷いたしました！</p>
-						</a></li>
-					<li><a href="./news/detail.html">
-							<p class="date">2022.09.09</p>
-							<p class="text">流氷と大地の恵みを活かし、人が輝き躍動するまち。紋別市の魅力を余すことなくご紹介いたします。</p>
-						</a></li>
-					<li><a href="./news/detail.html">
-							<p class="date">2022.09.08</p>
-							<p class="text">ふるさと納税の寄付の使い道をご紹介。皆さまからのご厚意が、紋別市の未来を築きます。</p>
-						</a></li>
-					<li><a href="./news/detail.html">
-							<p class="date">2022.09.07</p>
-							<p class="text">マンスリーサポーターになって、紋別市をもっと応援しませんか？　長期的な支援だからできる事があります。</p>
-						</a></li>
-					<li><a href="./news/detail.html">
-							<p class="date">2022.09.06</p>
-							<p class="text">お礼の品を提供している紋別市を盛り上げるべく奮闘している事業者の皆さまをご紹介いたします。</p>
-						</a></li>
-				</ul>
-				<a class="btn" href="./news/">一覧を見る</a>
-			</section>
-
-		</div>
-		<!--/container-->
-	</main>
+	</div>
 
 	<a class="totopfade" href="{{ url('homepage') }}"><img src="./img/totop.png"></a>
 	<footer>
