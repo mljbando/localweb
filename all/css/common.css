@@ -352,7 +352,7 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
 #gift.detail .sec2 .btn {margin-top:40px;}
 #gift.detail .sec2 .btn:last-of-type {margin-top:25px;}
 
-#kifu_bnrs .part {border-top:1px solid #c8c8c8;padding:40px 0;}
+#kifu_bnrs {border-top:1px solid #c8c8c8;/*padding:40px 0;*/}
 #kifu_bnrs .kifu_bnrs {display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;}
 #kifu_bnrs .kifu_bnrs li {/*width:24%;*/flex-basis: calc(24% - 1px);margin: 5px 5px 6px 5px;}
 #kifu_bnrs .kifu_bnrs a {display:block;overflow:hidden;border:1px solid #C8C8C8;border-radius:8px;}
@@ -534,6 +534,7 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
   #gift.detail .sec2 h3 {margin-top:12vw;}
   #gift.detail .sec2 .btn {margin-top:3vw;}
   #gift.detail .sec2 .btn:last-of-type {margin-top:5vw;}
+  #kifu_bnrs {padding:initial;}
   #kifu_bnrs .kifu_bnrs li {width:49%;margin:0px 0px 8px 0px;flex-basis:inherit;}
   #kifu_bnrs .kifu_bnrs {justify-content: space-between;}
   #crowdfunding.detail .sec1 .Rside {margin-top:6vw;padding:5vw 4vw;}

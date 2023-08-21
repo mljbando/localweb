@@ -551,31 +551,6 @@
 							<a class="btn-re" href="/guide">もっと詳しく</a>
 						</div>
 
-
-<!--{#author :MLJ Customize start#}-->
-<div id="sec_bt_cart" class="d-none d-md-block">
-	<form action="{{ url('product_add_cart', {id:Product.id}) }}" method="post" id="form1" name="form1">
-		<div class="default">
-			<p class="price">
-				寄付金額<span><!--{{ Product.getPrice02IncTaxMin|number_format }}-->14,000</span>円</p>
-			<!--{#author :MT start#}
-                {% if  Product.applicable_on_from != null and Product.applicable_on_from > date() %}
-                <button type="submit" class="add-cart go-cart disabled" disabled>{{Product.applicable_on_from|date_format('', 'm月d日')}}より受付開始</button>
-                {% elseif Product.applicable_on_to != null and Product.applicable_on_to < date() %}
-                <button type="submit" class="add-cart go-cart disabled" disabled>受付終了</button>
-                {% elseif Product.stock_find == 0 or Product.out_of_stock == 1 %}
-                <button type="submit" class="add-cart go-cart disabled" disabled>品切れ中</button>
-                {% else %}
-                <button type="submit" class="add-cart go-cart">{{ 'front.product.add_cart'|trans }}</button>
-                {% endif %}
-                {#author :MT end#}-->
-			<button type="submit" class="add-cart go-cart">寄付カートに入れる</button>
-		</div>
-		<!--{{ form_rest(form) }}-->
-	</form>
-</div>
-<!--{#author :MLJ Customize start#}-->
-
 					</div>
 
 
@@ -616,6 +591,37 @@
 				<!--{#author :MLJ Customize start#}-->
 
 				<div id="kifu_bnrs">
+
+    
+					<!--{#author :MLJ Customize start#}-->
+					<section class="d-md-none mb-5">
+						<div id="sec_bt_cart">
+							<form action="{{ url('product_add_cart', {id:Product.id}) }}" method="post" id="form1" name="form1">
+								<div class="default">
+									<p class="price">
+										寄付金額<span><!--{{ Product.getPrice02IncTaxMin|number_format }}-->14,000</span>円</p>
+	
+	
+									<!--{#author :MT start#}
+															{% if  Product.applicable_on_from != null and Product.applicable_on_from > date() %}
+															<button type="submit" class="add-cart go-cart disabled" disabled>{{Product.applicable_on_from|date_format('', 'm月d日')}}より受付開始</button>
+															{% elseif Product.applicable_on_to != null and Product.applicable_on_to < date() %}
+															<button type="submit" class="add-cart go-cart disabled" disabled>受付終了</button>
+															{% elseif Product.stock_find == 0 or Product.out_of_stock == 1 %}
+															<button type="submit" class="add-cart go-cart disabled" disabled>品切れ中</button>
+															{% else %}
+															<button type="submit" class="add-cart go-cart">{{ 'front.product.add_cart'|trans }}</button>
+															{% endif %}
+															{#author :MT end#}-->
+									<button type="submit" class="add-cart go-cart">寄付カートに入れる</button>
+								</div>
+								<!--{{ form_rest(form) }}-->
+	
+							</form>
+						</div>
+					</section>
+					<!--{#author :MLJ Customize start#}-->
+
 					<div class="part">
 						<h3>ポータルサイトから寄付する</h3>
 
