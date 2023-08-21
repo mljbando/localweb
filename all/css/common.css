@@ -455,7 +455,7 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
 
 /*スマホ==========================================*/
 @media screen and (max-width:768px) {
-.sp {display:block;}
+.sp {display:block;display: inline flex;}
   .pc {display:none;}
   main {min-height:calc(100vh - 307px);}/*main{padding:0 0 15vw;}*/
   .logo span {font-size:1.9rem;}
