@@ -95,7 +95,7 @@ h5 {font-size:2rem;font-weight:bold;line-height:1.4em;margin-bottom:25px;}
 .pankuzu li a:hover {opacity:.5;}
 
 /*header-----------------*/
-header {background:#fff;position:fixed;width:100%;z-index:99;box-shadow:0 6px 3px -3px rgb(0 0 0 / 13%);}
+header {background:#fff;position:fixed;width:100%;z-index:99;/*box-shadow:0 6px 3px -3px rgb(0 0 0 / 13%);*/}
 header .container {display:flex;align-items:center;justify-content:space-between;padding:15px 0;}
 header .logo {display:inline-block;}
 header .logo:hover, header nav ul li a:hover {opacity:.5;}
@@ -135,7 +135,7 @@ header nav ul li a .cart_number {position:absolute;width:16px;height:16px;displa
 .burger-menu .inner ul.s-navi li a {font-size:1.4rem;display:block;font-weight:bold;}
 
 /*header-cate ----------------*/
-header-cate {background:#fff;position:fixed;width:100%;z-index:99;box-shadow:0 6px 3px -3px rgb(0 0 0 / 13%);}
+header-cate {background:#fff;position:fixed;width:100%;z-index:98;box-shadow:0 6px 3px -3px rgb(0 0 0 / 13%);}
 /*header*/ .categorynav {border-top:1px solid #C8C8C8;}
 /*header*/ .categorynav ul {overflow-x:auto;white-space:nowrap;-ms-overflow-style:none;scrollbar-width:none;-webkit-overflow-scrolling:touch;/*-left*//*margin: 0 calc((100% - 1200px) / 2);*/}
 /*header*/ .categorynav ul::-webkit-scrollbar {display:none;}
@@ -187,7 +187,7 @@ header-cate {background:#fff;position:fixed;width:100%;z-index:99;box-shadow:0 6
 /*header*/ .categorynav .cate-next{left: calc(100vw - 6vW);margin-left: 1rem;}
 /*header*/ .categorynav ul {margin: 0 30px!important;}
 /*header*/ .categorynav button#all {margin-left: -1rem;}
-header-cate {top:58px;}
+header-cate {top:60px;}
 }
 
 .caticon path {color:#000;fill:currentColor;}
@@ -352,7 +352,7 @@ footer .copyright {background:#f6f6f6;font-size:1.2rem;padding:45px 0;}
 #gift.detail .sec2 .btn {margin-top:40px;}
 #gift.detail .sec2 .btn:last-of-type {margin-top:25px;}
 
-#kifu_bnrs {border-top:1px solid #c8c8c8;/*padding:40px 0;*/}
+#kifu_bnrs {border-top:1px solid #c8c8c8;padding:40px 0;}
 #kifu_bnrs .kifu_bnrs {display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;}
 #kifu_bnrs .kifu_bnrs li {/*width:24%;*/flex-basis: calc(24% - 1px);margin: 5px 5px 6px 5px;}
 #kifu_bnrs .kifu_bnrs a {display:block;overflow:hidden;border:1px solid #C8C8C8;border-radius:8px;}
