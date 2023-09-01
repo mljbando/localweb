@@ -187,7 +187,7 @@ header-cate {background:#fff;position:fixed;width:100%;z-index:98;box-shadow:0 6
 /*header*/ .categorynav .cate-next{left: calc(100vw - 6vW);margin-left: 1rem;}
 /*header*/ .categorynav ul {margin: 0 30px!important;}
 /*header*/ .categorynav button#all {margin-left: -1rem;}
-header-cate {top:60px;}
+header-cate {top:58px;}
 }
 
 .caticon path {color:#000;fill:currentColor;}
