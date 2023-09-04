@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>local</title>
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+  <link rel="stylesheet" property="stylesheet" href="./css/bootstrap.min.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/bootstrap-icons.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" property="stylesheet" href="./css/themify-icons.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/destyle.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/base.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/slider-pro.min.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/all.min.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/swiper-bundle.min.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/slick.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/slick-theme.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/nouislider.min.css" media="all">
+  <link rel="stylesheet" property="stylesheet" href="./css/common.css" media="all">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="page_shopping_login" class="cart_page">
+  <style>
+    #page_shopping_login .ec-pageHeader h1 {
+      text-align: center;
+      border: none;
+    }
+
+    .ec-pageHeader {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .ec-pageHeader h1 {
+      margin-bottom: 1rem;
+    }
+
+    .ec-pageHeader p {
+      margin-bottom: 3rem;
+    }
+
+    .ec-role {
+      width: 66.66667%;
+      margin: auto;
+    }
+
+    .ec-grid3 {
+      display: block;
+    }
+
+    .ec-grid3 .ec-grid3__cell2 {
+      width: 100%;
+    }
+
+    .ec-guest {
+      height: auto;
+    }
+
+    .ec-login,
+    .ec-guest {
+      box-shadow: 0 0 10px #b9b9b9;
+      border-radius: 10px;
+      background: white;
+      padding: 1.5rem 1.5rem 1.8rem;
+    }
+
+    .ec-login h1 {
+      background: #FF004E;
+    }
+
+    .ec-guest__inner h1 {
+      background: #6d9c00;
+    }
+
+    .ec-login h1,
+    .ec-guest__inner h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      color: #525263;
+      background: #f6f6f6;
+    }
+
+    .ec-blockBtn--cancel {
+      border-radius: 5px;
+      font-weight: initial !important;
+    }
+
+    .ec-guest {
+      display: inherit;
+    }
+
+    .ec-guest__inner {
+      text-align: initial !important;
+      vertical-align: initial !important;
+      display: initial !important;
+    }
+
+    .ec-login__input {
+      margin-top: 1rem;
+    }
+
+    .ec-input label {
+      display: inline-block;
+    }
+
+    .ec-input input[type="email"],
+    .ec-input input[type="password"] {
+      border-radius: 5px;
+    }
+
+    .ec-login__actions button {
+      position: relative;
+      background: #FF004E;
+      border: 1px solid #FF004E;
+      font-weight: normal;
+      border-radius: 5px;
+    }
+
+    .ec-login__actions button.ec-blockBtn--cancel:hover {
+      background: white;
+      color: #FF004E;
+      border-color: #cb3526;
+    }
+
+    .ec-login__actions button.ec-blockBtn--cancel:active,
+    .ec-login__actions button.ec-blockBtn--cancel:focus {
+      color: #fff;
+      background-color: #d33828;
+      border-color: #cb3526;
+    }
+
+    .ec-login__actions button.ec-blockBtn--cancel:active:hover {
+      color: #fff;
+      background-color: #b53022;
+      border-color: #93271c;
+    }
+
+    .ec-login__actions button:after {
+      position: absolute;
+      right: 2rem;
+      color: white;
+      content: ">";
+    }
+
+    .ec-login__actions button:hover:after {
+      color: #FF004E;
+    }
+
+    .ec-login__actions button:active:after {
+      color: white;
+    }
+
+    .form_bottom {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .b_head {
+      background: #ddd;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    .form_bottom p {
+      margin-top: 2rem;
+    }
+
+    .form_bottom .ec-login__link a {
+      display: block;
+      text-align: center;
+      border: solid 2px #FF004E;
+      font-weight: normal;
+      padding: 1.5rem;
+      color: #FF004E;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 1rem;
+      max-width: 450px;
+    }
+
+    .form_bottom .ec-login__link a:hover,
+    .form_bottom .ec-login__link a:active,
+    .form_bottom .ec-login__link a:focus {
+      background: #FF004E;
+      border-color: #FF004E;
+      color: white;
+    }
+
+    .form_bottom .ec-grid2__cell {
+      padding: 0 2rem;
+    }
+
+    .b_secure {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .b_secure img {
+      max-width: 15%;
+      padding: 1.4rem;
+      max-width: 60px;
+    }
+
+    .b_secure p {
+      min-width: 85%;
+      width: 85%;
+      margin-top: 0;
+    }
+
+    .to-back {
+      background: #F6F6F6;
+      text-align: center;
+      display: block;
+      width: 100%;
+      max-width: 450px;
+      margin: 1rem auto;
+      position: relative;
+      padding: 1rem 0;
+      border-radius: 6px;
+      margin-top: 3rem;
+      border: solid 1px #F6F6F6;
+    }
+
+    .to-back:hover,
+    .to-back:active,
+    .to-back:focus {
+      background: white;
+      border: solid 1px #c8c8c8;
+      color: #090000;
+    }
+
+    .to-back:before {
+      position: absolute;
+      content: "<";
+      left: 20%;
+    }
+
+    .to-back:hover:before,
+    .to-back:active:before {
+      color: #090000;
+    }
+
+    .form_last p {
+      margin-top: 2rem;
+    }
+
+    @media screen and (min-width:769px) {
+      .ec-pageHeader p {
+        text-align: center;
+      }
+
+      .ec-login,
+      .ec-guest {
+        padding: 3.5rem 3.5rem 3.8rem;
+      }
+
+      .ec-login .ec-grid2 {
+        justify-content: center;
+      }
+
+      .ec-login .ec-checkbox {
+        max-width: 315px;
+        margin: auto auto 1rem;
+      }
+
+      .form_bottom {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .form_bottom .ec-grid2__cell {
+        padding: 0 6rem;
+      }
+
+      .ec-grid2 .ec-grid2__cell .ec-blockBtn--cancel {
+        max-width: 315px;
+        margin: auto;
+      }
+
+      .ec-grid2 .ec-grid2__cell {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:768px) {
+      br.pc {
+        display: none;
+      }
+
+      .ec-pageHeader h1 {
+        font-size: 21px;
+      }
+
+      .ec-role {
+        width: 100%;
+        padding: 0;
+      }
+
+      #page_shopping_login p {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <header class="common">
+    <div class="container">
+      <a class="logo" href="https://mombetsu.furusato-direct.jp/"><img src="./img/logo.png"><span>紋別市<br
+            class="sp">ふるさと納税<br class="sp">総合サイト</span></a>
+    </div>
+  </header>
+
+  <div class="ec-layoutRole__contents">
+    <div class="ec-layoutRole__main">
+
+      <main id="about">
+        <div class="container">
+          <div class="row col-12 col-lg-10 mx-auto">
+
+            <div class="ec-role">
+              <div class="ec-pageHeader">
+                <h1>紋別市ふるさと納税へようこそ</h1>
+                <!--<p>お申し込みに進むにはログインまたは会員登録が必要です。</p>-->
+              </div>
+            </div>
+
+
+            <div class="col-lg-6">
+              <form name="shopping_login" id="shopping_login" method="post"
+                action="https://mombetsu.furusato-direct.jp/mypage/login">
+                <input type="hidden" name="_target_path" value="shopping" />
+                <input type="hidden" name="_failure_path" value="shopping_login" />
+                <input type="hidden" name="_csrf_token" value="8Mt3-d6catGJbwHHn0b3Ru38kW5DfbAYTzUQXU7ZI68">
+                <div class="ec-login">
+                  <h1>会員ログイン</h1>
+                  <p>会員登録をされている方は、メールアドレス・パスワードを入力しログインしてください。</p>
+                  <div class="ec-login__input">
+                    <div class="ec-input">
+                      <label>メールアドレス</label>
+                      <input type="email" id="login_email" name="login_email" required="required" maxlength="255"
+                        style="ime-mode: disabled" class="form-control" />
+                      <label>パスワード</label>
+                      <input type="password" id="login_pass" name="login_pass" required="required" maxlength="255"
+                        class="form-control" />
+                    </div>
+                    <div class="ec-login__link">
+                      <a class="ec-link" href="https://mombetsu.furusato-direct.jp/forgot">
+                        パスワードをお忘れの方
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ec-grid2__cell">
+                    <div class="ec-checkbox">
+                      <label>
+                        <div class="form-check"> <input type="checkbox" id="login_memory" name="login_memory"
+                            class="form-check-input" value="1" />
+                          <label class="form-check-label" for="login_memory">次回から自動的にログインする</label>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="ec-grid2 form_last">
+                    <div class="ec-grid2__cell">
+                      <div class="ec-login__actions">
+                        <button type="submit" class="ec-blockBtn--cancel">ログインしてトップページへ</button>
+                      </div>
+                      <p>ログインしますとトップページが表示されますので、寄付カートより手続きへお進みください。</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+
+              <div class="form_bottom">
+                <p class="b_head">紋別市ふるさと納税総合サイトが<br>はじめての方</p>
+                <div class="ec-grid2__cell">
+                  <!--<p>お申し込みには会員登録が必要です。</p>-->
+                  <div class="ec-login__link">
+                    <a class="ec-link" href="https://mombetsu.furusato-direct.jp/entry">新規会員登録（無料）</a>
+                  </div>
+                  <div class="b_secure">
+                    <img src="./img/secure.png">
+                    <p>お申込者の入力情報は、全て暗号化されて守られています。</p>
+                  </div>
+                  <!--<p>ふるさとチョイス・楽天ふるさと納税・さとふる・ふるなびなどの各ふるさと納税ポータルサイト、または紋別市ふるさと納税特設サイトで紋別市にふるさと納税のお申込をされた方も、当サイトを始めてご利用になる場合は、新規会員登録をお願いいたします。</p>-->
+                </div>
+              </div>
+            </div>
+
+            <!--{% if is_granted('IS_AUTHENTICATED_REMEMBERED') == false %}-->
+            <div class="col-lg-4">
+              <div class="ec-guest">
+                <div class="ec-guest__inner">
+                  <h1>ビジターログイン</h1>
+                  <p>会員登録をせずにお申込ををされたい方は、下記よりお進みください。</p>
+                  <div class="ec-guest__actions"><a class="ec-blockBtn--cancel"
+                      href="{{ url('shopping_nonmember') }}">会員登録せずにお申込み</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--{% endif %}-->
+
+
+          </div>
+        </div>
+
+        <a href="javascript:history.back()" class="to-back">前の画面に戻る</a>
+
+
+    </div>
+  </div>
+  </main>
+
+  <a class="totopfade" href="{{ url('homepage') }}"><img src="./img/totop.png"></a>
+  <footer>
+    <div class="container inner">
+      <a href="{{ url('homepage') }}">
+        <p class="logo"><img src="./img/logo.png"><span>紋別市ふるさと納税総合サイト</span></p>
+      </a>
+      <p>紋別市ふるさと納税担当<br>〒094-8707 北海道紋別市幸町2丁目1番18号</p>
+      <ul class="snslinks">
+        <li><a href="https://www.facebook.com/mombetsucity" target="_blank"><img src="./img/icon_fb.png"></a></li>
+        <li><a href="#" target="_blank"><img src="./img/icon_ig.png"></a></li>
+      </ul>
+      <ul class="subnav pc">
+        <li><a href="/guide">ふるさと納税の仕組みと手続き</a></li>
+        <li><a href="/help/agreement">ご利用規約</a></li>
+        <li><a href="/help/tradelaw">特定商取引法の表示</a></li>
+        <li><a href="/help/privacy">個人情報保護方針</a></li>
+        <li><a href="/help/about">よくある質問</a></li>
+        <li><a href="/contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="container">Copyright &copy; 紋別市</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.sliderPro.min.js"></script>
+  <script type="text/javascript" src="./js/chart.min.js"></script>
+  <script type="text/javascript" src="./js/nouislider.min.js"></script>
+  <script type="text/javascript" src="./js/wNumb.js"></script>
+  <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+
+</body>
+
+</html>
