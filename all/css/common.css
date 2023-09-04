@@ -95,7 +95,7 @@ h5 {font-size:2rem;font-weight:bold;line-height:1.4em;margin-bottom:25px;}
 .pankuzu li a:hover {opacity:.5;}
 
 /*header-----------------*/
-header {background:#fff;position:fixed;width:100%;z-index:99;/*box-shadow:0 6px 3px -3px rgb(0 0 0 / 13%);*/}
+header {background:#fff;position:fixed;width:100%;z-index:99;border-bottom: 1px solid #c8c8c8;/*box-shadow:0 6px 3px -3px rgb(0 0 0 / 13%);*/}
 header .container {display:flex;align-items:center;justify-content:space-between;padding:15px 0;}
 header .logo {display:inline-block;}
 header .logo:hover, header nav ul li a:hover {opacity:.5;}
