@@ -736,6 +736,9 @@ body {font-size:1.4rem;}
 @media screen and (min-width:769px) and (max-width:3840px) {
 .topani {min-height:80vh;margin-top: 68px;}
 }
+@media screen and (orientation:landscape) {
+.topani {min-height:80vh !important;margin-top: 60px !important;}
+}
 @media screen and (max-width:768px) {
 .topani {min-height:/*70*/40vh;margin-top: 60px;}
 }
@@ -746,6 +749,9 @@ body {font-size:1.4rem;}
 .t-slide_img {/*animation-duration:30s;*/  animation:slideAnime 36s 0s infinite;animation-iteration-count:infinite;animation-name:slideAnime;animation-timing-function:ease infinite;display:block;object-fit:cover;opacity:0;width:100%;z-index:10;}
 @media screen and (min-width:769px) and (max-width:3840px) {
 .t-slide_img {min-height:80vh;}
+}
+@media screen and (orientation:landscape) {
+.t-slide_img {min-height:80vh !important;}
 }
 @media screen and (max-width:768px) {
 .t-slide_img {min-height:/*70*/40vh;}
@@ -854,3 +860,13 @@ body {font-size:1.4rem;}
 #greeting .greeting .contents img {border-radius: 12px;}
 #greeting .greeting .row {background-color: rgba(255,255,255,0.7);border-radius: 12px;align-items: center;line-height: 3rem;}
 #greeting .greeting .row p.signe-mayor {text-align: right;font-weight: bold;padding: 0rem 2rem 0;}
+
+/*top medal*/
+.topinaera{position:absolute;right:0;display:flex;justify-content:flex-end;align-items:center;margin-top:-210px;}
+.topin1,.topin2{margin-right:10px;}
+.topin1pic,.topin2pic{width:200px;height:auto;}
+@media screen and (max-width:990px){
+.topinaera{display:flex;justify-content:center;align-items:center;transform:none;margin-top:-66px;}
+.topin1,.topin2{margin:0 2px;}
+.topin1pic,.topin2pic{width:60px;}
+}
